@@ -7,12 +7,56 @@
 
   <body style="">
     <div class="container">
-      <div id="view-10" view=""><div class="hero-unit">
+      <div class="hero-unit">
         <h1>FOAAS<h1>
         <h2>Fuck Off As A Service</h2>
         <p>Please see README for use.</p>
         <p><em>v0.0.1</em></p>
-        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content" style="margin-left:50px;">
+        <h2 id="introduction">Introduction</h2>
+        <p>FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.</p>
+
+        <h2 id="contentnegotiation">Content Negotiation</h2>
+
+        <p>FOAAS will respond to the following 'Accept:' values with appropriate content</p>
+
+        <ul>
+          <li>text/plain - Content will be returned as a plain string.</li>
+          <li>application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }</li>
+          <li>text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.</li>
+        </ul>
+
+        <h2 id="api">API</h2>
+
+        <h3 id="offnamefrom">/off/:name/:from</h3>
+
+        <p>Will return content of the form 'Fuck off, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck off, Tom - Chris'</p>
+
+        <h3 id="younamefrom">/you/:name/:from</h3>
+
+        <p>Will return content of the form 'Fuck you, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck you, Tom - Chris'</p>
+
+        <h3 id="everyonefrom">/everyone/:from</h3>
+
+        <p>Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /everyone/Tom will return 'Everyone can go and fuck off. - Tom'</p>
+
+        <h3 id="donutnamefrom">/donut/:name/:from</h3>
+
+        <p>Will return content of the form ':name, go and take a flying fuck at a rolling donut. - :from', e.g. /donut/Tom/Chris will return 'Tom, go and take a flying fuck at a rolling donut. - Chris'</p>
+
+        <h2 id="roadmap">Roadmap</h2>
+
+        <p>FOASS will be extended to include the following functionality:</p>
+
+        <ul>
+        <li>Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly</li>
+        <li>Internationalization based on Accept-Language.</li>
+        </ul>
+
+        <p>All contributions are very welcome.</p>
       </div>
     </div>
   </body>
