@@ -22,6 +22,18 @@ Will return content of the form 'Fuck off, :name. - :from', e.g. /off/Tom/Chris 
 
 Will return content of the form 'Fuck you, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck you, Tom - Chris'
 
+## /this/:from
+
+Will return content of the form 'Fuck this. - :name', e.g. /this/Tom will return 'Fuck this. - Tom'
+
+## /that/:from
+
+Will return content of the form 'Fuck that. - :name', e.g. /that/Tom will return 'Fuck that. - Tom'
+
+## /everything/:from
+
+Will return content of the form 'Fuck everything. - :name', e.g. /everything/Tom will return 'Fuck everything. - Tom'
+
 ## /everyone/:from
 
 Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /everyone/Tom will return 'Everyone can go and fuck off. - Tom'
