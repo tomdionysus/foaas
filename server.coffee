@@ -30,6 +30,10 @@ dooutput = (res, message, subtitle) ->
 
 app = express()
 
+app.use (req, res) ->
+  res.sendfile("index.html")
+
+
 app.get '/off/:name/:from', (req, res) ->
   message = "Fuck off, #{req.params.name}."
   subtitle = "- #{req.params.from}"
@@ -40,15 +44,16 @@ app.get '/you/:name', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/everyone/:from', (req, res) ->
+  message = "Everyone can go and fuck off."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 app.get '/donut/:name/:from', (req, res) ->
   message = "#{req.params.name}, go and take a flying fuck at a rolling donut."
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/everyone/:from', (req, res) ->
-  message = "Everyone can go and fuck off."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
 
 app.listen 3000 
 console.log 'Listening on port 3000'
