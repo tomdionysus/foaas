@@ -8,7 +8,7 @@ template = (message, subtitle) -> '
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
 
-  <body style="">
+  <body style="margin-top:40px;">
     <div class="container">
       <div id="view-10" view=""><div class="hero-unit">
         <h1>'+message+'</h1>
@@ -29,10 +29,11 @@ dooutput = (res, message, subtitle) ->
       res.send template(message,subtitle)
 
 app = express()
-
+app.use(express.bodyParser())
+app.use(express.methodOverride())
+app.use(app.router)
 app.use (req, res) ->
   res.sendfile("index.html")
-
 
 app.get '/off/:name/:from', (req, res) ->
   message = "Fuck off, #{req.params.name}."
