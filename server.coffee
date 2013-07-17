@@ -55,6 +55,6 @@ app.get '/donut/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-
-app.listen 3000 
-console.log 'Listening on port 3000'
+port = process.env.PORT || 5000 
+app.listen port
+console.log "FOAAS Started on port #{port}"
