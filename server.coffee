@@ -32,8 +32,9 @@ app = express()
 app.use(express.bodyParser())
 app.use(express.methodOverride())
 app.use(app.router)
+app.use(express.static('./public'))
 app.use (req, res) ->
-  res.sendfile("index.html")
+  res.sendfile("./public/index.html")
 
 app.get '/off/:name/:from', (req, res) ->
   message = "Fuck off, #{req.params.name}."
