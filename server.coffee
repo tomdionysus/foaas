@@ -40,7 +40,7 @@ app.get '/off/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/you/:name', (req, res) ->
+app.get '/you/:name/:from', (req, res) ->
   message = "Fuck you, #{req.params.name}."
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
