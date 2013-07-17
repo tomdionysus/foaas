@@ -1,0 +1,17 @@
+{
+  "name": "foaas",
+  "version": "0.0.1",
+  "description": "Fuck Off As A Service",
+  "main": "server.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+
+  "dependencies": {
+    "coffee-script" : "latest",
+    "express" : "latest"
+  }
+}

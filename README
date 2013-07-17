@@ -1,0 +1,40 @@
+# FOAAS
+
+v0.0.1
+
+FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
+
+# Content Negotiation
+
+FOAAS will respond to the following 'Accept:' values with appropriate content
+
+* text/plain - Content will be returned as a plain string.
+* application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }
+* text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
+
+# API
+
+## /off/:name/:from
+
+Will return content of the form 'Fuck off, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck off, Tom - Chris'
+
+## /you/:name/:from
+
+Will return content of the form 'Fuck you, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck you, Tom - Chris'
+
+## /everyone/:from
+
+Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /everyone/Tom will return 'Everyone can go and fuck off. - Tom'
+
+## /donut/:name/:from
+
+Will return content of the form ':name, go and take a flying fuck at a rolling donut. - :from', e.g. /donut/Tom/Chris will return 'Tom, go and take a flying fuck at a rolling donut. - Chris'
+
+# Roadmap
+
+FOASS will be extended to include the following functionality:
+
+* Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly
+* Internationalization based on Accept-Language.
+
+All contributions are very welcome.
