@@ -13,6 +13,7 @@
 
   "dependencies": {
     "coffee-script" : "latest",
-    "express" : "latest"
+    "express" : "latest",
+    "sanitizer": "latest"
   }
 }
