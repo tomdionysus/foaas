@@ -1,4 +1,5 @@
 express = require 'express'
+sanitizer = require 'sanitizer'
 
 template = (message, subtitle) -> '
 <html>
@@ -11,8 +12,8 @@ template = (message, subtitle) -> '
   <body style="margin-top:40px;">
     <div class="container">
       <div id="view-10" view=""><div class="hero-unit">
-        <h1>'+message+'</h1>
-        <p><em>'+subtitle+'</em></p>
+        <h1>'+sanitizer.escape(message)+'</h1>
+        <p><em>'+sanitizer.escape(subtitle)+'</em></p>
         </div>
       </div>
     </div>
