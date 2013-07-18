@@ -44,7 +44,11 @@ Will return content of the form ':name, go and take a flying fuck at a rolling d
 
 ## /linus/:name/:from
 
-Will return content of the form ':name, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - :from', e.g. /linus/Tom/Chris will return 'Chris, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - Tom'
+Will return content of the form ':name, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - :from'.
+
+## /pink/:from
+
+Will return content of the form 'Well, Fuck me pink. - :name".
 
 # Roadmap
 
