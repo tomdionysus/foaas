@@ -20,7 +20,7 @@ Will return content of the form 'Fuck off, :name. - :from', e.g. /off/Tom/Chris 
 
 ## /you/:name/:from
 
-Will return content of the form 'Fuck you, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck you, Tom - Chris'
+Will return content of the form 'Fuck you, :name. - :from', e.g. /you/Tom/Chris will return 'Fuck you, Tom - Chris'
 
 ## /this/:from
 
