@@ -76,6 +76,11 @@ app.get '/linus/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/pink/:from', (req, res) ->
+  message = "Well, Fuck me pink."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 port = process.env.PORT || 5000 
 app.listen port
 console.log "FOAAS Started on port #{port}"
