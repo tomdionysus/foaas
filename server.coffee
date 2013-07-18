@@ -77,6 +77,11 @@ app.get '/linus/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/king/:name/:from', (req, res) ->
+  message = "Oh fuck off, just really fuck off you total dickface. Christ #{req.params.name}, you are fucking thick."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 app.get '/pink/:from', (req, res) ->
   message = "Well, Fuck me pink."
   subtitle = "- #{req.params.from}"
