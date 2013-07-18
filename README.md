@@ -46,6 +46,10 @@ Will return content of the form ':name, go and take a flying fuck at a rolling d
 
 Will return content of the form ':name, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - :from'.
 
+## /king/:name/:from
+
+Will return content of the form 'Oh fuck off, just really fuck off you total dickface. Christ :name, you are fucking thick. - :from'.
+
 ## /pink/:from
 
 Will return content of the form 'Well, Fuck me pink. - :name".
