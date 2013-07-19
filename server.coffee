@@ -73,6 +73,11 @@ app.get '/donut/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/shakespeare/:name/:from', (req, res) ->
+  message = "#{req.params.name}, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 app.get '/linus/:name/:from', (req, res) ->
   message = "#{req.params.name}, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap."
   subtitle = "- #{req.params.from}"
