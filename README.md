@@ -24,7 +24,7 @@ Will return content of the form 'Fuck you, :name. - :from', e.g. /you/Tom/Chris 
 
 ## /this/:from
 
-Will return content of the form 'Fuck this. - :name', e.g. /this/Tom will return 'Fuck this. - Tom'
+Will return content of the form 'Fuck this. - :from', e.g. /this/Tom will return 'Fuck this. - Tom'
 
 ## /that/:from
 
