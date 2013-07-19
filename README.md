@@ -60,7 +60,7 @@ Will return content of the form 'Well, Fuck me pink. - :name".
 
 ## /life/:from
 
-Will return content of the form 'Fuck my life. - :from".
+Will return content of the form 'Fuck my life. - :from', e.g. /life/Phil will return 'Fuck my life. - Phil'.
 
 # Alternative URLs
 
