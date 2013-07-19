@@ -98,6 +98,11 @@ app.get '/life/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/chainsaw/:name/:from', (req, res) ->
+  message = "Fuck me gently with a chainsaw, #{req.params.name}. Do I look like Mother Teresa?"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 port = process.env.PORT || 5000 
 app.listen port
 console.log "FOAAS Started on port #{port}"
