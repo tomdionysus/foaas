@@ -54,6 +54,11 @@ Will return content of the form 'Oh fuck off, just really fuck off you total dic
 
 Will return content of the form 'Well, Fuck me pink. - :name".
 
+# Alternative URLs
+
+- http://foaas.herokuapp.com
+- http://foaas.com
+
 # Roadmap
 
 FOASS will be extended to include the following functionality:
