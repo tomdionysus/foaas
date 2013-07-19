@@ -42,6 +42,10 @@ Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /e
 
 Will return content of the form ':name, go and take a flying fuck at a rolling donut. - :from', e.g. /donut/Tom/Chris will return 'Tom, go and take a flying fuck at a rolling donut. - Chris'
 
+## /shakespeare/:name/:from
+
+Will return content of the form ':name, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - :from'.
+
 ## /linus/:name/:from
 
 Will return content of the form ':name, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - :from'.
