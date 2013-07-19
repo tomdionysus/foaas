@@ -66,6 +66,10 @@ Will return content of the form 'Fuck my life. - :from', e.g. /life/Phil will re
 
 Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather
 
+## /thanks/:from
+
+Will return content of the form 'Fuck you very much. - :from".
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
