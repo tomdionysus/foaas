@@ -54,6 +54,10 @@ Will return content of the form 'Oh fuck off, just really fuck off you total dic
 
 Will return content of the form 'Well, Fuck me pink. - :name".
 
+## /life/:from
+
+Will return content of the form 'Fuck my life. - :name".
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
