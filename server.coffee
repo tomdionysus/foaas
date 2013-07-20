@@ -103,6 +103,16 @@ app.get '/chainsaw/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/horse/:name/:from', (req, res) ->
+  message = "Fuck you and the horse you rode in on, #{req.params.name}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/toto/:from', (req, res) ->
+  message = "Fuck you my pretty! And your little dog too!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 app.get '/outside/:name/:from', (req, res) ->
   message = "#{req.params.name}, why don't you go outside and play hide-and-go-fuck-yourself?"
   subtitle = "- #{req.params.from}"
