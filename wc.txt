@@ -1,0 +1,385 @@
+2013-07-19T15:54:09.902532+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="173.164.129.225, 199.27.128.227" dyno=web.2 connect=1ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:09.282287+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="85.234.131.115, 141.101.70.145" dyno=web.2 connect=1ms service=4ms status=206 bytes=5493
+2013-07-19T15:54:09.707385+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="74.95.230.125, 108.162.221.240" dyno=web.1 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:53:39.425600+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=www.foaas.com fwd="216.201.168.18, 173.245.50.217" dyno=web.4 connect=8ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:10.079315+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="174.231.195.4, 108.162.216.129" dyno=web.3 connect=2ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:10.175041+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="107.9.24.187, 173.245.56.145" dyno=web.4 connect=1ms service=14ms status=200 bytes=5493
+2013-07-19T15:54:10.337879+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="98.101.39.134, 173.245.56.148" dyno=web.3 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:10.491898+00:00 heroku[router]: at=info method=GET path=/king/you%20guys/sunny host=foaas.com fwd="199.88.142.1, 108.162.237.151" dyno=web.1 connect=1ms service=3ms status=200 bytes=911
+2013-07-19T15:54:10.534672+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="69.166.47.113, 199.27.128.228" dyno=web.3 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:10.566173+00:00 heroku[router]: at=info method=GET path=/off/x/dimi host=foaas.com fwd="94.245.127.11, 141.101.70.103" dyno=web.2 connect=1ms service=3ms status=200 bytes=829
+2013-07-19T15:53:31.724000+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="67.79.13.15" dyno=web.2 connect=2ms service=9ms status=304 bytes=0
+2013-07-19T15:54:10.682061+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="107.9.24.187, 173.245.56.147" dyno=web.3 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:10.729212+00:00 heroku[router]: at=info method=GET path=/linus/Matei/Administratori%C8%9Ba host=foaas.com fwd="109.100.102.200, 173.245.51.243" dyno=web.4 connect=1ms service=6ms status=200 bytes=1002
+2013-07-19T15:54:10.820180+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.1 connect=1ms service=3ms status=200 bytes=24
+2013-07-19T15:54:10.843192+00:00 heroku[router]: at=info method=GET path=/donut/:name/:from host=foaas.com fwd="198.154.184.130, 173.245.52.152" dyno=web.2 connect=7ms service=8ms status=200 bytes=870
+2013-07-19T15:54:10.890265+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="98.101.39.134, 173.245.56.147" dyno=web.3 connect=8ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:11.007146+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="38.122.226.213, 108.162.219.90" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:10.695449+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=4ms service=3ms status=200 bytes=24
+2013-07-19T15:54:11.149043+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=1ms service=3ms status=200 bytes=24
+2013-07-19T15:54:11.157787+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="10.21.116.78,173.36.196.7, 199.27.128.205" dyno=web.1 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:11.304541+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="76.104.230.110" dyno=web.3 connect=4ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:10.971556+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=2ms service=3ms status=200 bytes=24
+2013-07-19T15:54:08.021273+00:00 heroku[router]: at=info method=GET path=/off/Dorian/Dan host=foaas.com fwd="199.185.133.5, 199.27.128.218" dyno=web.3 connect=2ms service=10ms status=200 bytes=833
+2013-07-19T15:54:11.466358+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="70.208.139.214, 173.245.56.146" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:53:32.826558+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="114.143.84.198, 108.162.222.181" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:11.543768+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.4 connect=2ms service=21ms status=200 bytes=24
+2013-07-19T15:54:11.577364+00:00 heroku[router]: at=info method=GET path=/off/airbrake/kickstarter host=foaas.com fwd="24.164.137.32, 173.245.52.100" dyno=web.2 connect=1ms service=5ms status=200 bytes=843
+2013-07-19T15:54:11.582734+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="68.143.68.146, 141.101.99.234" dyno=web.1 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:11.670367+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=1ms service=3ms status=200 bytes=24
+2013-07-19T15:54:10.349265+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="129.82.80.146, 173.245.55.227" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:11.741384+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="69.166.47.113, 199.27.128.222" dyno=web.4 connect=1ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:11.804829+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.3 connect=2ms service=5ms status=200 bytes=24
+2013-07-19T15:54:11.941125+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=1ms service=3ms status=200 bytes=24
+2013-07-19T15:54:12.016810+00:00 heroku[router]: at=info method=GET path=/king/Subversion/developpers%20everywhere host=foaas.com fwd="207.45.249.157, 108.162.229.241" dyno=web.4 connect=3ms service=3ms status=200 bytes=930
+2013-07-19T15:54:12.114370+00:00 heroku[router]: at=info method=GET path=/you/Nvidia/Linus%20Torvalds%5D(http://img840.imageshack.us/img840/1756/linusshootingthebird.png) host=foaas.com fwd="10.161.45.194, 127.0.0.1,132.185.161.98, 173.245.53.65" dyno=web.4 connect=3ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:12.214249+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=3ms service=6ms status=200 bytes=24
+2013-07-19T15:54:10.023752+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="201.220.235.12, 173.245.51.201" dyno=web.3 connect=1ms service=11ms status=200 bytes=5493
+2013-07-19T15:54:12.303269+00:00 heroku[router]: at=info method=GET path=/everyone/:from%20Miritol host=foaas.com fwd="62.65.239.73, 173.245.53.76" dyno=web.1 connect=4ms service=6ms status=200 bytes=855
+2013-07-19T15:54:12.347176+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.1 connect=2ms service=4ms status=200 bytes=24
+2013-07-19T15:53:59.988344+00:00 heroku[router]: at=info method=GET path=/off/Floyd/Andrew host=foaas.com fwd="82.4.222.92, 141.101.98.15" dyno=web.4 connect=1ms service=3ms status=200 bytes=835
+2013-07-19T15:54:12.507107+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.3 connect=2ms service=34ms status=200 bytes=24
+2013-07-19T15:54:12.535504+00:00 heroku[router]: at=info me
+thod=GET path=/ host=foaas.com fwd="75.177.140.137, 173.245.56.150" dyno=web.4 connect=1ms service=4ms status=304 bytes=0
+2013-07-19T15:54:12.652596+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=5ms service=5ms status=200 bytes=24
+2013-07-19T15:54:09.074525+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.4 connect=1ms service=7ms status=200 bytes=24
+2013-07-19T15:54:12.772542+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.1 connect=2ms service=3ms status=200 bytes=24
+2013-07-19T15:54:12.811915+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="81.197.122.201, 108.162.231.197" dyno=web.2 connect=3ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:12.724184+00:00 heroku[router]: at=info method=GET path=/thanks/Sam host=foaas.com fwd="199.19.249.196, 141.101.99.40" dyno=web.4 connect=1ms service=15ms status=200 bytes=27
+2013-07-19T15:54:12.978793+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="38.88.174.98, 199.27.128.205" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:13.041029+00:00 heroku[router]: at=info method=GET path=/you/will/pete host=foaas.com fwd="80.194.77.90, 141.101.99.48" dyno=web.1 connect=1ms service=3ms status=200 bytes=832
+2013-07-19T15:54:13.133652+00:00 heroku[router]: at=info method=GET path=/off/Floyd/Andrew host=foaas.com fwd="195.99.188.163, 141.101.70.127" dyno=web.4 connect=2ms service=7ms status=200 bytes=835
+2013-07-19T15:54:00.743644+00:00 heroku[router]: at=info method=HEAD path=/?utm_source=buffer&utm_campaign=Buffer&utm_content=buffer40a4d&utm_medium=twitter host=foaas.com fwd="176.34.78.244, 141.101.98.212" dyno=web.1 connect=1ms service=2ms status=200 bytes=0
+2013-07-19T15:54:13.001443+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="38.122.226.213, 173.245.52.106" dyno=web.3 connect=0ms service=91ms status=200 bytes=5493
+2013-07-19T15:54:13.272754+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="174.231.195.4, 108.162.216.129" dyno=web.3 connect=2ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:11.277555+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=1ms service=4ms status=200 bytes=24
+2013-07-19T15:54:09.422789+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="216.235.8.21, 108.162.241.41" dyno=web.1 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:13.424652+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="115.249.61.233, 108.162.222.106" dyno=web.2 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:13.447130+00:00 heroku[router]: at=info method=GET path=/you/pay%20me/Freelancers%20Everywhere host=foaas.com fwd="64.53.162.194, 108.162.216.233" dyno=web.1 connect=1ms service=3ms status=200 bytes=852
+2013-07-19T15:54:13.524281+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon.png host=foaas.com fwd="174.231.195.4, 173.245.55.129" dyno=web.3 connect=2ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:09.864843+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="216.235.8.21, 108.162.242.222" dyno=web.4 connect=1ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:13.667396+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="68.143.68.146, 141.101.99.249" dyno=web.2 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:13.827801+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="70.197.0.14, 199.27.128.237" dyno=web.4 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:13.841990+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="207.54.96.209, 108.162.216.128" dyno=web.2 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:13.887067+00:00 heroku[router]: at=info method=GET path=/chainsaw/Hughdbrown/Heather host=foaas.com fwd="110.55.4.158, 173.245.62.132" dyno=web.4 connect=1ms service=3ms status=200 bytes=893
+2013-07-19T15:54:13.968249+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="201.220.235.12, 108.162.229.117" dyno=web.4 connect=1ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:14.091653+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="201.220.235.12, 173.245.51.222" dyno=web.3 connect=3ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:14.085515+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="64.214.53.2, 173.245.56.164" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:14.469241+00:00 heroku[router]: at=info method=GET path=/shakespeare/Trumpet%20Winsock/Erik%20Kastner host=foaas.com fwd="24.42.108.210, 108.162.218.41" dyno=web.2 connect=2ms service=3ms status=200 bytes=932
+2013-07-19T15:54:12.989372+00:00 heroku[router]: at=info method=GET path=/chainsaw/Dudex80/Chewbacca host=foaas.com fwd="146.115.5.244, 108.162.219.163" dyno=web.3 connect=1ms service=100ms status=200 bytes=892
+2013-07-19T15:54:14.693922
++00:00 heroku[router]: at=info method=HEAD path=/ host=foaas.com fwd="23.29.122.197, 173.245.50.205" dyno=web.4 connect=1ms service=5ms status=206 bytes=0
+2013-07-19T15:54:14.698371+00:00 heroku[router]: at=info method=HEAD path=/ host=foaas.com fwd="23.29.122.197, 173.245.50.205" dyno=web.1 connect=2ms service=3ms status=206 bytes=0
+2013-07-19T15:54:14.694647+00:00 heroku[router]: at=info method=GET path=/king/Daniel/Aeriandi host=foaas.com fwd="217.42.251.67, 141.101.70.97" dyno=web.1 connect=2ms service=4ms status=200 bytes=912
+2013-07-19T15:52:30.837396+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="12.24.60.12" dyno=web.4 connect=4ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:15.019486+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="23.29.122.197, 173.245.50.235" dyno=web.3 connect=1ms service=5ms status=206 bytes=5493
+2013-07-19T15:54:15.039970+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="23.29.122.197, 173.245.50.205" dyno=web.4 connect=1ms service=23ms status=206 bytes=5493
+2013-07-19T15:54:15.116247+00:00 heroku[router]: at=info method=GET path=/off/airbrake/kickstarter host=foaas.com fwd="24.164.137.32, 173.245.52.100" dyno=web.3 connect=0ms service=2ms status=200 bytes=843
+2013-07-19T15:54:11.401634+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.1 connect=1ms service=3ms status=200 bytes=24
+2013-07-19T15:54:15.265967+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="92.230.241.157, 173.245.51.203" dyno=web.4 connect=1ms service=10ms status=304 bytes=0
+2013-07-19T15:54:15.396192+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="207.54.96.209, 108.162.216.96" dyno=web.4 connect=4ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:01.559171+00:00 heroku[router]: at=info method=GET path=/shakespeare/Steven/Bill%20Scott host=foaas.com fwd="63.99.16.91, 108.162.216.89" dyno=web.3 connect=2ms service=5ms status=200 bytes=921
+2013-07-19T15:54:14.202024+00:00 heroku[router]: at=info method=GET path=/off/sammy/gennady host=foaas.com fwd="68.192.117.253, 173.245.52.98" dyno=web.3 connect=3ms service=2ms status=200 bytes=836
+2013-07-19T15:54:15.466075+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="192.35.79.70, 173.245.55.250" dyno=web.1 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:15.321503+00:00 heroku[router]: at=info method=GET path=/shakespeare/Falstaff/Prince%20Henry host=foaas.com fwd="86.86.193.183, 108.162.231.211" dyno=web.1 connect=1ms service=2ms status=200 bytes=925
+2013-07-19T15:54:15.285527+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="88.91.138.195, 141.101.81.152" dyno=web.3 connect=1ms service=12ms status=200 bytes=5493
+2013-07-19T15:54:15.490994+00:00 heroku[router]: at=info method=GET path=/off/dick host=foaas.com fwd="98.114.101.17, 173.245.56.154" dyno=web.4 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:15.924812+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="68.192.117.253, 173.245.52.115" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:16.153095+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="8.35.201.98, 141.101.81.158" dyno=web.3 connect=2ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:16.510106+00:00 heroku[router]: at=info method=GET path=/shakespeare/Trumpet%20Winsock/Erik%20Kastner host=foaas.com fwd="24.42.108.210, 108.162.218.41" dyno=web.4 connect=1ms service=4ms status=200 bytes=932
+2013-07-19T15:54:16.275923+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="88.91.138.195, 141.101.81.39" dyno=web.4 connect=2ms service=20ms status=200 bytes=5493
+2013-07-19T15:54:16.722440+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="88.91.138.195, 141.101.81.174" dyno=web.4 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:16.997311+00:00 heroku[router]: at=info method=GET path=/shakespeare/Trumpet%20Winsock/Erik%20Kastner host=foaas.com fwd="24.42.108.210, 108.162.218.41" dyno=web.3 connect=1ms service=2ms status=200 bytes=932
+2013-07-19T15:54:17.036566+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="76.186.54.72" dyno=web.4 connect=2ms service=5ms status=200 bytes=5493
+2013-07-19T15:53:39.170768+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="113.146.88.248, 103.22.200.27" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:54:17.079866+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="86.86.193.183, 173.245.51.210" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:17.478790+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="31.185.249.135, 141.101.99.5" dyno=web.4 connect=1ms service=56ms status=200 bytes=5493
+2013-07-19T15:54:17.480198+00:00 heroku[router]: at=info method=GET path=/everyone/steve host=foaas.com fwd="173.9.214.233, 173.245.55.117" dyno=web.3 connect=3ms service=5ms status=200 bytes=847
+2013-07-19T15:54:17.474619+00:00 heroku[router]: at=info method=GET path=/shakespeare/Trumpet%20Winsock/Erik%20Kastner host=foaas.com fwd="24.42.108.210, 108.162.218.41" dyno=web.3 connect=26ms service=5ms status=200 bytes=932
+2013-07-19T15:54:16.837514+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="212.242.104.245, 141.101.80.158" dyno=web.1 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:17.483296+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="75.213.211.235, 173.245.56.159" dyno=web.4 connect=1ms service=81ms status=200 bytes=5493
+2013-07-19T15:54:17.576146+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="76.186.54.72" dyno=web.4 connect=14ms service=27ms status=200 bytes=5493
+2013-07-19T15:52:02.122802+00:00 heroku[router]: at=info method=GET path=/shakespeare/Falstaff/Prince%20Henry host=foaas.com fwd="146.90.16.228, 141.101.99.18" dyno=web.3 connect=0ms service=2ms status=200 bytes=925
+2013-07-19T15:54:17.624989+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="71.180.217.49, 108.162.212.91" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:17.910706+00:00 heroku[router]: at=info method=GET path=/king/you%20guys/sunny host=foaas.com fwd="209.123.166.6, 108.162.219.232" dyno=web.2 connect=1ms service=3ms status=200 bytes=911
+2013-07-19T15:54:18.302835+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="173.228.89.229, 199.27.128.229" dyno=web.1 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:18.638704+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon.png host=foaas.com fwd="192.0.172.236, 108.162.241.228" dyno=web.1 connect=0ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:18.813854+00:00 heroku[router]: at=info method=GET path=/everything/Paul host=foaas.com fwd="173.8.222.173, 199.27.128.146" dyno=web.1 connect=13ms service=6ms status=200 bytes=833
+2013-07-19T15:54:19.358148+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="173.8.222.173, 199.27.128.222" dyno=web.1 connect=4ms service=10ms status=200 bytes=5493
+2013-07-19T15:54:10.842142+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="10.72.0.40, 172.16.216.22,75.98.19.140, 173.245.52.114" dyno=web.3 connect=0ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:19.389893+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="208.86.230.129, 173.245.56.183" dyno=web.4 connect=1ms service=15ms status=200 bytes=5493
+2013-07-19T15:54:19.441310+00:00 heroku[router]: at=info method=GET path=/off/ian/dave host=foaas.com fwd="173.252.101.117, 173.245.56.120" dyno=web.2 connect=1ms service=2ms status=200 bytes=23
+2013-07-19T15:54:19.621747+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="71.71.235.99, 173.245.56.162" dyno=web.4 connect=1ms service=11ms status=200 bytes=5493
+2013-07-19T15:54:09.722216+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="10.21.116.78,173.36.196.7, 199.27.128.208" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:19.750055+00:00 heroku[router]: at=info method=GET path=/king/you%20guys/sunny host=foaas.com fwd="208.54.64.177, 108.162.238.60" dyno=web.3 connect=2ms service=4ms status=200 bytes=911
+2013-07-19T15:54:16.010922+00:00 heroku[router]: at=info method=GET path=/shakespeare/Trumpet%20Winsock/Erik%20Kastner host=foaas.com fwd="24.42.108.210, 108.162.218.41" dyno=web.2 connect=1ms service=2ms status=200 bytes=932
+2013-07-19T15:54:19.789525+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="75.213.211.235, 173.245.56.159" dyno=web.1 connect=4ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:18.964953+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="186.53.40.175, 108.162.229.100" dyno=web.4 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:52:37.312416+00:00 heroku[router]: at=info method=GET path=/off/foo/adam host=foaas.com fwd="24.27.39.175, 108.162.221.234" dyno=web.4 connect=1ms service=3ms status=200 bytes=831
+2013-07-19T15:54:20.105007+00:00 heroku[router]: at=info method=GET path=/shakespeare/elysia/john host=foaas.herokuapp.com fwd="167.246.61.1" dyno=web.4 connect=1ms service=6ms status=200 bytes=915
+2013-07-19T15:54:20.241050+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="64.115.118.110, 141.101.99.37" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:20.290287+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="186.53.40.175, 108.162.229.84" dyno=web.3 connect=1ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:20.311552+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="71.71.235.99, 173.245.56.159" dyno=web.4 connect=5ms service=10ms status=200 bytes=5493
+2013-07-19T15:54:12.627515+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="195.171.7.162" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:20.535542+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="124.39.204.163" dyno=web.4 connect=2ms service=7ms status=200 bytes=5493
+2013-07-19T15:53:43.247426+00:00 heroku[router]: at=info method=GET path=/off/sajid host=foaas.com fwd="72.222.187.61, 108.162.215.81" dyno=web.4 connect=3ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:20.748409+00:00 heroku[router]: at=info method=HEAD path=/donut/IHK/Max host=foaas.com fwd="23.29.122.197, 173.245.50.205" dyno=web.4 connect=1ms service=4ms status=200 bytes=0
+2013-07-19T15:54:20.814521+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="124.39.204.163" dyno=web.4 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:20.835257+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="24.164.137.32, 173.245.52.100" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:20.986133+00:00 heroku[router]: at=info method=GET path=/this/jp host=foaas.com fwd="128.148.232.2, 173.245.52.231" dyno=web.4 connect=1ms service=4ms status=200 bytes=825
+2013-07-19T15:54:20.994117+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="54.240.196.185, 108.162.246.225" dyno=web.3 connect=2ms service=5ms status=304 bytes=0
+2013-07-19T15:54:21.005458+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="124.39.204.163" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:54:21.224458+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="64.115.118.110, 141.101.99.249" dyno=web.4 connect=1ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:21.697605+00:00 heroku[router]: at=info method=GET path=/you/pay%20me/Freelancers%20Everywhere host=foaas.com fwd="50.159.68.63, 199.27.128.182" dyno=web.4 connect=1ms service=4ms status=200 bytes=852
+2013-07-19T15:54:21.789446+00:00 heroku[router]: at=info method=GET path=/chainsaw/Dude%90/Chewbacca host=foaas.com fwd="146.115.5.244, 108.162.219.163" dyno=web.1 connect=0ms service=4ms status=500 bytes=2148
+2013-07-19T15:54:21.786747+00:00 app[web.1]: URIError: URI malformed
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at decodeURIComponent (native)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at Route.match (/app/node_modules/express/lib/router/route.js:61:9)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at Router.matchRequest (/app/node_modules/express/lib/router/index.js:205:17)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at pass (/app/node_modules/express/lib/router/index.js:104:30)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at Router._dispatch (/app/node_modules/express/lib/router/index.js:170:5)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at Object.router (/app/node_modules/express/lib/router/index.js:33:10)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at next (/app/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at Object.methodOverride [as handle] (/app/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js:49:5)
+2013-07-19T15:54:21.786747+00:00 app[web.1]:   at next (/app/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at multipart (/app/node_modules/express/node_modules/connect/lib/middleware/multipart.js:64:37)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at /app/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js:57:9
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at urlencoded (/app/node_modules/express/node_modules/connect/lib/middleware/urlencoded.js:51:37)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at /app/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js:55:7
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at json (/app/node_modules/express/node_modules/connect/lib/middleware/json.js:53:37)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at Object.bodyParser [as handle] (/app/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js:53:5)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at next (/app/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at Object.expressInit [as handle] (/app/node_modules/express/lib/middleware.js:30:5)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at next (/app/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+2013-07-19T15:54:21.786975+00:00 app[web.1]:   at Object.query [as handle] (/app/node_modules/express/node_modules/connect/lib/middleware/query.js:44:5)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at next (/app/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at Function.app.handle (/app/node_modules/express/node_modules/connect/lib/proto.js:198:3)
+2013-07-19T15:54:21.834271+00:00 heroku[router]: at=info method=GET path=/off/Dan/Dan host=foaas.com fwd="208.82.13.114, 108.162.219.163" dyno=web.3 connect=1ms service=3ms status=200 bytes=830
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at Server.app (/app/node_modules/express/node_modules/connect/lib/connect.js:65:37)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at Server.EventEmitter.emit (events.js:98:17)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at HTTPParser.parser.onIncoming (http.js:2056:12)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:120:23)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at Socket.socket.ondata (http.js:1946:22)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:   at TCP.onread (net.js:525:27)
+2013-07-19T15:54:21.787130+00:00 app[web.1]:
+2013-07-19T15:54:15.442290+00:00 heroku[router]: at=info method=GET path=/shakespeare/Trumpet%20Winsock/Erik%20Kastner host=foaas.com fwd="24.42.108.210, 108.162.218.41" dyno=web.4 connect=1ms service=5ms status=200 bytes=932
+2013-07-19T15:54:08.798905+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="122.167.111.215, 103.22.201.222" dyno=web.3 connect=1ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:22.062182+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="128.148.232.2, 173.245.52.232" dyno=web.3 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:22.107007+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="93.93.59.25, 173.245.53.76" dyno=web.3 connect=1ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:22.191607+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.159.68.63, 199.27.128.188" dyno=web.3 connect=2ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:22.275131+00:00 heroku[router]: at=info method=GET path=/donut/Spencer/Max host=foaas.com fwd="198.154.184.130, 173.245.52.152" dyno=web.1 connect=1ms service=3ms status=200 bytes=870
+2013-07-19T15:54:22.330051+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="67.169.147.245, 199.27.128.206" dyno=web.1 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:22.428718+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="94.159.61.178, 173.245.51.217" dyno=web.2 connect=1ms service=5ms status=304 bytes=0
+2013-07-19T15:54:18.533557+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="192.0.172.236, 108.162.241.77" dyno=web.1 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:22.587141+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="70.171.184.67, 173.245.50.204" dyno=web.3 connect=1ms service=6ms status=304 bytes=0
+2013-07-19T15:54:22.832638+00:00 heroku[router]: at=info method=GET path=/ host=www.foaas.com fwd="31.4.238.198, 173.245.49.246" dyno=web.2 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:54:23.070854+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="216.201.168.18, 108.162.221.247" dyno=web.3 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:23.079475+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="134.74.17.96, 173.245.52.72" dyno=web.4 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:23.266601+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="50.0.2.26, 199.27.128.184" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:23.360609+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="134.74.17.96, 173.245.52.88" dyno=web.3 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:23.613600+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.0.2.26, 199.27.128.188" dyno=web.3 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:23.731796+00:00 heroku[router]: at=info method=GET path=/off/USA/China host=foaas.com fwd="116.232.236.254, 108.162.215.76" dyno=web.2 connect=1ms service=3ms status=200 bytes=832
+2013-07-19T15:54:24.110275+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="67.169.147.245, 199.27.128.205" dyno=web.4 connect=5ms service=10ms status=200 bytes=5493
+2013-07-19T15:52:39.070726+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="80.229.33.122, 141.101.99.42" dyno=web.3 connect=0ms service=21ms status=200 bytes=5493
+2013-07-19T15:54:24.267491+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="92.40.254.195" dyno=web.1 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:53:47.145489+00:00 heroku[router]: at=info method=GET path=/off/Kevin/Joe host=foaas.com fwd="70.72.194.105, 199.27.128.241" dyno=web.2 connect=1ms service=8ms status=200 bytes=832
+2013-07-19T15:54:24.617158+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="68.64.51.222, 108.162.246.63" dyno=web.4 connect=4ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:24.662757+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="70.36.236.226, 199.27.128.215" dyno=web.4 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:53:56.211740+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="76.186.54.72, 108.162.221.210" dyno=web.1 connect=16ms service=15ms status=200 bytes=5493
+2013-07-19T15:54:24.121796+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="67.169.147.245, 199.27.128.200" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:09.201092+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.1 connect=1ms service=4ms status=200 bytes=24
+2013-07-19T15:54:25.122998+00:00 heroku[router]: at=info method=GET path=/off/Hays%20%20for%20wasting%20my%20time/Marius host=foaas.herokuapp.com fwd="109.91.61.241" dyno=web.2 connect=1ms service=6ms status=200 bytes=855
+2013-07-19T15:54:25.508541+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="109.91.61.241" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:53:56.172820+00:00 heroku[router]: at=info method=GET path=/off/sammy/gennady host=foaas.com fwd="74.105.231.137, 108.162.219.174" dyno=web.3 connect=0ms service=5ms status=200 bytes=836
+2013-07-19T15:54:25.801452+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="96.238.177.181, 108.162.237.201" dyno=web.2 connect=11ms service=11ms status=200 bytes=5493
+2013-07-19T15:54:25.829991+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="198.204.15.125, 108.162.216.84" dyno=web.4 connect=1ms service=29ms status=200 bytes=5493
+2013-07-19T15:54:25.895143+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.138.227.119, 173.245.52.97" dyno=web.3 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:25.320419+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="122.166.176.21, 108.162.225.235" dyno=web.4 connect=2ms service=136ms status=200 bytes=5493
+2013-07-19T15:54:26.078148+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="96.238.177.181, 108.162.238.201" dyno=web.3 connect=7ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:26.262579+00:00 heroku[router]: at=info method=GET path=/off/Eloy/Gogs host=foaas.com fwd="187.58.65.5, 141.101.98.229" dyno=web.2 connect=7ms service=6ms status=200 bytes=832
+2013-07-19T15:54:26.431390+00:00 heroku[router]: at=info method=GET path=/king/Jake/Trey host=foaas.com fwd="107.9.24.187, 173.245.56.147" dyno=web.4 connect=1ms service=56ms status=200 bytes=906
+2013-07-19T15:54:26.500714+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="69.191.241.48, 173.245.56.154" dyno=web.2 connect=11ms service=14ms status=200 bytes=5493
+2013-07-19T15:54:26.470132+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="178.8.37.104" dyno=web.4 connect=1ms service=24ms status=200 bytes=5493
+2013-07-19T15:54:26.544977+00:00 heroku[router]: at=info method=GET path=/you/%22donuts%22/lotsofcows host=foaas.com fwd="173.14.211.226, 108.162.237.60" dyno=web.3 connect=3ms service=6ms status=200 bytes=850
+2013-07-19T15:54:26.699850+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="71.135.99.106, 199.27.128.199" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:26.890182+00:00 heroku[router]: at=info method=GET path=/you/will-hammill/pete host=foaas.com fwd="80.194.77.90, 141.101.99.48" dyno=web.3 connect=1ms service=3ms status=200 bytes=840
+2013-07-19T15:54:22.326372+00:00 heroku[router]: at=info method=GET path=/you/link%20clicker/mike_b host=foaas.com fwd="65.196.69.162, 173.245.56.184" dyno=web.1 connect=0ms service=2ms status=200 bytes=842
+2013-07-19T15:54:27.226935+00:00 heroku[router]: at=info method=GET path=/you/synace/MATT%20LEHNER host=foaas.com fwd="208.105.116.26, 173.245.55.239" dyno=web.2 connect=2ms service=4ms status=200 bytes=841
+2013-07-19T15:54:27.270729+00:00 heroku[router]: at=info method=GET path=/off/dick/everyone host=foaas.com fwd="98.114.101.17, 173.245.56.154" dyno=web.2 connect=15ms service=10ms status=200 bytes=836
+2013-07-19T15:54:27.286921+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="71.135.99.106, 199.27.128.205" dyno=web.3 connect=1ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:26.803279+00:00 heroku[router]: at=info method=GET path=/off/Healy/Damon host=foaas.com fwd="174.69.245.124, 199.27.128.128" dyno=web.2 connect=3ms service=5ms status=200 bytes=834
+2013-07-19T15:54:27.016433+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="122.166.176.21, 108.162.225.195" dyno=web.1 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:00.066465+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.3 connect=8ms service=9ms status=200 bytes=24
+2013-07-19T15:54:27.550083+00:00 heroku[router]: at=info method=GET path=/thanks/Julien host=foaas.com fwd="150.70.97.121, 199.27.128.195" dyno=web.2 connect=1ms service=4ms status=200 bytes=30
+2013-07-19T15:54:27.619414+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon.png host=foaas.com fwd="71.135.99.106, 199.27.128.204" dyno=web.4 connect=1ms service=14ms status=200 bytes=5493
+2013-07-19T15:54:27.667665+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="69.171.242.115, 173.245.56.133" dyno=web.2 connect=1ms service=3ms status=206 bytes=5493
+2013-07-19T15:54:27.725209+00:00 heroku[router]: at=info method=HEAD path=/ host=foaas.com fwd="66.249.82.206, 141.101.81.157" dyno=web.2 connect=0ms service=3ms status=200 bytes=0
+2013-07-19T15:54:27.894418+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="89.97.181.68" dyno=web.3 connect=0ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:28.105735+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="178.8.37.104" dyno=web.3 connect=1ms service=10ms status=200 bytes=5493
+2013-07-19T15:54:28.414866+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="174.69.245.124, 199.27.128.205" dyno=web.1 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:25.736513+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="147.55.168.134" dyno=web.1 connect=10ms service=12ms status=200 bytes=5493
+2013-07-19T15:54:28.661397+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="141.228.106.151, 108.162.229.239" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:27.889411+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="174.69.245.124, 199.27.128.205" dyno=web.3 connect=2ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:28.471248+00:00 heroku[router]: at=info method=GET path=/chainsaw/Fola/Jaimin host=foaas.com fwd="199.88.142.1, 108.162.237.151" dyno=web.3 connect=1ms service=8ms status=200 bytes=886
+2013-07-19T15:54:24.111640+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="68.64.51.222, 108.162.246.184" dyno=web.3 connect=3ms service=2ms status=200 bytes=5493
+2013-07-19T15:54:28.967856+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="64.124.168.50, 173.245.52.154" dyno=web.1 connect=1ms service=2ms status=200 bytes=5493
+2013-07-19T15:54:29.014477+00:00 heroku[router]: at=info method=GET path=/you/pay%20me/Freelancers%20Everywhere host=foaas.com fwd="98.207.172.163, 199.27.128.202" dyno=web.4 connect=1ms service=70ms status=200 bytes=852
+2013-07-19T15:54:29.155114+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="64.124.168.50, 173.245.52.241" dyno=web.4 connect=2ms service=64ms status=200 bytes=5493
+2013-07-19T15:52:37.791357+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="212.183.140.6, 108.162.231.117" dyno=web.4 connect=2ms service=5ms status=200 bytes=5493
+2013-07-19T15:52:38.054765+00:00 heroku[router]: at=info method=GET path=/shakespeare/Alex/Dave host=foaas.com fwd="198.245.95.125, 108.162.216.97" dyno=web.4 connect=1ms service=4ms status=200 bytes=913
+2013-07-19T15:54:29.678801+00:00 heroku[router]: at=info method=GET path=/off/sammy/hi host=foaas.com fwd="68.192.117.253, 173.245.52.98" dyno=web.3 connect=2ms service=5ms status=200 bytes=831
+2013-07-19T15:54:29.192433+00:00 heroku[router]: at=info method=GET path=/you/%22donuts%22/lotsofcows host=foaas.com fwd="176.46.8.198, 173.245.53.126" dyno=web.2 connect=1ms service=3ms status=200 bytes=850
+2013-07-19T15:54:29.983926+00:00 heroku[router]: at=info method=GET path=/you/Nvidia/Linus%20Torvalds](http://img840.imageshack.us/img840/1756/linusshootingthebird.png) host=foaas.com fwd="209.139.197.120, 199.27.128.201" dyno=web.3 connect=12ms service=27ms status=200 bytes=5493
+2013-07-19T15:54:30.210270+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="99.106.227.163, 108.162.221.104" dyno=web.4 connect=1ms service=26ms status=200 bytes=5493
+2013-07-19T15:54:13.098265+00:00 heroku[router]: at=info method=GET path=/you/pay%20me/Freelancers%20Everywhere host=foaas.com fwd="116.73.9.175, 108.162.225.184" dyno=web.1 connect=1ms service=3ms status=200 bytes=852
+2013-07-19T15:54:30.559274+00:00 heroku[router]: at=info method=GET path=/off/maggots/Sven host=foaas.com fwd="80.152.211.89, 173.245.51.209" dyno=web.2 connect=2ms service=3ms status=200 bytes=835
+2013-07-19T15:54:13.540007+00:00 heroku[router]: at=info method=GET path=/?utm_source=buffer&utm_campaign=Buffer&utm_content=buffercf3c6&utm_medium=twitter host=foaas.com fwd="50.18.9.24, 199.27.128.114" dyno=web.2 connect=1ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:30.698353+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="50.19.191.144, 173.245.56.141" dyno=web.1 connect=4ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:30.715675+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="198.228.228.148, 108.162.216.223" dyno=web.1 connect=2ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:30.842688+00:00 heroku[router]: at=info method=GET path=/off/hoge/foo host=foaas.herokuapp.com fwd="124.39.204.163" dyno=web.4 connect=2ms service=58ms status=200 bytes=831
+2013-07-19T15:54:30.864436+00:00 heroku[router]: at=info method=GET path=/you/pay%20me/Freelancers%20Everywhere host=foaas.com fwd="174.62.125.57, 199.27.128.113" dyno=web.2 connect=1ms service=3ms status=200 bytes=852
+2013-07-19T15:54:30.967064+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="141.89.216.151, 173.245.51.211" dyno=web.3 connect=32ms service=12ms status=304 bytes=0
+2013-07-19T15:54:30.941623+00:00 heroku[router]: at=info method=GET path=/you/will%20hammill/pete host=foaas.com fwd="80.194.77.90, 141.101.99.48" dyno=web.3 connect=1ms service=4ms status=200 bytes=840
+2013-07-19T15:54:31.114220+00:00 heroku[router]: at=info method=GET path=/life/Jordon host=foaas.com fwd="70.210.2.154, 108.162.238.201" dyno=web.4 connect=1ms service=91ms status=200 bytes=832
+2013-07-19T15:54:31.143778+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="80.152.211.89, 173.245.51.210" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:31.298020+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="76.186.54.72" dyno=web.4 connect=1ms service=35ms status=200 bytes=5493
+2013-07-19T15:54:31.542580+00:00 heroku[router]: at=info method=GET path=/linus/proggit/hackernews host=foaas.com fwd="207.127.103.2, 108.162.219.170" dyno=web.4 connect=2ms service=3ms status=200 bytes=997
+2013-07-19T15:54:29.788880+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="98.207.172.163, 199.27.128.188" dyno=web.4 connect=2ms service=53ms status=200 bytes=5493
+2013-07-19T15:54:31.129666+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="50.78.110.17, 199.27.128.221" dyno=web.4 connect=2ms service=323ms status=200 bytes=5493
+2013-07-19T15:54:31.761708+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="216.201.168.18, 108.162.221.247" dyno=web.2 connect=2ms service=4ms status=304 bytes=0
+2013-07-19T15:54:31.780584+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="92.4.173.230" dyno=web.4 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:31.814363+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="207.127.103.2, 108.162.218.47" dyno=web.4 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:31.169200+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="99.8.186.111, 199.27.128.244" dyno=web.4 connect=1ms service=43ms status=200 bytes=5493
+2013-07-19T15:54:31.746438+00:00 heroku[router]: at=info method=GET path=/off/Sammy/Gennady host=foaas.com fwd="74.105.231.137, 108.162.219.174" dyno=web.2 connect=1ms service=4ms status=200 bytes=836
+2013-07-19T15:54:01.771872+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="194.73.173.134, 141.101.98.214" dyno=web.4 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:06.077264+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="166.137.191.47, 199.27.128.200" dyno=web.4 connect=2ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:32.569167+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="74.125.57.36, 141.101.81.163" dyno=web.2 connect=1ms service=19ms status=200 bytes=5493
+2013-07-19T15:54:32.588158+00:00 heroku[router]: at=info method=GET path=/you/Tom/chris host=foaas.com fwd="95.131.184.40, 108.162.231.192" dyno=web.2 connect=1ms service=3ms status=200 bytes=832
+2013-07-19T15:54:30.652122+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="99.106.227.163, 108.162.221.198" dyno=web.3 connect=13ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:32.633439+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="166.137.191.21, 199.27.128.218" dyno=web.3 connect=1ms service=10ms status=200 bytes=5493
+2013-07-19T15:54:32.701327+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="223.30.45.100, 108.162.225.216" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:54:32.738332+00:00 heroku[router]: at=info method=GET path=/Linus/Mike/Dan host=foaas.com fwd="199.185.133.5, 199.27.128.218" dyno=web.1 connect=2ms service=4ms status=200 bytes=987
+2013-07-19T15:54:32.781556+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.78.110.17, 199.27.128.222" dyno=web.3 connect=5ms service=11ms status=200 bytes=5493
+2013-07-19T15:54:32.835602+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="198.228.228.148, 108.162.216.222" dyno=web.3 connect=14ms service=53ms status=200 bytes=5493
+2013-07-19T15:54:32.479672+00:00 heroku[router]: at=info method=GET path=/chainsaw/Hughdbrown/Heather host=foaas.com fwd="110.55.4.158, 173.245.62.132" dyno=web.3 connect=1ms service=2ms status=200 bytes=893
+2013-07-19T15:54:33.128892+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="172.5.153.34, 199.27.128.94" dyno=web.2 connect=1ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:33.296299+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="70.210.2.154, 108.162.238.201" dyno=web.3 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:33.376776+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="70.210.2.154, 108.162.237.155" dyno=web.4 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:33.477716+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="95.237.69.137, 108.162.229.241" dyno=web.4 connect=2ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:33.507084+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon.png host=foaas.com fwd="70.210.2.154, 108.162.237.201" dyno=web.4 connect=1ms service=22ms status=200 bytes=5493
+2013-07-19T15:54:33.578879+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="72.64.129.133, 108.162.212.95" dyno=web.1 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:33.680230+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="50.19.191.144, 173.245.56.136" dyno=web.4 connect=1ms service=16ms status=200 bytes=5493
+2013-07-19T15:54:33.917079+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="171.159.64.10, 199.27.128.202" dyno=web.3 connect=15ms service=6ms status=200 bytes=5493
+2013-07-19T15:52:40.992943+00:00 heroku[router]: at=info method=GET path=/king/jeff/phil host=foaas.com fwd="192.197.128.19, 108.162.216.5" dyno=web.1 connect=1ms service=3ms status=200 bytes=906
+2013-07-19T15:54:34.011867+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="72.64.129.133, 108.162.212.91" dyno=web.4 connect=1ms service=46ms status=200 bytes=5493
+2013-07-19T15:54:22.208886+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.17.96.146, 173.245.56.159" dyno=web.4 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:33.904222+00:00 heroku[router]: at=info method=GET path=/you/Will%20hammill/pete host=foaas.com fwd="80.194.77.90, 141.101.99.48" dyno=web.1 connect=1ms service=3ms status=200 bytes=840
+2013-07-19T15:54:34.098675+00:00 heroku[router]: at=info method=GET path=/you/Manji/Anonymous host=foaas.com fwd="65.204.229.11, 173.245.50.118" dyno=web.4 connect=2ms service=17ms status=200 bytes=838
+2013-07-19T15:54:34.012277+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="8.35.201.98, 141.101.81.158" dyno=web.4 connect=1ms service=77ms status=200 bytes=5493
+2013-07-19T15:54:34.124562+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="108.16.196.146, 173.245.56.147" dyno=web.1 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:34.480154+00:00 heroku[router]: at=info method=HEAD path=/?utm_source=buffer&utm_campaign=Buffer&utm_content=buffer40a4d&utm_medium=twitter host=foaas.com fwd="23.29.122.203, 173.245.50.235" dyno=web.4 connect=1ms service=9ms status=206 bytes=0
+2013-07-19T15:54:34.523862+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="108.16.196.146, 173.245.56.147" dyno=web.3 connect=4ms service=11ms status=200 bytes=5493
+2013-07-19T15:54:23.517109+00:00 heroku[router]: at=info method=GET path=/shakespeare/Falstaff/Prince%20Henry host=foaas.com fwd="170.20.96.11, 173.245.48.72" dyno=web.2 connect=1ms service=2ms status=200 bytes=925
+2013-07-19T15:54:34.699727+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="171.159.64.10, 199.27.128.205" dyno=web.4 connect=2ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:34.908916+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="70.199.228.180, 108.162.246.66" dyno=web.1 connect=4ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:34.930587+00:00 heroku[router]: at=info method=GET path=/you/%22donuts%22/lotsofcows host=foaas.com fwd="176.46.8.198, 173.245.53.126" dyno=web.1 connect=1ms service=3ms status=200 bytes=850
+2013-07-19T15:54:34.955059+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon-precomposed.png host=foaas.com fwd="70.199.228.180, 108.162.245.188" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:35.146882+00:00 heroku[router]: at=info method=GET path=/?utm_source=buffer&utm_campaign=Buffer&utm_content=buffer40a4d&utm_medium=twitter host=foaas.com fwd="23.29.122.203, 173.245.50.235" dyno=web.3 connect=1ms service=11ms status=206 bytes=5493
+2013-07-19T15:54:00.650171+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.2 connect=1ms service=5ms status=200 bytes=24
+2013-07-19T15:54:35.211531+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon.png host=foaas.com fwd="70.199.228.180, 108.162.245.66" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:35.268359+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="67.151.197.130, 173.245.56.147" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:00.824996+00:00 heroku[router]: at=info method=GET path=/off/jwade/zac/ host=foaas.com fwd="12.28.104.10, 173.245.50.116" dyno=web.1 connect=1ms service=3ms status=200 bytes=24
+2013-07-19T15:54:35.471735+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="76.186.54.72, 108.162.221.210" dyno=web.3 connect=4ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:35.544240+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="91.233.154.8, 141.101.98.35" dyno=web.3 connect=3ms service=35ms status=200 bytes=5493
+2013-07-19T15:54:35.628818+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="67.136.50.146, 199.27.128.189" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:35.789562+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="67.151.197.130, 173.245.56.147" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:35.852773+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="91.233.154.8, 141.101.98.31" dyno=web.2 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:35.976564+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="95.237.69.137, 108.162.229.240" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:36.104460+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="124.39.204.163" dyno=web.4 connect=2ms service=20ms status=304 bytes=0
+2013-07-19T15:54:36.216726+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="95.237.69.137, 108.162.229.240" dyno=web.1 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:36.297031+00:00 heroku[router]: at=info method=GET path=/off/dick/ host=foaas.com fwd="98.114.101.17, 173.245.56.154" dyno=web.2 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:36.301377+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="124.39.204.163" dyno=web.4 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:54:36.480953+00:00 heroku[router]: at=info method=GET path=/pink/:James host=foaas.com fwd="76.164.170.2, 108.162.238.160" dyno=web.4 connect=1ms service=5ms status=200 bytes=838
+2013-07-19T15:54:36.558765+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="67.136.50.146, 199.27.128.188" dyno=web.1 connect=10ms service=11ms status=200 bytes=5493
+2013-07-19T15:54:25.329256+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="70.36.236.226, 199.27.128.222" dyno=web.4 connect=1ms service=120ms status=200 bytes=5493
+2013-07-19T15:54:36.762543+00:00 heroku[router]: at=info method=GET path=/everything/c1q host=foaas.com fwd="50.46.220.34, 199.27.128.217" dyno=web.1 connect=1ms service=3ms status=200 bytes=832
+2013-07-19T15:54:37.103538+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="123.201.33.226, 108.162.222.131" dyno=web.3 connect=1ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:37.314904+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="42.61.255.203, 103.22.201.141" dyno=web.4 connect=1ms service=12ms status=200 bytes=5493
+2013-07-19T15:54:25.086417+00:00 heroku[router]: at=info method=GET path=/chainsaw/Austin/TJ host=foaas.com fwd="208.86.230.129, 173.245.56.187" dyno=web.4 connect=2ms service=3ms status=200 bytes=884
+2013-07-19T15:54:37.569206+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="38.99.192.106, 173.245.52.241" dyno=web.4 connect=1ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:37.653267+00:00 heroku[router]: at=info method=GET path=/that/Bert host=foaas.com fwd="92.230.241.157, 173.245.51.203" dyno=web.2 connect=1ms service=4ms status=200 bytes=827
+2013-07-19T15:54:37.289702+00:00 heroku[router]: at=info method=GET path=/chainsaw/Dude]/Chewbacca host=foaas.com fwd="146.115.5.244, 108.162.219.163" dyno=web.4 connect=1ms service=8ms status=200 bytes=890
+2013-07-19T15:54:37.929532+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="76.28.158.252, 199.27.128.178" dyno=web.4 connect=5ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:19.707170+00:00 heroku[router]: at=info method=GET path=/Linus/Dorian/Dan host=foaas.com fwd="199.185.133.5, 199.27.128.218" dyno=web.4 connect=1ms service=8ms status=200 bytes=989
+2013-07-19T15:54:38.026669+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="209.117.122.226, 173.245.56.159" dyno=web.1 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:38.079494+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="166.137.191.23, 199.27.128.201" dyno=web.1 connect=5ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:37.957896+00:00 heroku[router]: at=info method=GET path=/you/Tom/Chris host=foaas.com fwd="96.238.177.181, 108.162.237.201" dyno=web.3 connect=2ms service=8ms status=200 bytes=832
+2013-07-19T15:54:37.783224+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="209.117.122.226, 173.245.56.161" dyno=web.4 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:25.935839+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.138.227.119, 173.245.52.97" dyno=web.2 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:52:52.286066+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="66.193.162.46, 173.245.52.178" dyno=web.4 connect=1ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:38.367516+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="76.28.158.252, 199.27.128.171" dyno=web.3 connect=11ms service=43ms status=200 bytes=5493
+2013-07-19T15:54:38.410481+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="42.61.255.203, 103.22.201.222" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:06.487665+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="54.240.196.185, 108.162.246.69" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2013-07-19T15:54:38.657180+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="70.197.0.14, 199.27.128.237" dyno=web.3 connect=1ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:38.813235+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.197.188.218, 199.27.128.205" dyno=web.4 connect=1ms service=10ms status=200 bytes=5493
+2013-07-19T15:54:38.845318+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="162.212.58.85, 173.245.50.89" dyno=web.3 connect=8ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:38.963829+00:00 heroku[router]: at=info method=GET path=/off/Hays%20%20for%20having%20wasted%20my%20time/Marius host=foaas.herokuapp.com fwd="109.91.61.241" dyno=web.1 connect=1ms service=3ms status=200 bytes=861
+2013-07-19T15:54:39.046795+00:00 heroku[router]: at=info method=GET path=/you/%22donuts%22/lotsofcows host=foaas.com fwd="209.139.197.120, 199.27.128.201" dyno=web.4 connect=1ms service=3ms status=200 bytes=850
+2013-07-19T15:54:34.916915+00:00 heroku[router]: at=info method=GET path=/linus/Vinnie/TJ host=foaas.com fwd="208.86.230.129, 173.245.56.187" dyno=web.3 connect=12ms service=5ms status=200 bytes=988
+2013-07-19T15:54:39.165512+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="171.159.64.10, 199.27.128.202" dyno=web.3 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:39.169766+00:00 heroku[router]: at=info method=GET path=/off/Larry/Paul host=foaas.com fwd="173.8.222.173, 199.27.128.146" dyno=web.4 connect=1ms service=4ms status=200 bytes=833
+2013-07-19T15:54:39.296460+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="38.122.9.170, 173.245.52.88" dyno=web.2 connect=5ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:33.578063+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="62.173.127.138, 141.101.98.234" dyno=web.3 connect=6ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:13.110580+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="174.231.195.4, 108.162.216.240" dyno=web.4 connect=1ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:39.385196+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="38.122.9.170, 173.245.52.88" dyno=web.4 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:13.266919+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="62.65.239.73, 173.245.53.118" dyno=web.2 connect=2ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:39.510494+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="68.65.165.95, 199.27.128.226" dyno=web.4 connect=3ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:39.537722+00:00 heroku[router]: at=info method=GET path=/you/%22donuts%22/lotsofcows host=foaas.com fwd="176.46.8.198, 173.245.53.126" dyno=web.4 connect=1ms service=3ms status=200 bytes=850
+2013-07-19T15:54:39.633326+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="199.127.120.65, 141.101.98.246" dyno=web.3 connect=6ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:39.765583+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="109.91.61.241" dyno=web.3 connect=5ms service=5ms status=304 bytes=0
+2013-07-19T15:54:39.882464+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="5.158.168.88, 108.162.229.246" dyno=web.4 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:39.896535+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="174.225.134.217, 173.245.55.240" dyno=web.4 connect=2ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:39.917758+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="68.65.165.95, 199.27.128.222" dyno=web.4 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:29.899287+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="199.127.120.65, 141.101.98.238" dyno=web.3 connect=0ms service=22ms status=200 bytes=5493
+2013-07-19T15:54:40.088014+00:00 heroku[router]: at=info method=GET path=/you/Nvidia/Linus%20Torvalds](http://img840.imageshack.us/img840/1756/linusshootingthebird.png) host=foaas.com fwd="67.165.179.249, 108.162.216.83" dyno=web.2 connect=1ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:40.100119+00:00 heroku[router]: at=info method=GET path=/off/Tom/Chris host=foaas.com fwd="86.33.82.98, 173.245.51.238" dyno=web.1 connect=2ms service=3ms status=200 bytes=832
+2013-07-19T15:54:40.091491+00:00 heroku[router]: at=info method=GET path=/shakespeare/Falstaff/Prince%20Henry host=foaas.com fwd="65.220.10.3, 173.245.56.197" dyno=web.2 connect=8ms service=10ms status=200 bytes=925
+2013-07-19T15:54:40.256764+00:00 heroku[router]: at=info method=GET path=/off/Brandon/Reid host=foaas.com fwd="69.144.220.138, 199.27.128.203" dyno=web.1 connect=8ms service=10ms status=200 bytes=835
+2013-07-19T15:54:40.494242+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="209.85.238.110" dyno=web.4 connect=1ms service=10ms status=200 bytes=5493
+2013-07-19T15:54:40.601158+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="50.152.141.228" dyno=web.2 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:40.634575+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="95.131.184.40, 108.162.231.192" dyno=web.4 connect=2ms service=15ms status=304 bytes=0
+2013-07-19T15:54:40.635036+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="198.204.15.125, 108.162.216.83" dyno=web.4 connect=1ms service=12ms status=200 bytes=5493
+2013-07-19T15:54:40.875543+00:00 heroku[router]: at=info method=GET path=/off/Tom/Chris host=foaas.com fwd="75.177.140.137, 173.245.56.150" dyno=web.4 connect=1ms service=7ms status=200 bytes=832
+2013-07-19T15:54:40.926287+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="66.119.165.34, 173.245.55.240" dyno=web.4 connect=5ms service=8ms status=200 bytes=5493
+2013-07-19T15:54:40.932758+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="175.156.241.84, 108.162.225.12" dyno=web.4 connect=2ms service=11ms status=304 bytes=0
+2013-07-19T15:54:40.951222+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="5.158.168.88, 108.162.229.246" dyno=web.4 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:41.087117+00:00 heroku[router]: at=info method=GET path=/off/facebook/alistar host=foaas.com fwd="173.252.112.116, 173.245.56.192" dyno=web.4 connect=9ms service=11ms status=200 bytes=31
+2013-07-19T15:54:41.128467+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="5.158.168.88, 108.162.229.246" dyno=web.4 connect=1ms service=12ms status=200 bytes=5493
+2013-07-19T15:54:41.137757+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="95.84.233.19, 173.245.53.120" dyno=web.1 connect=3ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:31.295442+00:00 heroku[router]: at=info method=GET path=/ host=foaas.herokuapp.com fwd="92.4.173.230" dyno=web.4 connect=1ms service=82ms status=200 bytes=5493
+2013-07-19T15:54:41.351975+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="50.152.158.221, 199.27.128.154" dyno=web.3 connect=4ms service=6ms status=200 bytes=5493
+2013-07-19T15:54:41.486044+00:00 heroku[router]: at=info method=GET path=/you/Patrick/Chris host=foaas.com fwd="96.238.177.181, 108.162.237.201" dyno=web.1 connect=1ms service=2ms status=200 bytes=836
+2013-07-19T15:54:41.131777+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="64.134.150.20, 108.162.221.77" dyno=web.3 connect=8ms service=19ms status=304 bytes=0
+2013-07-19T15:54:41.579281+00:00 heroku[router]: at=info method=GET path=/tht/Bert host=foaas.com fwd="92.230.241.157, 173.245.51.203" dyno=web.2 connect=2ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:41.654811+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="173.164.103.161, 199.27.128.221" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:41.789134+00:00 heroku[router]: at=info method=GET path=/Everyone/I%22m%20%20Out host=foaas.com fwd="75.144.74.201, 173.245.55.123" dyno=web.2 connect=3ms service=3ms status=200 bytes=854
+2013-07-19T15:54:41.985882+00:00 heroku[router]: at=info method=GET path=/you/synace/me host=foaas.com fwd="208.105.116.26, 173.245.55.239" dyno=web.4 connect=1ms service=4ms status=200 bytes=832
+2013-07-19T15:54:42.142869+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="67.241.240.138, 108.162.216.221" dyno=web.1 connect=3ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:42.160257+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="86.128.19.199, 141.101.99.249" dyno=web.4 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:42.154732+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="216.87.224.162, 199.27.128.148" dyno=web.2 connect=1ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:41.816276+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="95.84.233.19, 173.245.53.184" dyno=web.2 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:42.463006+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.com fwd="123.201.33.226, 108.162.222.132" dyno=web.4 connect=2ms service=7ms status=200 bytes=5493
+2013-07-19T15:54:42.533423+00:00 heroku[router]: at=info method=GET path=/shakespeare/Falstaff/Prince%20Henry host=foaas.com fwd="105.236.116.210, 141.101.99.71" dyno=web.4 connect=2ms service=5ms status=200 bytes=925
+2013-07-19T15:54:43.015991+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=foaas.herokuapp.com fwd="50.152.141.228" dyno=web.2 connect=2ms service=3ms status=200 bytes=5493
+2013-07-19T15:54:43.144909+00:00 heroku[router]: at=info method=GET path=/you/George/Zimmerman host=foaas.com fwd="192.150.10.201, 199.27.128.134" dyno=web.3 connect=1ms service=2ms status=200 bytes=839
+2013-07-19T15:54:43.211264+00:00 heroku[router]: at=info method=GET path=/chainsaw/Dude%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20/Chewbacca host=foaas.com fwd="146.115.5.244, 108.162.219.163" dyno=web.3 connect=1ms service=2ms status=200 bytes=904
+2013-07-19T15:54:09.382372+00:00 heroku[router]: at=info method=GET path=/apple-touch-icon.png host=foaas.com fwd="70.194.129.193, 108.162.216.7" dyno=web.2 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:43.662920+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="94.197.127.211, 141.101.98.11" dyno=web.4 connect=2ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:43.753011+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="83.177.18.224, 141.101.80.163" dyno=web.1 connect=1ms service=3ms status=200 bytes=5493
+2013-07-19T15:52:52.695907+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="50.68.71.191, 199.27.128.80" dyno=web.3 connect=5ms service=9ms status=200 bytes=5493
+2013-07-19T15:54:44.046744+00:00 heroku[router]: at=info method=GET path=/steven/pay%20me/Freelancers%20Everywhere host=foaas.com fwd="50.159.68.63, 199.27.128.182" dyno=web.2 connect=1ms service=12ms status=200 bytes=5493
+2013-07-19T15:54:38.163530+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="50.197.188.218, 199.27.128.129" dyno=web.2 connect=1ms service=5ms status=200 bytes=5493
+2013-07-19T15:54:34.223985+00:00 heroku[router]: at=info method=GET path=/thanks/Ben host=foaas.com fwd="194.73.173.134, 141.101.98.214" dyno=web.4 connect=1ms service=33ms status=200 bytes=835
+2013-07-19T15:54:44.297464+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="190.0.63.214, 108.162.212.185" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-07-19T15:54:43.976915+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="209.163.206.98, 108.162.221.84" dyno=web.2 connect=0ms service=4ms status=200 bytes=5493
+2013-07-19T15:54:33.627657+00:00 heroku[router]: at=info method=GET path=/ host=foaas.com fwd="70.199.228.180, 108.162.245.66" dyno=web.4 connect=0ms service=27ms status=200 bytes=5493
