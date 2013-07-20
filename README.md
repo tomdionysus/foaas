@@ -87,7 +87,7 @@ Will return content of the form 'Fuck you very much. - :from".
 
 FOASS will be extended to include the following functionality:
 
-* Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly
+* Fuck Off of the Day
 * Internationalization based on Accept-Language.
 
 All contributions are very welcome.
