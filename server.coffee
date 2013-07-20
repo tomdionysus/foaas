@@ -24,7 +24,7 @@ template = (message, subtitle) -> '
 dooutput = (res, message, subtitle) ->
   res.format
     "text/plain": ->
-      res.send "#{message} - #{subtitle}"
+      res.send "#{message} #{subtitle}"
     "application/json": ->
       res.send JSON.stringify { message: message, subtitle: subtitle }
     "text/html": ->
