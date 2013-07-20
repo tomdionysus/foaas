@@ -1,6 +1,8 @@
 express = require 'express'
 sanitizer = require 'sanitizer'
 
+
+
 template = (message, subtitle) -> '
 <html>
   <head>
@@ -21,7 +23,9 @@ template = (message, subtitle) -> '
   </body>
 </html>'
 
-dooutput = (res, message, subtitle) ->
+
+
+doOutput = (res, message, subtitle) ->
   res.format
     "text/plain": ->
       res.send "#{message} - #{subtitle}"
@@ -29,6 +33,8 @@ dooutput = (res, message, subtitle) ->
       res.send JSON.stringify { message: message, subtitle: subtitle }
     "text/html": ->
       res.send template(message,subtitle)
+
+
 
 app = express()
 app.use(express.bodyParser())
@@ -38,75 +44,93 @@ app.use(express.static('./public'))
 app.use (req, res) ->
   res.sendfile("./public/index.html")
 
-app.get '/off/:name/:from', (req, res) ->
-  message = "Fuck off, #{req.params.name}."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
 
-app.get '/you/:name/:from', (req, res) ->
-  message = "Fuck you, #{req.params.name}."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
 
-app.get '/this/:from', (req, res) ->
-  message = "Fuck this."
-  subtitle = "- #{req.params. from}"
-  dooutput(res, message, subtitle)
+app.get '/:style/:name/:from', (req, res) ->
+  style = req.params.style
+  name = req.params.name
+  from = req.params.from
 
-app.get '/that/:from', (req, res) ->
-  message = "Fuck that."
-  subtitle = "- #{req.params. from}"
-  dooutput(res, message, subtitle)
+  paths = 
+    off:
+      message: "Fuck off, #{name}."
+      subtitle: "- #{from}"
+    you:
+      message: "Fuck you, #{name}."
+      subtitle: "- #{from}"
 
-app.get '/everything/:from', (req, res) ->
-  message = "Fuck everything."
-  subtitle = "- #{req.params. from}"
-  dooutput(res, message, subtitle)
+    donut:
+      message: "#{name}, go and take a flying fuck at a rolling donut."
+      subtitle: "- #{from}"
 
-app.get '/everyone/:from', (req, res) ->
-  message = "Everyone can go and fuck off."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+    shakespeare:
+      message: "#{name}, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch!"
+      subtitle: "- #{from}"
 
-app.get '/donut/:name/:from', (req, res) ->
-  message = "#{req.params.name}, go and take a flying fuck at a rolling donut."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+    linus:
+      message: "#{name}, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap."
+      subtitle: "- #{from}"
 
-app.get '/shakespeare/:name/:from', (req, res) ->
-  message = "#{req.params.name}, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch!"
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+    king:
+      message: "Oh fuck off, just really fuck off you total dickface. Christ #{name}, you are fucking thick."
+      subtitle: "- #{from}"
 
-app.get '/linus/:name/:from', (req, res) ->
-  message = "#{req.params.name}, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+    chainsaw:
+      message: "Fuck me gently with a chainsaw, #{name}. Do I look like Mother Teresa?"
+      subtitle: "- #{from}"
 
-app.get '/king/:name/:from', (req, res) ->
-  message = "Oh fuck off, just really fuck off you total dickface. Christ #{req.params.name}, you are fucking thick."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+  if style == 'random'
+    path = Object.keys( paths )
+    index = Math.floor( Math.random() * path.length )
+    res.redirect '/' + path[index] + '/' + name + '/' + from
 
-app.get '/pink/:from', (req, res) ->
-  message = "Well, Fuck me pink."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+  else
+    doOutput(res, paths[style].message, paths[style].subtitle)
 
-app.get '/life/:from', (req, res) ->
-  message = "Fuck my life."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
 
-app.get '/chainsaw/:name/:from', (req, res) ->
-  message = "Fuck me gently with a chainsaw, #{req.params.name}. Do I look like Mother Teresa?"
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
 
-app.get '/thanks/:from', (req, res) ->
-  message = "Fuck you very much."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
+app.get '/:style/:from', (req, res) ->
+  style = req.params.style
+  from = req.params.from
+
+  paths =
+    this:
+      message: "Fuck this."
+      subtitle: "- #{from}"
+
+    that:
+      message: "Fuck that."
+      subtitle: "- #{from}"
+
+    everything:
+      message: "Fuck everything."
+      subtitle: "- #{from}"
+
+    everyone:
+      message: "Everyone can go and fuck off."
+      subtitle: "- #{from}"
+
+    pink:
+      message: "Well, Fuck me pink."
+      subtitle: "- #{from}"
+
+    life:
+      message: "Fuck my life."
+      subtitle: "- #{from}"
+
+    thanks:
+      message: "Fuck you very much."
+      subtitle: "- #{from}"
+
+  if style == 'random'
+    path = Object.keys( paths )
+    index = Math.floor( Math.random() * path.length )
+    res.redirect '/' + path[index] + '/' + from
+
+  else
+    doOutput(res, paths[style].message, paths[style].subtitle)
+
+
 
 port = process.env.PORT || 5000 
 app.listen port
