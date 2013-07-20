@@ -78,6 +78,14 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 
 Will return content of the form 'Fuck you very much. - :from".
 
+## /random/:from
+
+Will return a random fuck like 'Fuck you very much. - :from".
+
+## /random/:name/:from
+
+Will return a random fuck like 'Fuck off, :name - :from".
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
