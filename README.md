@@ -64,7 +64,11 @@ Will return content of the form 'Fuck my life. - :from', e.g. /life/Phil will re
 
 ## /chainsaw/:name/:from
 
-Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather
+Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather'.
+
+## /outside/:name/:from
+
+Will return content of the form ':name, why don't you go outside and play hide-and-go-fuck-yourself? - :from', e.g. /outside/BigBrother/TheWorld will return 'BigBrother, why don't you go outside and play hide-and-go-fuck-yourself? - TheWorld'.
 
 ## /:thing/:from
 
