@@ -78,6 +78,14 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 
 Will return content of the form 'Fuck you very much. - :from".
 
+## /horse/:name/:from
+
+Will return content of the form 'Fuck you and the horse you rode in on, :name. - :from".
+
+## /toto/:from
+
+Will return content of the form 'Fuck you my pretty! And your little dog too! - :from".
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
