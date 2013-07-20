@@ -78,6 +78,14 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 
 Will return content of the form 'Fuck you very much. - :from".
 
+## /random/:from
+
+Will return a random fuck like 'Fuck you very much. - :from".
+
+## /random/:name/:from
+
+Will return a random fuck like 'Fuck off, :name - :from".
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
@@ -87,7 +95,7 @@ Will return content of the form 'Fuck you very much. - :from".
 
 FOASS will be extended to include the following functionality:
 
-* Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly
+* Fuck Off of the Day
 * Internationalization based on Accept-Language.
 
 All contributions are very welcome.
