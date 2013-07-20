@@ -66,6 +66,10 @@ Will return content of the form 'Fuck my life. - :from', e.g. /life/Phil will re
 
 Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather
 
+## /:thing/:from
+
+Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%A5%20Chris will return 'Fuck pineapples. - ♥ Chris'.
+
 ## /thanks/:from
 
 Will return content of the form 'Fuck you very much. - :from".
