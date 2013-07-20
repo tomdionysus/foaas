@@ -131,7 +131,7 @@ app.get '/:style/:from', (req, res) ->
       subtitle: "- #{from}"
 
     thing:
-      message: "Fuck #{style}"
+      message: "Fuck #{style}."
       subtitle: "- #{from}"
 
   if style == 'random'
