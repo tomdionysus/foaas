@@ -78,6 +78,10 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 
 Will return content of the form 'Fuck you very much. - :from".
 
+## /and/:verb/:from
+
+Will return content of the form 'Fuck off and :verb. - :from', e.g. /and/die/Chris will return 'Fuck off and die. - Chris'
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
