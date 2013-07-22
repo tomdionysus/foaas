@@ -99,6 +99,10 @@ Will return content of the form 'Cool story, Bro - :from'
 
 Will return content of the form 'And :from said on to :name, "Verily, cast thine eyes upon the field in which I grow my fucks", and :name gave witness onto the field, and saw that it was barren. -  :reference'
 
+## /what/:from
+
+Will return content of the form 'What the fuck?!. - :from".
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com

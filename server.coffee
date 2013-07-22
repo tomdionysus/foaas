@@ -145,6 +145,11 @@ app.get '/flying/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/what/:from', (req, res) ->
+  message = "What the fuck?!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 app.get '/fascinating/:from', (req, res) ->
   message = "Fascinating story, in what chapter do you shut the fuck up?"
   subtitle = "- #{req.params.from}"
@@ -155,7 +160,7 @@ app.get '/madison/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/cool/:from', (req, res) -> 
+app.get '/cool/:from', (req, res) ->
   message = "Cool story, bro."
   subtitle = "- #{req.params.from}"
   dooutput(res,message,subtitle)
