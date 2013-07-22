@@ -99,6 +99,14 @@ Will return content of the form 'Cool story, Bro - :from'
 
 Will return content of the form 'And :from said on to :name, "Verily, cast thine eyes upon the field in which I grow my fucks", and :name gave witness onto the field, and saw that it was barren. -  :reference'
 
+## /yeah/:from
+
+Will return content of the form 'Fuck yeah! - :from".
+
+## /item/:item/:from
+
+Will return content of the form 'Fucking :item. - :from', e.g. /item/flying%20monkeys/Bob will return 'Fucking flying monkeys. - Bob'.
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
