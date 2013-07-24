@@ -1,6 +1,6 @@
 # FOAAS
 
-v0.0.1
+v0.0.2
 
 FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
@@ -77,6 +77,10 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 ## /thanks/:from
 
 Will return content of the form 'Fuck you very much. - :from".
+
+## /flying/:from
+
+Will return content of the form 'I don't give a flying fuck. - :from".
 
 # Alternative URLs
 
