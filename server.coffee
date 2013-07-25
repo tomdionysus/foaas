@@ -113,6 +113,36 @@ app.get '/thanks/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/who/:from', (req, res) ->
+  message = "who the fuck are you?"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/wtf/:from', (req, res) ->
+  message = "what the fuck!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/keep/:from', (req, res) ->
+  message = "keep on fucking."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/genius/:from', (req, res) ->
+  message = "you are fucking genius"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/get/:from', (req, res) ->
+  message = "Go and get fucked"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/shut/:from', (req, res) ->
+  message = "Shut the fuck up"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 app.get '/:thing/:from', (req, res) ->
   message = "Fuck #{req.params.thing}."
   subtitle = "- #{req.params.from}"

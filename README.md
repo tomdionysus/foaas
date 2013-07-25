@@ -38,6 +38,30 @@ Will return content of the form 'Fuck everything. - :name', e.g. /everything/Tom
 
 Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /everyone/Tom will return 'Everyone can go and fuck off. - Tom'
 
+## /who/:from
+
+Will return content of the form 'who the fuck are you? - :name', e.g. /who/Tom will return 'who the fuck are you? - Tom'
+
+## /wtf/:from
+
+Will return content of the form 'what the fuck!. - :name', e.g. /wtf/Tom will return 'what the fuck! - Tom'
+
+## /keep/:from
+
+Will return content of the form 'keep on fucking. - :name', e.g. /keep/Tom will return 'keep on fucking. - Tom'
+
+## /genius/:from
+
+Will return content of the form 'you are fucking genius - :name', e.g. /genius/Tom will return 'you are fucking genius - Tom'
+
+## /get/:from
+
+Will return content of the form 'Go and get fucked - :name', e.g. /get/Tom will return 'Go and get fucked - Tom'
+
+## /shut/:from
+
+Will return content of the form 'Shut the fuck up - :name', e.g. /shut/Tom will return 'Shut the fuck up - Tom'
+		
 ## /donut/:name/:from
 
 Will return content of the form ':name, go and take a flying fuck at a rolling donut. - :from', e.g. /donut/Tom/Chris will return 'Tom, go and take a flying fuck at a rolling donut. - Chris'
