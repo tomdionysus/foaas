@@ -87,6 +87,10 @@ Will return content of the form 'I don't give a flying fuck. - :from".
 - http://foaas.herokuapp.com
 - http://foaas.com
 
+# Contributing
+
+In your PR, please include relevant documentation in both README.md and public/index.html.
+
 # Roadmap
 
 FOASS will be extended to include the following functionality:
