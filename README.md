@@ -82,6 +82,10 @@ Will return content of the form 'Fuck you very much. - :from".
 
 Will return content of the form 'I don't give a flying fuck. - :from".
 
+## /fascinating/:from
+
+Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'.
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
