@@ -82,6 +82,10 @@ Will return content of the form 'Fuck you very much. - :from".
 
 Will return content of the form 'I don't give a flying fuck. - :from".
 
+## /outside/:from
+
+Will return content of the form 'Why don't you go outside and play hide and go fuck yourself. - :from'
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
