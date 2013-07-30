@@ -1,6 +1,8 @@
 express = require 'express'
 sanitizer = require 'sanitizer'
 
+operations = require './lib/operations'
+
 template = (message, subtitle) -> '
 <html>
   <head>
@@ -122,6 +124,8 @@ app.get '/:flying/:from', (req, res) ->
   message = "I don't give a flying fuck. - #{req.params.from}."
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
+
+operations(app)
 
 port = process.env.PORT || 5000 
 app.listen port
