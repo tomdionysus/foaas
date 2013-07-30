@@ -49,6 +49,7 @@ app.use (req, res) ->
 app.options '/*', (req, res) ->
   res.header 'Access-Control-Allow-Origin', '*'
   res.header 'Access-Control-Allow-Headers', 'Content-Type'
+  
   res.end()
 
 app.get '/off/:name/:from', (req, res) ->
