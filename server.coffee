@@ -35,7 +35,6 @@ dooutput = (res, message, subtitle) ->
 app = express()
 app.use(express.bodyParser())
 app.use(express.methodOverride())
-app.use(app.router)
 
 app.use (req, res, next) ->
   res.header 'Access-Control-Allow-Origin', '*'
@@ -43,6 +42,7 @@ app.use (req, res, next) ->
   res.header 'Access-Control-Allow-Headers', 'Content-Type'
   next()
         
+app.use(app.router)
 app.use(express.static('./public'))
 app.use (req, res) ->
   res.sendfile("./public/index.html")
