@@ -128,13 +128,13 @@ app.get '/thanks/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/:thing/:from', (req, res) ->
-  message = "Fuck #{req.params.thing}."
+app.get '/flying/:from', (req, res) ->
+  message = "I don't give a flying fuck. - #{req.params.from}."
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/:flying/:from', (req, res) ->
-  message = "I don't give a flying fuck. - #{req.params.from}."
+app.get '/:thing/:from', (req, res) ->
+  message = "Fuck #{req.params.thing}."
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
