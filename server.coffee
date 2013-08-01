@@ -3,7 +3,7 @@ sanitizer = require 'sanitizer'
 
 operations = require './lib/operations'
 
-template = (message, subtitle) -> '
+templateHTML = (message, subtitle) -> '
 <html>
   <head>
     <title>Fuck Off As A Service (FOAAS)</title>
@@ -30,7 +30,7 @@ dooutput = (res, message, subtitle) ->
     "application/json": ->
       res.send JSON.stringify { message: message, subtitle: subtitle }
     "text/html": ->
-      res.send template(message,subtitle)
+      res.send templateHTML(message,subtitle)
 
 app = express()
 app.use(express.bodyParser())
