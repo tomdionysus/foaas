@@ -11,6 +11,7 @@ FOAAS will respond to the following 'Accept:' values with appropriate content
 * text/plain - Content will be returned as a plain string.
 * application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }
 * text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
+* application/xml - Content will be returned as an XML document.
 
 # API
 
