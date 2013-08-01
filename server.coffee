@@ -3,6 +3,7 @@ express = require 'express'
 sanitizer = require 'sanitizer'
 
 operations = require './lib/operations'
+helpers = require './lib/helpers'
 
 templateHTML = (message, subtitle) -> '
 <html>
@@ -24,6 +25,14 @@ templateHTML = (message, subtitle) -> '
   </body>
 </html>'
 
+templateXML = (message, subtitle) -> '
+<?xml version="1.0" encoding="UTF-8"?>
+<foaas:response xmlns:foaas="http://foaas.com/fuckoff">
+  <foaas:message>'+helpers.escapeXML(message)+'</foaas:message>
+  <foaas:subtitle>'+helpers.escapeXML(subtitle)+'</foaas:subtitle>
+</foaas:response>
+'
+
 dooutput = (res, message, subtitle) ->
   res.format
     "text/plain": ->
@@ -32,6 +41,8 @@ dooutput = (res, message, subtitle) ->
       res.send JSON.stringify { message: message, subtitle: subtitle }
     "text/html": ->
       res.send templateHTML(message,subtitle)
+    "application/xml": ->
+      res.send templateXML(message,subtitle)
 
 app = express()
 app.use(express.bodyParser())
