@@ -138,6 +138,11 @@ app.get '/flying/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/fascinating/:from', (req, res) ->
+  message = "Fascinating story, in what chapter do you shut the fuck up? - #{req.params.from}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 operations(app)
 
 port = process.env.PORT || 5000 
