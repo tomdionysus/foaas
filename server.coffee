@@ -129,7 +129,7 @@ app.get '/thanks/:from', (req, res) ->
   dooutput(res, message, subtitle)
 
 app.get '/flying/:from', (req, res) ->
-  message = "I don't give a flying fuck. - #{req.params.from}."
+  message = "I don't give a flying fuck."
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
@@ -139,7 +139,7 @@ app.get '/fascinating/:from', (req, res) ->
   dooutput(res, message, subtitle)
 
 ###
-  Additional routes should go above the catchall /:thing/ route
+  Additional routes should go above the catch all /:thing/ route
 ###
 app.get '/:thing/:from', (req, res) ->
   message = "Fuck #{req.params.thing}."
