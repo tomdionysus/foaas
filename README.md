@@ -76,11 +76,11 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 
 ## /thanks/:from
 
-Will return content of the form 'Fuck you very much. - :from".
+Will return content of the form 'Fuck you very much. - :from'.
 
 ## /flying/:from
 
-Will return content of the form 'I don't give a flying fuck. - :from".
+Will return content of the form 'I don't give a flying fuck. - :from'.
 
 ## /fascinating/:from
 
