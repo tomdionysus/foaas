@@ -41,7 +41,7 @@ app.use (req, res, next) ->
   res.header 'Access-Control-Allow-Methods', 'GET, OPTIONS'
   res.header 'Access-Control-Allow-Headers', 'Content-Type'
   next()
-        
+
 app.use(app.router)
 app.use(express.static('./public'))
 app.use (req, res) ->
@@ -128,11 +128,6 @@ app.get '/thanks/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/:thing/:from', (req, res) ->
-  message = "Fuck #{req.params.thing}."
-  subtitle = "- #{req.params.from}"
-  dooutput(res, message, subtitle)
-
 app.get '/flying/:from', (req, res) ->
   message = "I don't give a flying fuck. - #{req.params.from}."
   subtitle = "- #{req.params.from}"
@@ -143,8 +138,13 @@ app.get '/fascinating/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/:thing/:from', (req, res) ->
+  message = "Fuck #{req.params.thing}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 operations(app)
 
-port = process.env.PORT || 5000 
+port = process.env.PORT || 5000
 app.listen port
 console.log "FOAAS Started on port #{port}"
