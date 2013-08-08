@@ -134,7 +134,7 @@ app.get '/flying/:from', (req, res) ->
   dooutput(res, message, subtitle)
 
 app.get '/fascinating/:from', (req, res) ->
-  message = "Fascinating story, in what chapter do you shut the fuck up? - #{req.params.from}."
+  message = "Fascinating story, in what chapter do you shut the fuck up?"
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
