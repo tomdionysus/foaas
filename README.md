@@ -78,6 +78,10 @@ Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%
 
 Will return content of the form 'Fuck you very much. - :from".
 
+## /because/:from
+
+Will return content of the form 'Why? Beacuse Fuck you, that's why. - :from'
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
