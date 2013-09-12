@@ -86,6 +86,10 @@ Will return content of the form 'I don't give a flying fuck. - :from'.
 
 Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'.
 
+## /ballmer/:name/:company/:from
+
+Will return content of the form 'Fucking :name is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill :company. - :from'.
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
