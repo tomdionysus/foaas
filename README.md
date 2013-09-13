@@ -86,6 +86,11 @@ Will return content of the form 'I don't give a flying fuck. - :from'.
 
 Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'.
 
+
+## /caniuse/:tool/:from
+
+Will return content of the form 'Can you use :tool? Fuck no! - :from'.
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
