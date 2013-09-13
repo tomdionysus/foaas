@@ -110,4 +110,9 @@ module.exports = (app) ->
       { name: "Because", url: '/because/:from', fields: [
         { name: 'From', field: 'from'}
       ] }
+
+      { name: "Can I Use", url: '/caniuse/:tool/:from', fields: [
+        { name: 'Tool', field: 'tool'}
+        { name: 'From', field: 'from'}
+      ] }
     ]
