@@ -75,4 +75,8 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
+      { name: "Fuck No", url: '/caniuse/:tool/:from', fields: [
+        { name: 'Tool', field: 'tool'}
+        { name: 'From', field: 'from'}
+      ] }
     ]
