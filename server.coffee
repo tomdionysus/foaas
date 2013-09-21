@@ -65,17 +65,17 @@ app.get '/you/:name/:from', (req, res) ->
 
 app.get '/this/:from', (req, res) ->
   message = "Fuck this."
-  subtitle = "- #{req.params. from}"
+  subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
 app.get '/that/:from', (req, res) ->
   message = "Fuck that."
-  subtitle = "- #{req.params. from}"
+  subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
 app.get '/everything/:from', (req, res) ->
   message = "Fuck everything."
-  subtitle = "- #{req.params. from}"
+  subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
 app.get '/everyone/:from', (req, res) ->
@@ -138,6 +138,11 @@ app.get '/fascinating/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/caniuse/:tool/:from', (req, res) ->
+  message = "Can you use #{req.params.tool}? Fuck, no!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+  
 ###
   Additional routes should go above the catch all /:thing/ route
 ###

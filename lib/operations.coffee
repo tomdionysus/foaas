@@ -1,4 +1,3 @@
-
 module.exports = (app) ->
 
   app.get '/operations', (req, res) ->
@@ -75,4 +74,8 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
+      { name: "Can I Use", url: '/caniuse/:tool/:from', fields: [
+        { name: 'Tool', field: 'tool'}
+        { name: 'From', field: 'from'}
+      ] }
     ]
