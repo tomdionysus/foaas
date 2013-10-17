@@ -86,6 +86,10 @@ Will return content of the form 'I don't give a flying fuck. - :from'.
 
 Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'.
 
+## /burgundy/:name/:from
+
+Will return content of the form 'Go fuck yourself, :name - :from', e.g. /burgundy/San%20Diego/Ron%20Burgundy will return 'Go fuck yourself, San Diego. - Ron Burgundy'.
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com

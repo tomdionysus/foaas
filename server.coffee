@@ -138,6 +138,11 @@ app.get '/fascinating/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/burgundy/:name/:from', (req, res) ->
+  message = "Go fuck yourself, #{req.params.name}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
