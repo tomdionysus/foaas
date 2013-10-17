@@ -1,4 +1,3 @@
-
 module.exports = (app) ->
 
   app.get '/operations', (req, res) ->
@@ -72,6 +71,11 @@ module.exports = (app) ->
       ] }
 
       { name: "Flying Fuck", url: '/flying/:from', fields: [
+        { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Go fuck yourself", url: '/burgandy/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
         { name: 'From', field: 'from'}
       ] }
 
