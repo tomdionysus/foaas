@@ -74,7 +74,7 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
-      { name: "Go fuck yourself", url: '/burgandy/:name/:from', fields: [
+      { name: "Go fuck yourself", url: '/burgundy/:name/:from', fields: [
         { name: 'Name', field: 'name'}
         { name: 'From', field: 'from'}
       ] }
