@@ -155,7 +155,7 @@ app.get '/madison/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
-app.get '/cool/:from', (req, res) -> 
+app.get '/cool/:from', (req, res) ->
   message = "Cool story, bro."
   subtitle = "- #{req.params.from}"
   dooutput(res,message,subtitle)
@@ -164,6 +164,11 @@ app.get '/field/:name/:from/:reference', (req, res) ->
   message = "And #{req.params.name} said on to #{req.params.from}, 'Verily, cast thine eyes upon the field in which I grow my fucks', and #{req.params.from} gave witness onto the field, and saw that it was barren."
   reference = "- #{req.params.reference}"
   dooutput(res, message, reference)
+
+app.get '/yoda/:name/:from', (req, res) ->
+  message = "Fuck off, you must, #{req.params.name}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
 
 ###
   Additional routes should go above the catch all /:thing/ route

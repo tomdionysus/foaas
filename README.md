@@ -99,6 +99,10 @@ Will return content of the form 'Cool story, Bro - :from'
 
 Will return content of the form 'And :from said on to :name, "Verily, cast thine eyes upon the field in which I grow my fucks", and :name gave witness onto the field, and saw that it was barren. -  :reference'
 
+## /yoda/:name/:from
+
+Will return content of the form 'Fuck off, you must, :name. - :from'.
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
