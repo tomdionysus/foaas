@@ -86,6 +86,11 @@ Will return content of the form 'I don't give a flying fuck. - :from'.
 
 Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'.
 
+## /madison/:name/:from
+
+Will return content of the form 'What you've just said is one of the most insanely idiotic things I have ever heard, :name. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points :name, and may God have mercy on your soul. -  :from'
+
+
 # Alternative URLs
 
 - http://foaas.herokuapp.com
