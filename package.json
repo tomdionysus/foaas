@@ -13,7 +13,8 @@
 
   "dependencies": {
     "coffee-script" : "latest",
-    "express" : "latest",
-    "sanitizer": "latest"
+    "express" : "3.0.0",
+    "sanitizer": "latest",
+    "newrelic": "latest"
   }
 }

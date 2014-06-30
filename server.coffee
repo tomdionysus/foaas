@@ -1,3 +1,4 @@
+require 'newrelic'
 express = require 'express'
 sanitizer = require 'sanitizer'
 
