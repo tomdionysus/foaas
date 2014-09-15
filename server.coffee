@@ -155,6 +155,11 @@ app.get '/madison/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+  app.get '/cool/:from', (req, res) -> 
+    message = "Cool story, bro."
+    subtitle = "- #{req.params.from}"
+    dooutput(res,message,subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
