@@ -75,4 +75,8 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
+      { name: "Cool story" , url: "/cool/:from", fields: [
+       { name: 'From', field: 'from'}
+      ] }
+
     ]
