@@ -79,4 +79,10 @@ module.exports = (app) ->
        { name: 'From', field: 'from'}
       ] }
 
+      { name: "Field of Fucks", url: '/field/:name/:from/:reference', fields: [
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
+        { name: 'Reference', field: 'reference'}
+      ] }
+
     ]
