@@ -95,7 +95,7 @@ Will return content of the form 'What you've just said is one of the most insane
 
 Will return content of the form 'Cool story, Bro - :from'
 
-## /field/:from/:name/:reference
+## /field/:name/:from/:reference
 
 Will return content of the form 'And :from said on to :name, "Verily, cast thine eyes upon the field in which I grow my fucks", and :name gave witness onto the field, and saw that it was barren. -  :reference'
 
