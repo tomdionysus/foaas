@@ -93,8 +93,11 @@ Will return content of the form 'What you've just said is one of the most insane
 
 ## /cool/:from
 
-Will return "Cool story, Bro - :from"
+Will return content of the form 'Cool story, Bro - :from'
 
+## /field/:from/:name/:reference
+
+Will return content of the form 'And :from said on to :name, "Verily, cast thine eyes upon the field in which I grow my fucks", and :name gave witness onto the field, and saw that it was barren. -  :reference'
 
 # Alternative URLs
 
