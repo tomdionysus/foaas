@@ -85,4 +85,9 @@ module.exports = (app) ->
         { name: 'Reference', field: 'reference'}
       ] }
 
+      { name: "What the actual fuck", url: '/actual/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
+      ] }
+
     ]

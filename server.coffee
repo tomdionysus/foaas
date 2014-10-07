@@ -165,6 +165,11 @@ app.get '/field/:name/:from/:reference', (req, res) ->
   reference = "- #{req.params.reference}"
   dooutput(res, message, reference)
 
+app.get '/actual/:name/:from', (req, res) ->
+  message = "What the actual fuck #{req.params.name}?"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
