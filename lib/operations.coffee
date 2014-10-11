@@ -85,4 +85,9 @@ module.exports = (app) ->
         { name: 'Reference', field: 'reference'}
       ] }
 
+      { name: "Fuck-nugget", url:'nugget/:name/:from', fields:[
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
+      ] }
+
     ]
