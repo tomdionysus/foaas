@@ -1,6 +1,6 @@
 # FOAAS
 
-v0.0.4
+v0.0.5
 
 FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
