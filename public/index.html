@@ -11,7 +11,7 @@
         <h1>FOAAS</h1>
         <h2>Fuck Off As A Service</h2>
         <p>Please see README for use.</p>
-        <p><em>v0.0.3</em></p>
+        <p><em>v0.0.4</em></p>
       </div>
     </div>
     <div class="container">
@@ -19,18 +19,28 @@
         <h2 id="introduction">Introduction</h2>
         <p>FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.</p>
 
+        <p>Thanks to <a href="http://teespring.com" target="_new">teespring.com</a> you can now buy <a href="http://teespring.com/foaas" target="_new">FOAAS T-Shirts, Hoodies and more!</a></p>
+
         <h2 id="contentnegotiation">Content Negotiation</h2>
 
         <p>FOAAS will respond to the following 'Accept:' values with appropriate content</p>
 
         <ul>
           <li>text/plain - Content will be returned as a plain string.</li>
-          <li>application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }</li>
+          <li>application/json - Content will be returned as a JSON object <code>{ message: 'message', subtitle: 'subtitle' }</code></li>
           <li>text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.</li>
           <li>application/xml - Content will be returned as a XML document.</li>
         </ul>
 
         <h2 id="api">API</h2>
+
+        <h3 id="version">/version</h3>
+
+        <p>Will return content with the current FOAAS version number.</p>
+
+        <h3 id="operations">/operations</h3>
+
+        <p>Will return a JSON list of operations with names and fields. <em>Note: JSON Only</em></p>
 
         <h3 id="offnamefrom">/off/:name/:from</h3>
 
@@ -119,13 +129,6 @@
         <h3 id="nugget">/nugget/:name/:from</h3>
 
         <p>Will return content of the form 'Well :name,  aren't you a shining example of a rancid fuck-nugget. - :from'</p>
-
-        <h2 id="alturls">Alternative URLs</h2>
-
-        <ul>
-          <li><a href="http://foaas.herokuapp.com">http://foaas.herokuapp.com</a></li>
-          <li><a href="http://foaas.com">http://foaas.com</a></li>
-        </ul>
 
         <h2 id="roadmap">Roadmap</h2>
 

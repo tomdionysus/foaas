@@ -1,4 +1,5 @@
 require 'newrelic'
+
 express = require 'express'
 sanitizer = require 'sanitizer'
 
@@ -64,6 +65,17 @@ app.options "*", (req, res) ->
   res.header 'Access-Control-Allow-Methods', 'GET, OPTIONS'
   res.header 'Access-Control-Allow-Headers', 'Content-Type'
   res.end()
+
+app.get '/version', (req, res) ->
+  res.format
+    "text/plain": ->
+      res.send "FOAAS Version #{helpers.VERSION}"
+    "application/json": ->
+      res.send JSON.stringify { version: helpers.VERSION }
+    "text/html": ->
+      res.send templateHTML("Version #{helpers.VERSION}",'FOAAS')
+    "application/xml": ->
+      res.send templateXML("Version #{helpers.VERSION}",'FOAAS')
 
 app.get '/off/:name/:from', (req, res) ->
   message = "Fuck off, #{req.params.name}."

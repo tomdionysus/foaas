@@ -1,3 +1,5 @@
 node_modules
 newrelic_agent.log
+newrelic.js
+public/googlead*
 .idea

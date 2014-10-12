@@ -3,6 +3,8 @@ module.exports = (app) ->
 
   app.get '/operations', (req, res) ->
     res.send [
+      { name: "Version", url: '/version', fields: [] }
+
       { name: "Fuck Off", url: '/off/:name/:from', fields: [
         { name: 'Name', field: 'name'}
         { name: 'From', field: 'from'}
