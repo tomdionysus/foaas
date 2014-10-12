@@ -14,7 +14,9 @@ API clients are available in a number of languages:
 |:---------|:---------------|:-----|
 | JS/Node  | `foaas-client` | https://www.npmjs.org/package/foaas-client |
 | Ruby     | `foaas-client` | https://rubygems.org/gems/foaas-client/versions/0.0.0 |
+| PHP      | `foaas-php`    | https://github.com/klaude/foaas-php |
 | R        | `rfoaas`       | https://github.com/eddelbuettel/rfoaas |
+
 
 # Contributing
 
