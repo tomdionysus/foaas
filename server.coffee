@@ -202,6 +202,11 @@ app.get '/because/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/caniuse/:tool/:from', (req, res) ->
+  message = "Can you use #{req.params.tool}? Fuck no!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
