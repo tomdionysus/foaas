@@ -182,6 +182,11 @@ app.get '/nugget/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/yoda/:name/:from', (req, res) ->
+  message = "Fuck off, you must, #{req.params.name}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
