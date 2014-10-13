@@ -17,6 +17,7 @@ API clients are available in a number of languages:
 | PHP      | `foaas-php`    | https://github.com/klaude/foaas-php |
 | Python   | `foaas-python` | https://github.com/dmpayton/foaas-python |
 | R        | `rfoaas`       | https://github.com/eddelbuettel/rfoaas |
+| CLI/bash | `foaas.sh`     | https://github.com/RaymiiOrg/foaas.sh |
 
 # Integrate FOAAS
 
