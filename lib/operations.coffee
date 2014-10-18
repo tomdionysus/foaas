@@ -82,8 +82,13 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
-      { name: "Fascinating" , url: "/fascinating/:from", fields: [
+      { name: "Fascinating story" , url: "/fascinating/:from", fields: [
        { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Billy-Madison-movie-quote", url: '/madison/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
       ] }
 
       { name: "Cool story" , url: "/cool/:from", fields: [
