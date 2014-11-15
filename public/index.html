@@ -24,7 +24,12 @@
 
         <ul>
           <li>text/plain - Content will be returned as a plain string.</li>
-          <li>application/json - Content will be returned as a JSON object <code>{ message: 'message', subtitle: 'subtitle' }</code></li>
+          <li>
+            application/json - Content will be returned as a JSON object <code>{ message: 'message', subtitle: 'subtitle' }</code>
+            <ul>
+              <li>Supports jsonp by including <code>?callback=?</code></li>
+            </ul>
+          </li>
           <li>text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.</li>
           <li>application/xml - Content will be returned as a XML document.</li>
         </ul>
