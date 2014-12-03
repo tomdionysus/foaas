@@ -39,7 +39,7 @@ dooutput = (res, message, subtitle) ->
     "text/plain": ->
       res.send "#{message} #{subtitle}"
     "application/json": ->
-      res.send JSON.stringify { message: message, subtitle: subtitle }
+      res.jsonp { message: message, subtitle: subtitle }
     "text/html": ->
       res.send templateHTML(message,subtitle)
     "application/xml": ->
@@ -71,7 +71,7 @@ app.get '/version', (req, res) ->
     "text/plain": ->
       res.send "FOAAS Version #{helpers.VERSION}"
     "application/json": ->
-      res.send JSON.stringify { version: helpers.VERSION }
+      res.json { version: helpers.VERSION }
     "text/html": ->
       res.send templateHTML("Version #{helpers.VERSION}",'FOAAS')
     "application/xml": ->
