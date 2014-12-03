@@ -173,7 +173,7 @@ app.get '/cool/:from', (req, res) ->
   dooutput(res,message,subtitle)
 
 app.get '/field/:name/:from/:reference', (req, res) ->
-  message = "And #{req.params.name} said unto #{req.params.from}, 'Verily, cast thine eyes upon the field in which I grow my fucks', and #{req.params.from} gave witness onto the field, and saw that it was barren."
+  message = "And #{req.params.name} said unto #{req.params.from}, 'Verily, cast thine eyes upon the field in which I grow my fucks', and #{req.params.from} gave witness unto the field, and saw that it was barren."
   reference = "- #{req.params.reference}"
   dooutput(res, message, reference)
 
