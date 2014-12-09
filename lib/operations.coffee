@@ -115,4 +115,13 @@ module.exports = (app) ->
         { name: 'Tool', field: 'tool'}
         { name: 'From', field: 'from'}
       ] }
+
+      { name: "Random with Name", url: '/random/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Random without Name", url: '/random/:from', fields: [
+        { name: 'From', field: 'from'}
+      ] }
     ]

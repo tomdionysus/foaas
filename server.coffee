@@ -77,6 +77,19 @@ app.get '/version', (req, res) ->
     "application/xml": ->
       res.send templateXML("Version #{helpers.VERSION}",'FOAAS')
 
+
+app.get '/random/:name/:from', (req, res, next) ->
+ name_param = ['you', 'off', 'donut', 'shakespeare', 'linus', 'king', 'chainsaw', 'outside', 'madison', 'nugget', 'yoda', 'caniuse']
+ method = name_param[Math.floor(Math.random()*name_param.length)];
+ req.url = '/'+method+'/'+req.params.name+'/'+req.params.from
+ next()
+
+app.get '/random/:from', (req, res, next) ->
+ from_param = ['this' , 'that', 'everything', 'everyone', 'pink', 'life', 'thanks', 'flying', 'fascinating', 'cool', 'what', 'because']
+ method = from_param[Math.floor(Math.random()*from_param.length)];
+ req.url = '/'+method+'/'+req.params.from
+ next() 
+
 app.get '/off/:name/:from', (req, res) ->
   message = "Fuck off, #{req.params.name}."
   subtitle = "- #{req.params.from}"
@@ -207,6 +220,7 @@ app.get '/caniuse/:tool/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+ 
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
