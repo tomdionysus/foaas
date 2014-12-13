@@ -31,6 +31,11 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
+      { name: "Donut", url: '/donut/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
+      ] }
+
       { name: "Shakespeare", url: '/shakespeare/:name/:from', fields: [
         { name: 'Name', field: 'name'}
         { name: 'From', field: 'from'}
@@ -64,7 +69,7 @@ module.exports = (app) ->
         { name: 'From', field: 'from'}
       ] }
 
-      { name: "Fuck you very much", url: '/outside/:from', fields: [
+      { name: "Fuck you very much", url: '/thanks/:from', fields: [
         { name: 'From', field: 'from'}
       ] }
 
@@ -74,6 +79,15 @@ module.exports = (app) ->
       ] }
 
       { name: "Flying Fuck", url: '/flying/:from', fields: [
+        { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Fascinating story" , url: "/fascinating/:from", fields: [
+       { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Billy-Madison-movie-quote", url: '/madison/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
         { name: 'From', field: 'from'}
       ] }
 
