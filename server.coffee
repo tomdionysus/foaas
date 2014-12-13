@@ -193,7 +193,7 @@ app.get '/ballmer/:name/:company/:from', (req, res) ->
   dooutput(res, message, subtitle)
 
 app.get '/what/:from', (req, res) ->
-  message = "What the fuck?!"
+  message = "What the fuck‽"
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
