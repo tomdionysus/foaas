@@ -2,6 +2,8 @@
 
 v0.0.5
 
+[![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
+
 FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
 Please see http://foaas.com for API documentation and examples.
@@ -9,7 +11,7 @@ Please see http://foaas.com for API documentation and examples.
 # Installation
 
 	npm install
-	
+
 # Run
 
 	npm start
