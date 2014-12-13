@@ -207,6 +207,21 @@ app.get '/caniuse/:tool/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/bye/:from', (req, res) ->
+  message = "Fuckity bye!"
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/diabetes/:from', (req, res) ->
+  message = "I'd love to stop and chat to you but I'd rather have type 2 diabetes."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
+app.get '/bus/:name/:from', (req, res) ->
+  message = "Christ on a bendy-bus, #{req.params.name}, don't be such a fucking faff-arse."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###

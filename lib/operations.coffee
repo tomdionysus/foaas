@@ -115,4 +115,17 @@ module.exports = (app) ->
         { name: 'Tool', field: 'tool'}
         { name: 'From', field: 'from'}
       ] }
+
+      { name: "Bye", url: '/bye/:from', fields: [
+        { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Diabetes", url: '/diabetes/:from', fields: [
+        { name: 'From', field: 'from'}
+      ] }
+
+      { name: "Bus", url: '/bus/:name/:from', fields: [
+        { name: 'Name', field: 'name'}
+        { name: 'From', field: 'from'}
+      ] }
     ]
