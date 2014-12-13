@@ -6,6 +6,18 @@ FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to t
 
 Please see http://foaas.com for API documentation and examples.
 
+# Installation
+
+	npm install
+	
+# Run
+
+	npm start
+
+# Test
+
+	npm test
+
 # Clients
 
 API clients are available in a number of languages:

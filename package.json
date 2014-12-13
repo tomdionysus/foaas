@@ -2,15 +2,17 @@
   "name": "foaas",
   "version": "0.0.5",
   "description": "Fuck Off As A Service",
-  "main": "server.coffee",
+  "main": "lib/server.coffee",
   "scripts": {
-    "start": "./node_modules/.bin/coffee server.coffee",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/coffee lib/server.coffee",
+    "test": "./node_modules/.bin/jasmine-node --coffee spec"
   },
-  "repository": "",
-  "author": "",
+  "repository": "git@github.com:tomdionysus/foaas",
+  "author": "Tom Cully",
   "license": "BSD",
-
+  "devDependencies": {
+    "jasmine-node": "latest"
+  },
   "dependencies": {
     "coffee-script" : "latest",
     "express" : "3.0.0",
