@@ -230,6 +230,9 @@ app.get '/:thing/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.put "/", (req, res) ->
+	dooutput res.send(418, "I'm a teapot")
+
 operations(app)
 
 port = process.env.PORT || 5000
