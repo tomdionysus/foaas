@@ -5,5 +5,5 @@ escapeXML = (s) ->
   s.replace(/([&<>'"])/g, escapeXMLCharacter)
 
 module.exports =
-  VERSION: '0.0.4'
+  VERSION: '0.0.5'
   escapeXML: escapeXML

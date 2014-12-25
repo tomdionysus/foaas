@@ -1,6 +1,6 @@
 {
   "name": "foaas",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Fuck Off As A Service",
   "main": "server.coffee",
   "scripts": {
