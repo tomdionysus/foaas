@@ -222,6 +222,11 @@ app.get '/bus/:name/:from', (req, res) ->
   subtitle = "- #{req.params.from}"
   dooutput(res, message, subtitle)
 
+app.get '/xmas/:name/:from', (req, res) ->
+  message = "Merry Fucking Christmas, #{req.params.name}."
+  subtitle = "- #{req.params.from}"
+  dooutput(res, message, subtitle)
+
 ###
   Additional routes should go above the catch all /:thing/ route
 ###
