@@ -3,7 +3,7 @@ fs = require 'fs'
 
 module.exports = class FOAAS
 
-  VERSION: '0.0.5'
+  VERSION: '0.1.0'
 
   constructor: ->
     @app = express()
