@@ -3,8 +3,8 @@ require 'newrelic'
 express = require 'express'
 sanitizer = require 'sanitizer'
 
-operations = require './lib/operations'
-helpers = require './lib/helpers'
+operations = require './operations'
+helpers = require './helpers'
 
 templateHTML = (message, subtitle) -> '
 <html>
