@@ -20,6 +20,7 @@
     "coffee-script" : "latest",
     "express" : "3.0.0",
     "sanitizer": "latest",
-    "newrelic": "latest"
+    "newrelic": "latest",
+    "xml-escape": "1.0.0"
   }
 }

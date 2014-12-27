@@ -1,7 +1,4 @@
-escapeXML = (s) ->
-  s.replace(/([&<>'"])/g, (c) ->
-    '&' + { '&': 'amp', '<': 'lt', '>': 'gt', "'": 'apos', '"': 'quot'}[c] + ';'
-  )
+xmlEscape = require 'xml-escape'
 
 module.exports =
   name: 'XML'
@@ -11,6 +8,6 @@ module.exports =
     res.set 'Content-Type', 'application/xml'
     res.send '<?xml version="1.0" encoding="UTF-8"?>
 <foaas:response xmlns:foaas="http://foaas.com/fuckoff">
-  <foaas:message>'+escapeXML(message)+'</foaas:message>
-  <foaas:subtitle>'+escapeXML(subtitle)+'</foaas:subtitle>
+  <foaas:message>'+xmlEscape(message)+'</foaas:message>
+  <foaas:subtitle>'+xmlEscape(subtitle)+'</foaas:subtitle>
 </foaas:response>'
