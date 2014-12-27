@@ -25,7 +25,7 @@ describe "HTML Renderer", ->
 
       expect(res.send).toHaveBeenCalledWith('<html>
   <head>
-    <title>Fuck Off As A Service (FOAAS)</title>
+    <title>FOAAS - ONE - TWO</title>
     <meta charset="utf-8">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
@@ -50,7 +50,7 @@ describe "HTML Renderer", ->
 
       expect(res.send).toHaveBeenCalledWith('<html>
   <head>
-    <title>Fuck Off As A Service (FOAAS)</title>
+    <title>FOAAS - &lt;one&gt;ONE&lt;/one&gt; - &lt;two&gt;TWO&lt;/two&gt;</title>
     <meta charset="utf-8">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>

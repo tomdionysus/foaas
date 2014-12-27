@@ -5,10 +5,12 @@ module.exports =
   mime: 'text/html'
 
   render: (res, message, subtitle) ->
+    message = sanitizer.escape(message)
+    subtitle = sanitizer.escape(subtitle)
     res.set 'Content-Type', 'text/html'
     res.send '<html>
   <head>
-    <title>Fuck Off As A Service (FOAAS)</title>
+    <title>FOAAS - '+message+' - '+subtitle+'</title>
     <meta charset="utf-8">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
@@ -16,8 +18,8 @@ module.exports =
   <body style="margin-top:40px;">
     <div class="container">
       <div id="view-10" view=""><div class="hero-unit">
-        <h1>'+sanitizer.escape(message)+'</h1>
-        <p><em>'+sanitizer.escape(subtitle)+'</em></p>
+        <h1>'+message+'</h1>
+        <p><em>'+subtitle+'</em></p>
         </div>
       </div>
     </div>
