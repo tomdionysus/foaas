@@ -12,7 +12,7 @@
   },
   "repository": "git@github.com:tomdionysus/foaas",
   "author": "Tom Cully",
-  "license": "BSD",
+  "license": "WTFPL",
   "devDependencies": {
     "jasmine-node": "latest"
   },
