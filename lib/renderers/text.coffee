@@ -1,5 +1,3 @@
-sanitizer = require 'sanitizer'
-
 module.exports =
   name: 'Text'
   mime: 'text/plain'

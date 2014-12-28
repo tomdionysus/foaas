@@ -1,5 +1,3 @@
-sanitizer = require 'sanitizer'
-
 module.exports =
   name: 'JSON'
   mime: 'application/json'
