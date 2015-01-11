@@ -1,6 +1,6 @@
 # FOAAS
 
-v0.1.0
+v0.1.1
 
 [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
 
