@@ -10,24 +10,42 @@ module.exports = class FOAAS
     @app.use(express.bodyParser())
     @app.use(express.methodOverride())
 
+    # Send very permissive CORS headers.
     @app.use (req, res, next) ->
       res.header 'Access-Control-Allow-Origin', '*'
       res.header 'Access-Control-Allow-Methods', 'GET, OPTIONS'
       res.header 'Access-Control-Allow-Headers', 'Content-Type'
       next()
 
+    # Express Router
     @app.use(@app.router)
-    @app.use(express.static('./public'))
-    @app.use (req, res) ->
-      res.sendfile("./public/index.html")
 
+    # All Public Resources.
+    @app.use(express.static('./public'))
+
+    # GET / and /index.html sends index HTML page.
+    @app.get '/', @sendIndex
+    @app.get 'index.html', @sendIndex
+
+    # OPTIONS on any route sends CORS above and ends
     @app.options "*", (req, res) ->
       res.end()
 
+    # Final case, send 404 Not Found
+    @app.use @send404
+
+    # Internal State.
     @operations = {}
     @operationsArray = []
     @formats = {}
     @formatsArray = []
+
+  send404: (req, res) =>
+    res.status(404)
+    @output(req, res, "404 - Not Found", 'FOAAS')
+
+  sendIndex: (req, res) ->
+    res.sendfile("./public/index.html")
 
   loadRenderers: (path) =>
     for file in fs.readdirSync(path)
