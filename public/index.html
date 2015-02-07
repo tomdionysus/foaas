@@ -10,7 +10,7 @@
       <div class="hero-unit">
         <h1>FOAAS</h1>
         <h2>Fuck Off As A Service</h2>
-        <p><em>v0.1.2</em></p>
+        <p><em>v0.1.3</em></p>
       </div>
     </div>
     <div class="container">
@@ -18,7 +18,14 @@
         <h2 id="introduction">Introduction</h2>
         <p>FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.</p>
 
-        <h2 id="contentnegotiation">Content Negotiation</h2>
+        <h2>What's New in 0.1.3</h2>
+        <ul>
+            <li><strong>Filters</strong> - See <a href='#filters'>Filters</a> below.</li>
+        </ul>
+
+        <h2 id="api">API</h2>
+
+        <h3 id="contentnegotiation">Content Negotiation</h2>
 
         <p>FOAAS will respond to the following 'Accept:' values with appropriate content</p>
 
@@ -34,143 +41,201 @@
           <li>application/xml - Content will be returned as a XML document.</li>
         </ul>
 
-        <h2 id="api">API</h2>
-
-        <h3 id="version">/version</h3>
-
-        <p>Will return content with the current FOAAS version number.</p>
-
-        <h3 id="operations">/operations</h3>
-
-        <p>Will return a JSON list of operations with names and fields. <em>Note: JSON Only</em></p>
-
-        <h3 id="offnamefrom">/off/:name/:from</h3>
-
-        <p>Will return content of the form 'Fuck off, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck off, Tom - Chris'</p>
-
-        <h3 id="younamefrom">/you/:name/:from</h3>
-
-        <p>Will return content of the form 'Fuck you, :name. - :from', e.g. /you/Tom/Chris will return 'Fuck you, Tom - Chris'</p>
-
-        <h3 id="thisfrom">/this/:from</h3>
-
-        <p>Will return content of the form 'Fuck this - :from', e.g. /this/Chris will return 'Fuck this. - Chris'</p>
-
-        <h3 id="thatfrom">/that/:from</h3>
-
-        <p>Will return content of the form 'Fuck that. - :from', e.g. /that/Chris will return 'Fuck that. - Chris'</p>
-
-        <h3 id="evenythingfrom">/everything/:from</h3>
-
-        <p>Will return content of the form 'Fuck everything. - :from', e.g. /everything/Chris will return 'Fuck everything. - Chris'</p>
-
-        <h3 id="everyonefrom">/everyone/:from</h3>
-
-        <p>Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /everyone/Tom will return 'Everyone can go and fuck off. - Tom'</p>
-
-        <h3 id="donutnamefrom">/donut/:name/:from</h3>
-
-        <p>Will return content of the form ':name, go and take a flying fuck at a rolling donut. - :from', e.g. /donut/Tom/Chris will return 'Tom, go and take a flying fuck at a rolling donut. - Chris'</p>
-
-        <h3 id="shakespearenamefrom">/shakespeare/:name/:from</h3>
-
-        <p>Will return content of the form ':name, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - :from', e.g. /shakespeare/Falstaff/Prince%20Henry will return 'Falstaff, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - Prince Henry</p>
-
-        <h3 id="linusnamefrom">/linus/:name/:from</h3>
-
-        <p>Will return content of the form ':name, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - :from'. </p>
-
-        <h3 id="kingnamefrom">/king/:name/:from</h3>
-
-        <p>Will return content of the form 'Oh fuck off, just really fuck off you total dickface. Christ :name, you are fucking thick. - :from'. </p>
-
-        <h3 id="pink">/pink/:from</h3>
-
-        <p>Will return content of the form 'Well, Fuck me pink. - :from'. </p>
-
-        <h3 id="life">/life/:from</h3>
-
-        <p>Will return content of the form 'Fuck my life. - :from', e.g. /life/Phil will return 'Fuck my life. - Phil'</p>
-
-        <h3 id="chainsaw">/chainsaw/:name/:from</h3>
-
-        <p>Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather'.</p>
-
-        <h3 id="outside">/outside/:name/:from</h3>
-
-        <p>Will return content of the form ':name, why don't you go outside and play hide-and-go-fuck-yourself? - :from', e.g. /outside/BigBrother/TheWorld will return 'BigBrother, why don't you go outside and play hide-and-go-fuck-yourself? - TheWorld'.</p>
-
-        <h3 id="thing">/:thing/:from</h3>
-
-        <p>Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%A5%20Chris will return 'Fuck pineapples. - ♥ Chris' </p>
-
-        <h3 id="thanks">/thanks/:from</h3>
-
-        <p>Will return content of the form 'Fuck you very much. - :from'. </p>
-
-        <h3 id="flying">/flying/:from</h3>
-
-        <p>Will return content of the form 'I don't give a flying fuck. - :from'. </p>
-
-        <h3 id="fascinating">/fascinating/:from</h3>
-
-        <p>Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'. </p>
-
-        <h3 id="madison">/madison/:name/:from</h3>
-
-        <p>Will return content of the form 'What you've just said is one of the most insanely idiotic things I have ever heard, :name. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points :name, and may God have mercy on your soul. -  :from'
-
-        <h3 id="cool">/cool/:from</h3>
-
-        <p>'Cool story, Bro - :from'</p>
-
-        <h3 id="field">/field/:name/:from/:reference</h3>
-
-        <p>Will return content of the form 'And :name said unto :from, &quot;Verily, cast thine eyes upon the field in which I grow my fucks&quot;, and :from gave witness unto the field, and saw that it was barren. -  :reference'</p>
-
-        <h3 id="nugget">/nugget/:name/:from</h3>
-
-        <p>Will return content of the form 'Well :name,  aren't you a shining example of a rancid fuck-nugget. - :from'</p>
-
-        <h3 id="yoda">/yoda/:name/:from</h3>
-
-        <p>Will return content of the form 'Fuck off, you must, :name. - :from'. </p>
-
-        <h3 id="ballmer">/ballmer/:name/:company/:from</h3>
-
-        <p>Will return content of the form 'Fucking :name is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill :company. - :from' </p>
-
-        <h3 id="what">/what/:from</h3>
-
-        <p>Will return content of the form 'What the fuck?!. - :from".</p>
-
-        <h3 id="because">/because/:from</h3>
-        
-        <p>Will return content of the form 'Why? Beacuse Fuck you, that's why. - :from'. </p>
-        
-        <h3 id="caniuse">/caniuse/:tool/:from</h3>
-        
-        <p>Will return content of the form 'Can you use :tool? Fuck no! - :from'.</p>
-        
-        <h3 id "bye">/bye/:from</h3>
-
-        <p>Will return content of the form 'Fuckity bye! - :from'.</p>
-
-        <h3 id "diabetes">/diabetes/:from</h3>
-
-        <p>Will return content of the form 'I'd love to stop and chat to you but I'd rather have type 2 diabetes. - :from'.</p>
-
-        <h3 id "bus">/bus/:name/:from</h3>
-
-        <p>Will return content of the from 'Christ on a bendy-bus, :name, don't be such a fucking faff-arse. - :from'.</p>
-
-        <h3 id "bus">/xmas/:name/:from</h3>
-
-        <p>Will return content of the from 'Merry Fucking Christmas, :name. - :from'.</p>
-
-        <h3 id="awesome">/awesome/:from</h3>
-
-        <p>Will return content of the form 'This is Fucking Awesome. - :from', , e.g. /awesome/Macklemore will return 'This is Fucking Awesome. - Macklemore'</p>
+        <h3 id="operations">Operations</h3>
+
+        <table class="table">
+            <tr>
+                <th>Path</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>/version</td>
+                <td>Will return content with the current FOAAS version number.</td>
+            </tr>
+
+            <tr>
+                <td>/operations</td>
+                <td>Will return a JSON list of operations with names and fields. <em>Note: JSON Only</em></td>
+            </tr>
+
+            <tr>
+                <td>/off/:name/:from</td>
+                <td>Will return content of the form 'Fuck off, :name. - :from', e.g. /off/Tom/Chris will return 'Fuck off, Tom - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/you/:name/:from</td>
+                <td>Will return content of the form 'Fuck you, :name. - :from', e.g. /you/Tom/Chris will return 'Fuck you, Tom - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/this/:from</td>
+                <td>Will return content of the form 'Fuck this - :from', e.g. /this/Chris will return 'Fuck this. - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/that/:from</td>
+                <td>Will return content of the form 'Fuck that. - :from', e.g. /that/Chris will return 'Fuck that. - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/everything/:from</td>
+                <td>Will return content of the form 'Fuck everything. - :from', e.g. /everything/Chris will return 'Fuck everything. - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/everyone/:from</td>
+                <td>Will return content of the form 'Everyone can go and fuck off. - :name', e.g. /everyone/Tom will return 'Everyone can go and fuck off. - Tom'</td>
+            </tr>
+
+            <tr>
+                <td>/donut/:name/:from</td>
+                <td>Will return content of the form ':name, go and take a flying fuck at a rolling donut. - :from', e.g. /donut/Tom/Chris will return 'Tom, go and take a flying fuck at a rolling donut. - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/shakespeare/:name/:from</td>
+                <td>Will return content of the form ':name, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - :from', e.g. /shakespeare/Falstaff/Prince%20Henry will return 'Falstaff, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - Prince Henry</td>
+            </tr>
+
+            <tr>
+                <td>/linus/:name/:from</td>
+                <td>Will return content of the form ':name, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>/king/:name/:from</td>
+                <td>Will return content of the form 'Oh fuck off, just really fuck off you total dickface. Christ :name, you are fucking thick. - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>/pink/:from</td>
+                <td>Will return content of the form 'Well, Fuck me pink. - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>/life/:from</td>
+                <td>Will return content of the form 'Fuck my life. - :from', e.g. /life/Phil will return 'Fuck my life. - Phil'</td>
+            </tr>
+
+            <tr>
+                <td>/chainsaw/:name/:from</td>
+                <td>Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather'.</td>
+            </tr>
+
+            <tr>
+                <td>/outside/:name/:from</td>
+                <td>Will return content of the form ':name, why don't you go outside and play hide-and-go-fuck-yourself? - :from', e.g. /outside/BigBrother/TheWorld will return 'BigBrother, why don't you go outside and play hide-and-go-fuck-yourself? - TheWorld'.</td>
+            </tr>
+
+            <tr>
+                <td>/:thing/:from</td>
+                <td>Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%A5%20Chris will return 'Fuck pineapples. - ♥ Chris' </td>
+            </tr>
+
+            <tr>
+                <td>/thanks/:from</td>
+                <td>Will return content of the form 'Fuck you very much. - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>/flying/:from</td>
+                <td>Will return content of the form 'I don't give a flying fuck. - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>/fascinating/:from</td>
+                <td>Will return content of the form 'Fascinating story, in what chapter do you shut the fuck up? - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>madison/:name/:from</td>
+                <td>Will return content of the form 'What you've just said is one of the most insanely idiotic things I have ever heard, :name. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points :name, and may God have mercy on your soul. -  :from'</td>
+            </tr>
+
+            <tr>
+                <td>/cool/:from</td>
+                <td>'Cool story, Bro - :from'</td>
+            </tr>
+
+            <tr>
+                <td>/field/:name/:from/:reference</td>
+                <td>Will return content of the form 'And :name said unto :from, &quot;Verily, cast thine eyes upon the field in which I grow my fucks&quot;, and :from gave witness unto the field, and saw that it was barren. -  :reference'</td>
+            </tr>
+
+            <tr>
+                <td>/nugget/:name/:from</td>
+                <td>Will return content of the form 'Well :name,  aren't you a shining example of a rancid fuck-nugget. - :from'</td>
+            </tr>
+
+            <tr>
+                <td>/yoda/:name/:from</td>
+                <td>Will return content of the form 'Fuck off, you must, :name. - :from'. </td>
+            </tr>
+
+            <tr>
+                <td>/ballmer/:name/:company/:from</td>
+                <td>Will return content of the form 'Fucking :name is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill :company. - :from' </td>
+            </tr>
+
+            <tr>
+                <td>/what/:from</td>
+                <td>Will return content of the form 'What the fuck?!. - :from".</td>
+            </tr>
+
+            <tr>
+                <td>/because/:from</td>
+                <td>Will return content of the form 'Why? Beacuse Fuck you, that's why. - :from'. </td>
+            </tr>
+            
+            <tr>
+                <td>/caniuse/:tool/:from</td>
+                <td>Will return content of the form 'Can you use :tool? Fuck no! - :from'.</td>
+            </tr>
+            
+            <tr>
+                <td>/bye/:from</td>
+                <td>Will return content of the form 'Fuckity bye! - :from'.</td>
+            </tr>
+
+            <tr>
+                <td>/diabetes/:from</td>
+                <td>Will return content of the form 'I'd love to stop and chat to you but I'd rather have type 2 diabetes. - :from'.</td>
+            </tr>
+
+            <tr>
+                <td>/bus/:name/:from</td>
+                <td>Will return content of the from 'Christ on a bendy-bus, :name, don't be such a fucking faff-arse. - :from'.</td>
+            </tr>
+
+            <tr>
+                <td>/xmas/:name/:from</td>
+                <td>Will return content of the from 'Merry Fucking Christmas, :name. - :from'.</td>
+            </tr>
+
+            <tr>
+                <td>/awesome/:from</td>
+                <td>Will return content of the form 'This is Fucking Awesome. - :from', , e.g. /awesome/Macklemore will return 'This is Fucking Awesome. - Macklemore'</td>
+            </tr>
+        </table>
+
+        <h3 id="filters">Filters</h2>
+
+        <p>Filters are optional output modifiers, and are specified by adding the filter name as query to the HTTP request, e.g.
+
+        <a href="http://foaas.com/off/Tom/Everyone?shoutcloud">http://foaas.com/off/Tom/Everyone?<em>shoutcloud</em></a>
+        </p>
+
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>shoutcloud</td>
+                <td>Integration with the ShoutCloud service. Please see <a href="http://shoutcloud.io">shoutcloud.io</a> for details.</td>
+            </tr>
+        </table>
         
         <h2 id="roadmap">Roadmap</h2>
 
