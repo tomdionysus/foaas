@@ -1,9 +1,11 @@
 express = require 'express'
 fs = require 'fs'
+path = require 'path'
+npmPackage = require path.resolve(__dirname,'../package.json') 
 
 module.exports = class FOAAS
 
-  VERSION: '0.1.2'
+  VERSION: npmPackage.version
 
   constructor: ->
     @app = express()
@@ -39,6 +41,7 @@ module.exports = class FOAAS
     @operationsArray = []
     @formats = {}
     @formatsArray = []
+    @filters = {}
 
   send404: (req, res) =>
     res.status(404)
@@ -52,6 +55,11 @@ module.exports = class FOAAS
       renderer = require path+'/'+file
       @formatsArray.push renderer.mime
       @formats[renderer.mime] = renderer.render
+
+  loadFilters: (path) =>
+    for file in fs.readdirSync(path)
+      filter = require path+'/'+file
+      @filters[filter.name] = filter
 
   loadOperations: (path) =>
     for file in fs.readdirSync(path)
@@ -78,6 +86,17 @@ module.exports = class FOAAS
     console.log "FOAAS v#{@VERSION} Started on port #{port}"
 
   output: (req, res, message, subtitle) =>
+    filters = []
+    for name, filter of @filters
+      filters.push filter.process if filter.applies(req, message, subtitle) 
+
+    final = @outputFinal
+    rout = (req,res,message,subtitle) ->
+      (filters.pop() || final)(req,res,message,subtitle,rout)
+
+    rout(req,res,message,subtitle)
+
+  outputFinal: (req,res,message,subtitle) =>
     mime = req.accepts(@formatsArray)
 
     unless mime?
@@ -87,5 +106,7 @@ module.exports = class FOAAS
 
     @formats[mime](res, message, subtitle)
     res.end()
+
+    
 
 
