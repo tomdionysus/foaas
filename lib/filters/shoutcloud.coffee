@@ -16,12 +16,12 @@ module.exports =
       url: 'HTTP://API.SHOUTCLOUD.IO/V1/SHOUT'
       body: '{"INPUT": "'+str+'"}'
     }, (error, response, body) =>
-      return @onError(req, res) if error?
+      return module.exports.onError(req, res) if error?
       try
         str = JSON.parse(body).body['OUTPUT'].split('**SEPERATOR**')
         next(req,res,str[0],str[1])
       catch
-        return @onError(req, res)
+        return module.exports.onError(req, res)
 
   onError: (req,res) ->
     res.status 408
