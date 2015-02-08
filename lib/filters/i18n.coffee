@@ -12,7 +12,7 @@ module.exports =
   cachePop: []
 
   register: (app) ->
-    i18next.init();
+    i18next.init()
     app.use(i18next.handle)
 
   applies: (req) ->
@@ -20,8 +20,8 @@ module.exports =
 
   process: (req, res, message, subtitle, next) =>
     lang = req.query.i18n
-    lang = req.locale if !lang? or lang == ''
-    lang = 'en' if !lang? or lang == ''
+    lang = req.locale if lang == ''
+    lang = 'en' if lang == ''
 
     # Shortcut if already english.
     return next(req, res, message, subtitle) if lang == 'en'
