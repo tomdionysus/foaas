@@ -53,11 +53,4 @@ To add a new FOAAS operation:
 
 For the time being, in your PR, please include relevant documentation in `public/index.html`.
 
-# Roadmap
-
-FOASS will be extended to include the following functionality:
-
-* Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly
-* Internationalization based on Accept-Language.
-
 All contributions are very welcome.
