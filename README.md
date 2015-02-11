@@ -1,6 +1,6 @@
 # FOAAS
 
-v0.1.3
+0.1.4
 
 [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
 
@@ -52,12 +52,5 @@ To add a new FOAAS operation:
 5. Push to your fork and submit a PR.
 
 For the time being, in your PR, please include relevant documentation in `public/index.html`.
-
-# Roadmap
-
-FOASS will be extended to include the following functionality:
-
-* Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly
-* Internationalization based on Accept-Language.
 
 All contributions are very welcome.

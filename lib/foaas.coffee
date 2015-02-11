@@ -7,10 +7,28 @@ module.exports = class FOAAS
 
   VERSION: npmPackage.version
 
-  constructor: ->
+  constructor: (options) ->
+    # Internal State.
+    @operations = {}
+    @operationsArray = []
+    @formats = {}
+    @formatsArray = []
+    @filters = {}
+
+    # Main App
     @app = express()
+
+    # Plugin Paths
+    renderersPath = options.renderersPath || 'renderers'
+    filtersPath = options.filtersPath || 'filters'
+    operationsPath = options.operationsPath || 'operations'
+
+    # Standard Middleware
     @app.use(express.bodyParser())
     @app.use(express.methodOverride())
+    
+    # Load Filters
+    @loadFilters(filtersPath)
 
     # Send very permissive CORS headers.
     @app.use (req, res, next) ->
@@ -21,6 +39,9 @@ module.exports = class FOAAS
 
     # Express Router
     @app.use(@app.router)
+
+    # Operations
+    @loadOperations(operationsPath)
 
     # All Public Resources.
     @app.use(express.static('./public'))
@@ -35,13 +56,9 @@ module.exports = class FOAAS
 
     # Final case, send 404 Not Found
     @app.use @send404
-
-    # Internal State.
-    @operations = {}
-    @operationsArray = []
-    @formats = {}
-    @formatsArray = []
-    @filters = {}
+    
+    # Renderers
+    @loadRenderers(renderersPath)
 
   send404: (req, res) =>
     res.status(404)
@@ -59,6 +76,7 @@ module.exports = class FOAAS
   loadFilters: (path) =>
     for file in fs.readdirSync(path)
       filter = require path+'/'+file
+      filter.register(@app) if filter.register?
       @filters[filter.name] = filter
 
   loadOperations: (path) =>

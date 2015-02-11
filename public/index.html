@@ -10,7 +10,7 @@
       <div class="hero-unit">
         <h1>FOAAS</h1>
         <h2>Fuck Off As A Service</h2>
-        <p><em>v0.1.3</em></p>
+        <p><em>v0.1.4</em></p>
       </div>
     </div>
     <div class="container">
@@ -18,9 +18,9 @@
         <h2 id="introduction">Introduction</h2>
         <p>FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.</p>
 
-        <h2>What's New in 0.1.3</h2>
+        <h2>What's New in 0.1.4</h2>
         <ul>
-            <li><strong>Filters</strong> - See <a href='#filters'>Filters</a> below.</li>
+            <li><strong>i18n</strong> - See <a href='#i18n'>Internationalization</a> below.</li>
         </ul>
 
         <h2 id="api">API</h2>
@@ -221,9 +221,7 @@
 
         <h3 id="filters">Filters</h2>
 
-        <p>Filters are optional output modifiers, and are specified by adding the filter name as query to the HTTP request, e.g.
-
-        <a href="http://foaas.com/off/Tom/Everyone?shoutcloud">http://foaas.com/off/Tom/Everyone?<em>shoutcloud</em></a>
+        <p>Filters are optional output modifiers, and are specified by adding the filter name as query to the HTTP request, e.g. <a href="http://foaas.com/off/Tom/Everyone?shoutcloud">http://foaas.com/off/Tom/Everyone?<em>shoutcloud</em></a>
         </p>
 
         <table class="table">
@@ -235,7 +233,15 @@
                 <td>shoutcloud</td>
                 <td>Integration with the ShoutCloud service. Please see <a href="http://shoutcloud.io">shoutcloud.io</a> for details.</td>
             </tr>
+            <tr id='i18n'>
+                <td>i18n</td>
+                <td>Translation provided by <a href="http://mymemory.translated.net">mymemory.translated.net</a>. Specifying ?i18n on its own will attempt to detect your browser language, or you can specify the language to translate to using the ISO 639-1 language code, i.e. ?i18n=es</td>
+            </tr>
         </table>
+
+        </p>
+            Filters can be used in combinations, e.g. <a href="http://foaas.com/off/Tom/Everyone?shoutcloud&i18n=de">http://foaas.com/off/Tom/Everyone?<em>shoutcloud&amp;i18n=de</em></a>
+        </p>
         
         <h2 id="roadmap">Roadmap</h2>
 
@@ -243,7 +249,6 @@
 
         <ul>
         <li>Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly</li>
-        <li>Internationalization based on Accept-Language.</li>
         </ul>
 
         <p>All contributions are very welcome.</p>
