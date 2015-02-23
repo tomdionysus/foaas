@@ -1,11 +1,11 @@
-operation = require '../../lib/operations/diabetes'
+operation = require '../../lib/operations/diabetes2'
 
-describe "/diabetes", ->
+describe "/diabetes2", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('Diabetes')
+    expect(operation.name).toEqual('Type 2 Diabetes')
 
   it "should have the correct url", ->
-    expect(operation.url).toEqual('/diabetes/:from')
+    expect(operation.url).toEqual('/diabetes2/:from')
 
   it "should have the correct fields", ->
     expect(operation.fields).toEqual([
@@ -20,7 +20,7 @@ describe "/diabetes", ->
       operation.register(app,null)
 
       expect(app.get).toHaveBeenCalled()
-      expect(app.get.argsForCall[0][0]).toEqual('/diabetes/:from')
+      expect(app.get.argsForCall[0][0]).toEqual('/diabetes2/:from')
 
     it 'should call output with correct params', ->
       func = null
