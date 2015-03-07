@@ -31,13 +31,13 @@ describe "/field", ->
       output = jasmine.createSpy()
       operation.register(app, output)
 
-      req = 
+      req =
         params:
           name: "TESTNAME"
           from: "TESTFROM"
           reference: "TESTREFERENCE"
 
-      message = "And #{req.params.name} said unto #{req.params.from}, 'Verily, cast thine eyes upon the field in which I grow my fucks', and #{req.params.from} gave witness unto the field, and saw that it was barren."
+      message = "And #{req.params.from} said unto #{req.params.name}, 'Verily, cast thine eyes upon the field in which I grow my fucks', and #{req.params.name} gave witness unto the field, and saw that it was barren."
       subtitle = "- #{req.params.reference}"
 
       func(req,'RES')
