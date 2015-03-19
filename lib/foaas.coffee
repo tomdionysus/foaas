@@ -23,6 +23,11 @@ module.exports = class FOAAS
     filtersPath = options.filtersPath || 'filters'
     operationsPath = options.operationsPath || 'operations'
 
+    # A man is not dead while his name is still spoken.
+    @app.use (req, res, next) ->
+      res.header 'X-Clacks-Overhead', 'GNU Terry Pratchett'
+      next()
+      
     # Standard Middleware
     @app.use(express.bodyParser())
     @app.use(express.methodOverride())
@@ -36,6 +41,7 @@ module.exports = class FOAAS
       res.header 'Access-Control-Allow-Methods', 'GET, OPTIONS'
       res.header 'Access-Control-Allow-Headers', 'Content-Type'
       next()
+
 
     # Express Router
     @app.use(@app.router)
