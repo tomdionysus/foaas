@@ -33,6 +33,7 @@ API clients are available in a number of languages:
 | R        | `rfoaas`       | https://github.com/eddelbuettel/rfoaas |
 | CLI/bash | `foaas.sh`     | https://github.com/RaymiiOrg/foaas.sh |
 | .NET     | `FOAASClient`  | https://github.com/igorkulman/FOAASClient |
+| Java     | `JFOAAS`       | https://github.com/AnUnknownMiner/FOAAS-Java |
 
 # Integrate FOAAS
 
