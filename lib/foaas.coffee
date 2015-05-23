@@ -67,8 +67,8 @@ module.exports = class FOAAS
     @loadRenderers(renderersPath)
 
   send404: (req, res) =>
-    res.status(404)
-    @output(req, res, "404 - Not Found", 'FOAAS')
+    res.status(622)
+    @output(req, res, "622 - All The Fucks", 'Server invites you to consider the truly monumental amount of fucks it couldn\'t give about your request.')
 
   sendIndex: (req, res) ->
     res.sendfile("./public/index.html")
