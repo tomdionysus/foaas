@@ -1,7 +1,8 @@
 express = require 'express'
 fs = require 'fs'
 path = require 'path'
-npmPackage = require path.resolve(__dirname,'../package.json') 
+npmPackage = require path.resolve(__dirname,'../package.json')
+newrelic = require 'newrelic' 
 
 module.exports = class FOAAS
 
@@ -42,7 +43,6 @@ module.exports = class FOAAS
       res.header 'Access-Control-Allow-Headers', 'Content-Type'
       next()
 
-
     # Express Router
     @app.use(@app.router)
 
@@ -60,13 +60,16 @@ module.exports = class FOAAS
     @app.options "*", (req, res) ->
       res.end()
 
-    # Final case, send 404 Not Found
-    @app.use @send404
+    # Final case, send 622 All The Fucks
+    @app.use @send622
     
     # Renderers
     @loadRenderers(renderersPath)
 
-  send404: (req, res) =>
+  send622: (req, res) =>
+    # NewRelic hasn't yet adopted the HTTP 6xx (Sarcasm) series of responses.
+    newrelic.setIgnoreTransaction(true)
+
     res.status(622)
     @output(req, res, "622 - All The Fucks", 'Server invites you to consider the truly monumental amount of fucks it couldn\'t give about your request.')
 
