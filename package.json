@@ -19,6 +19,7 @@
   "dependencies": {
     "coffee-script" : "1.9.0",
     "express" : "3.0.0",
+    "body-parser" : "1.12.4",
     "sanitizer": "0.1.2",
     "newrelic": "1.16.1",
     "xml-escape": "1.0.0",

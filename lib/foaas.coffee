@@ -1,4 +1,5 @@
 express = require 'express'
+bodyParser  = require('body-parser')
 fs = require 'fs'
 path = require 'path'
 npmPackage = require path.resolve(__dirname,'../package.json')
@@ -30,7 +31,9 @@ module.exports = class FOAAS
       next()
       
     # Standard Middleware
-    @app.use(express.bodyParser())
+    @app.use(bodyParser.json({extended: true, strict: false}))
+    @app.use(bodyParser.urlencoded({extended: true}))
+    @app.use(bodyParser.text({extended: true}))
     @app.use(express.methodOverride())
     
     # Load Filters
