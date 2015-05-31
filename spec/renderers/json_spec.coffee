@@ -9,8 +9,11 @@ describe "Json/JsonP Renderer", ->
 
   describe 'render', ->
     it 'should call res.jsonp with correct params', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         jsonp: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.jsonp).toHaveBeenCalledWith({ message: 'ONE', subtitle: 'TWO' })

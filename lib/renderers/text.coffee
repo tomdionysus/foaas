@@ -2,6 +2,6 @@ module.exports =
   name: 'Text'
   mime: 'text/plain'
 
-  render: (res, message, subtitle) ->
+  render: (req, res) ->
     res.set 'Content-Type', 'text/plain'
-    res.send "#{message} #{subtitle}"
+    res.send "#{req.message} #{req.subtitle}"

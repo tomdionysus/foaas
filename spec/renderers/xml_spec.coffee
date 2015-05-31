@@ -10,18 +10,24 @@ describe "XML Renderer", ->
   describe 'render', ->
 
     it 'should call res.set with Content-Type header', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.set).toHaveBeenCalledWith('Content-Type', 'application/xml')
 
     it 'should call res.send with correct params', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.send).toHaveBeenCalledWith('<?xml version="1.0" encoding="UTF-8"?>
 <foaas:response xmlns:foaas="http://foaas.com/fuckoff">
@@ -30,10 +36,13 @@ describe "XML Renderer", ->
 </foaas:response>')
    
     it 'should sanitize params', ->
+      req =
+        message: '<one>ONE</one>'
+        subtitle: '<two>TWO</two>'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'<one>ONE</one>','<two>TWO</two>')
+      renderer.render(req,res)
 
       expect(res.send).toHaveBeenCalledWith('<?xml version="1.0" encoding="UTF-8"?>
 <foaas:response xmlns:foaas="http://foaas.com/fuckoff">

@@ -2,5 +2,5 @@ module.exports =
   name: 'JSON'
   mime: 'application/json'
 
-  render: (res, message, subtitle) ->
-  	res.jsonp { message: message, subtitle: subtitle }
+  render: (req, res) ->
+  	res.jsonp { message: req.message, subtitle: req.subtitle }

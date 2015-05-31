@@ -3,13 +3,14 @@ request = require 'request'
 module.exports =
   name: "ShoutCloud"
   description: ""
+  priority: 1
 
   applies: (req) ->
     req.query? and req.query.shoutcloud?
 
-  process: (req, res, message, subtitle, next) =>
+  process: (req, res, next) =>
 
-    str = "#{message}**seperator**#{subtitle}"
+    str = "#{req.message}**seperator**#{req.subtitle}"
 
     request.post {
       headers: 'content-type': 'application/json'
@@ -19,7 +20,9 @@ module.exports =
       return module.exports.onError(req, res) if error?
       try
         str = JSON.parse(body)['OUTPUT'].split('**SEPERATOR**')
-        next(req,res,str[0],str[1])
+        req.message = str[0]
+        req.subtitle = str[1]
+        next(req,res)
       catch
         return module.exports.onError(req, res)
 

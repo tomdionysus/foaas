@@ -10,18 +10,24 @@ describe "HTML Renderer", ->
   describe 'render', ->
 
     it 'should call res.set with Content-Type header', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.set).toHaveBeenCalledWith('Content-Type', 'text/html')
 
     it 'should call res.send with correct params', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.send).toHaveBeenCalledWith('<html>
   <head>
@@ -43,10 +49,13 @@ describe "HTML Renderer", ->
 </html>')
    
     it 'should sanitize params', ->
+      req =
+        message: '<one>ONE</one>'
+        subtitle: '<two>TWO</two>'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'<one>ONE</one>','<two>TWO</two>')
+      renderer.render(req,res)
 
       expect(res.send).toHaveBeenCalledWith('<html>
   <head>

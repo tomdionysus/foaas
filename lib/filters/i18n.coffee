@@ -5,6 +5,7 @@ md5 = require 'MD5'
 module.exports =
   name: "i18n"
   description: ""
+  priority: 2
 
   CACHE_SIZE: 4096
 
@@ -18,28 +19,29 @@ module.exports =
   applies: (req) ->
     req.query? and req.query.i18n?
 
-  process: (req, res, message, subtitle, next) =>
+  process: (req, res, next) =>
     lang = req.query.i18n
     lang = req.locale if lang == ''
     lang = 'en' if lang == ''
 
     # Shortcut if already english.
-    return next(req, res, message, subtitle) if lang == 'en'
+    return next(req, res) if lang == 'en'
 
-    key = md5(lang+message)
+    key = md5(lang+req.message)
 
     if module.exports.cache[key]?
-      return next(req, res, module.exports.cache[key], subtitle)
+      req.message = module.exports.cache[key]
+      return next(req, res)
     else
       request.post {
         headers: 'content-type': 'application/json'
-        url: "http://api.mymemory.translated.net/get?q=#{message}&langpair=en|#{lang}"
+        url: "http://api.mymemory.translated.net/get?q=#{req.message}&langpair=en|#{lang}"
       }, (error, response, body) =>
         return module.exports.onError(req, res) if error?
         try
-          message = JSON.parse(body)['responseData']['translatedText']
-          module.exports.addCache(key,message)
-          return next(req, res, message, subtitle)
+          req.message = JSON.parse(body)['responseData']['translatedText']
+          module.exports.addCache(key,req.message)
+          return next(req, res)
         catch
           return module.exports.onError(req, res)    
 

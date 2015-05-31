@@ -4,9 +4,9 @@ module.exports =
   name: 'HTML'
   mime: 'text/html'
 
-  render: (res, message, subtitle) ->
-    message = sanitizer.escape(message)
-    subtitle = sanitizer.escape(subtitle)
+  render: (req, res) ->
+    message = sanitizer.escape(req.message)
+    subtitle = sanitizer.escape(req.subtitle)
     res.set 'Content-Type', 'text/html'
     res.send '<html>
   <head>

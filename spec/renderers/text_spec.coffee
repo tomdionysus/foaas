@@ -10,17 +10,23 @@ describe "TEXT Renderer", ->
   describe 'render', ->
 
     it 'should call res.set with Content-Type header', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.set).toHaveBeenCalledWith('Content-Type', 'text/plain')
 
     it 'should call res.send with correct params', ->
+      req =
+        message: 'ONE'
+        subtitle: 'TWO'
       res =
         set: jasmine.createSpy()
         send: jasmine.createSpy()
-      renderer.render(res,'ONE','TWO')
+      renderer.render(req,res)
 
       expect(res.send).toHaveBeenCalledWith('ONE TWO')

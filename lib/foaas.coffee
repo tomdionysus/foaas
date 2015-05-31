@@ -3,7 +3,8 @@ bodyParser  = require('body-parser')
 fs = require 'fs'
 path = require 'path'
 npmPackage = require path.resolve(__dirname,'../package.json')
-newrelic = require 'newrelic' 
+newrelic = require 'newrelic'
+_ = require 'underscore'
 
 module.exports = class FOAAS
 
@@ -91,6 +92,8 @@ module.exports = class FOAAS
       filter.register(@app) if filter.register?
       @filters[filter.name] = filter
 
+    @filters = _(@filters).chain().sortBy('priority').value()
+
   loadOperations: (path) =>
     for file in fs.readdirSync(path)
       operation = require path+'/'+file
@@ -116,17 +119,20 @@ module.exports = class FOAAS
     console.log "FOAAS v#{@VERSION} Started on port #{port}"
 
   output: (req, res, message, subtitle) =>
+    req.message = message
+    req.subtitle = subtitle
+
     filters = []
-    for name, filter of @filters
-      filters.push filter.process if filter.applies(req, message, subtitle) 
+    for filter in @filters
+      filters.push filter if filter.applies(req) 
 
     final = @outputFinal
-    rout = (req,res,message,subtitle) ->
-      (filters.pop() || final)(req,res,message,subtitle,rout)
+    rout = (req,res) =>
+      (filters.pop() || @).process(req,res,rout)
 
-    rout(req,res,message,subtitle)
+    rout(req,res)
 
-  outputFinal: (req,res,message,subtitle) =>
+  process: (req,res) =>
     mime = req.accepts(@formatsArray)
 
     unless mime?
@@ -134,7 +140,7 @@ module.exports = class FOAAS
       res.end()
       return
 
-    @formats[mime](res, message, subtitle)
+    @formats[mime](req, res)
     res.end()
 
     
