@@ -40,7 +40,7 @@ API clients are available in a number of languages:
 | Platform/Software | Name                                                                         |
 |:------------------|:-----------------------------------------------------------------------------|
 | Hubot				| https://github.com/github/hubot-scripts/blob/master/src/scripts/foass.coffee |
-| Firefox           | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off |
+| Thunderbird/Seamonkey | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off |
 
 # Contributing
 
