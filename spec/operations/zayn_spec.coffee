@@ -2,7 +2,7 @@ operation = require '../../lib/operations/zayn'
 
 describe "/zayn", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('zayn')
+    expect(operation.name).toEqual('Zayn')
 
   it "should have the correct url", ->
     expect(operation.url).toEqual('/zayn/:from')
@@ -33,8 +33,10 @@ describe "/zayn", ->
         params:
           from: "TESTFROM"
 
-      message = "Ask me if I give a motherfuck ?!!"
-      subtitle = "- #{req.params.from}"
-
       func(req,'RES')
-      expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
+      expect(output).toHaveBeenCalledWith(
+        req,
+        'RES',
+        'Ask me if I give a motherfuck ?!!',
+        '- TESTFROM'
+      )
