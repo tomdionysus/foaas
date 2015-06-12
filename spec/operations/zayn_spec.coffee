@@ -2,7 +2,7 @@ operation = require '../../lib/operations/zayn'
 
 describe "/zayn", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('Zayn')
+    expect(operation.name).toEqual('zayn')
 
   it "should have the correct url", ->
     expect(operation.url).toEqual('/zayn/:from')
