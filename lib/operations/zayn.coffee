@@ -1,12 +1,13 @@
-module.exports =
-  name: "Zayn"
-  url: '/zayn/:from'
-  fields: [
+path = require 'path'
+BaseOperation = require path.resolve(__dirname,'../baseOperation')
+
+class Zayn extends BaseOperation
+
+  handler: (req, res, output) ->
+    message = "Ask me if I give a motherfuck ?!!"
+    subtitle = "- #{req.params.from}"
+    output(req, res, message, subtitle)
+
+module.exports = new Zayn "Zayn", '/zayn/:from', [
     { name: 'From', field: 'from'}
   ]
-
-  register: (app, output) ->
-    app.get '/zayn/:from', (req, res) ->
-      message = "Ask me if I give a motherfuck ?!!"
-      subtitle = "- #{req.params.from}"
-      output(req, res, message, subtitle)
