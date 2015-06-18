@@ -1,14 +1,14 @@
-module.exports =
-  name: "Bday"
-  url: '/bday/:name/:from'
-  excludeFromRandom: true
-  fields: [
+path = require 'path'
+BaseOperation = require path.resolve(__dirname,'../baseOperation')
+
+class Bday extends BaseOperation
+
+  handler: (req, res, output) ->
+    message = "Happy Fucking Birthday, #{req.params.name}."
+    subtitle = "- #{req.params.from}"
+    output(req, res, message, subtitle)
+
+module.exports = new Bday "Bday", '/bday/:name/:from', [
     { name: 'Name', field: 'name'}
     { name: 'From', field: 'from'}
-  ]
-
-  register: (app, output) ->
-    app.get '/bday/:name/:from', (req, res) ->
-      message = "Happy Fucking Birthday, #{req.params.name}."
-      subtitle = "- #{req.params.from}"
-      output(req, res, message, subtitle)
+  ], true

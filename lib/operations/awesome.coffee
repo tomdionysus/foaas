@@ -1,13 +1,12 @@
-module.exports =
-  name: "Awesome"
-  url: '/awesome/:from'
-  excludeFromRandom: true
-  fields: [
-    { name: 'From', field: 'from'}
-  ]
+path = require 'path'
+BaseOperation = require path.resolve(__dirname,'../baseOperation')
 
-  register: (app, output) ->
-    app.get '/awesome/:from', (req, res) ->
-      message = "This is Fucking Awesome."
-      subtitle = "- #{req.params.from}"
-      output(req, res, message, subtitle)
+class Awesome extends BaseOperation
+
+  handler: (req, res, output) ->
+    message = "This is Fucking Awesome."
+    subtitle = "- #{req.params.from}"
+    output(req, res, message, subtitle)
+
+module.exports = new Awesome "Awesome", '/awesome/:from', [
+  { name: 'From', field: 'from'}], true

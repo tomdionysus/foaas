@@ -1,11 +1,11 @@
-module.exports =
-  name: "Version"
-  url: '/version'
-  excludeFromRandom: true
-  fields: []
+path = require 'path'
+BaseOperation = require path.resolve(__dirname,'../baseOperation')
 
-  register: (app, output, version) ->
-    app.get '/version', (req, res) ->
-      message = "Version #{version}"
-      subtitle = "FOAAS"
-      output(req, res, message, subtitle)
+class Version extends BaseOperation
+
+  handler: (req, res, output, version) ->
+    message = "Version #{version}"
+    subtitle = "FOAAS"
+    output(req, res, message, subtitle)
+
+module.exports = new Version "Version", '/version', [], true
