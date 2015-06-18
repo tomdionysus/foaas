@@ -1,6 +1,7 @@
 module.exports =
   name: "Awesome"
   url: '/awesome/:from'
+  excludeFromRandom: true
   fields: [
     { name: 'From', field: 'from'}
   ]

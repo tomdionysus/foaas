@@ -1,6 +1,7 @@
 module.exports =
   name: "Version"
   url: '/version'
+  excludeFromRandom: true
   fields: []
 
   register: (app, output, version) ->
