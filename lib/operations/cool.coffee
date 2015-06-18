@@ -1,12 +1,13 @@
-module.exports =
-  name: "Cool Story"
-  url: '/cool/:from'
-  fields: [
-    { name: 'From', field: 'from'}
-  ]
+path = require 'path'
+BaseOperation = require path.resolve(__dirname,'../baseOperation')
 
-  register: (app, output) ->
-    app.get '/cool/:from', (req, res) ->
-      message = "Cool story, bro."
-      subtitle = "- #{req.params.from}"
-      output(req, res, message, subtitle)
+class CoolStory extends BaseOperation
+
+  handler: (req, res, output) ->
+    message = "Cool story, bro."
+    subtitle = "- #{req.params.from}"
+    output(req, res, message, subtitle)
+
+module.exports = new CoolStory "Cool Story", '/cool/:from', [
+    { name: 'From', field: 'from'}
+  ], true

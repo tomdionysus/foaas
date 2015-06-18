@@ -12,7 +12,7 @@ module.exports = class FOAAS
 
   constructor: (options) ->
     # Internal State.
-    @operations = {}
+    @operations = []
     @operationsArray = []
     @formats = {}
     @formatsArray = []
@@ -97,12 +97,20 @@ module.exports = class FOAAS
   loadOperations: (path) =>
     for file in fs.readdirSync(path)
       operation = require path+'/'+file
-      operation.register(@app, @output, @VERSION)
-      @operationsArray.push
-        name: operation.name
-        url: operation.url
-        fields: operation.fields
-      @operations[operation.url] = operation
+      if operation.name != 'Random'
+        operation.register(@app, @output, @VERSION)
+        @operationsArray.push
+          name: operation.name
+          url: operation.url
+          fields: operation.fields
+        @operations.push operation
+    # Load Random separatedly not to send the operations Array to all the operations
+    operation = require path + '/random.coffee'
+    @operationsArray.push
+      name: operation.name
+      url: operation.url
+      fields: operation.fields
+    operation.register(@app, @output, @VERSION, @operations)
 
     # /operations endpoint
     @app.get '/operations', (req, res) =>
