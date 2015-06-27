@@ -41,6 +41,7 @@ API clients are available in a number of languages:
 |:------------------|:-----------------------------------------------------------------------------|
 | Hubot				| https://github.com/github/hubot-scripts/blob/master/src/scripts/foass.coffee |
 | Thunderbird/Seamonkey | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off |
+| TelegramBot | https://github.com/rajanand02/TelegramFoaasBot |
 
 # Contributing
 
