@@ -1,6 +1,6 @@
 {
   "name": "foaas",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Fuck Off As A Service",
   "engines": {
     "node": "0.10.33"
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "coffee-script" : "1.9.3",
-    "express" : "4.13.3",
+    "express" : "3.x.x",
     "body-parser" : "1.13.3",
     "sanitizer": "0.1.2",
     "newrelic": "1.22.0",
@@ -26,6 +26,7 @@
     "request": "2.61.0",
     "i18next": "1.10.4",
     "md5": "2.0.0",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "method-override": "2.3.5"
   }
 }

@@ -1,5 +1,6 @@
 express = require 'express'
 bodyParser  = require('body-parser')
+methodOverride = require('method-override')
 fs = require 'fs'
 path = require 'path'
 npmPackage = require path.resolve(__dirname,'../package.json')
@@ -35,7 +36,7 @@ module.exports = class FOAAS
     @app.use(bodyParser.json({extended: true, strict: false}))
     @app.use(bodyParser.urlencoded({extended: true}))
     @app.use(bodyParser.text({extended: true}))
-    @app.use(express.methodOverride())
+    @app.use(methodOverride())
     
     # Load Filters
     @loadFilters(filtersPath)
