@@ -8,7 +8,8 @@ module.exports =
     message = sanitizer.escape(req.message)
     subtitle = sanitizer.escape(req.subtitle)
     res.set 'Content-Type', 'text/html'
-    res.send '<html>
+    res.send '<!DOCTYPE html>
+<html>
   <head>
     <title>FOAAS - '+message+' - '+subtitle+'</title>
     <meta charset="utf-8">
@@ -17,9 +18,10 @@ module.exports =
 
   <body style="margin-top:40px;">
     <div class="container">
-      <div id="view-10" view=""><div class="hero-unit">
-        <h1>'+message+'</h1>
-        <p><em>'+subtitle+'</em></p>
+      <div id="view-10">
+        <div class="hero-unit">
+          <h1>'+message+'</h1>
+          <p><em>'+subtitle+'</em></p>
         </div>
       </div>
     </div>
