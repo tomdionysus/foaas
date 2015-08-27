@@ -17,16 +17,16 @@
     "jasmine-node": "1.14.5"
   },
   "dependencies": {
-    "coffee-script" : "1.9.3",
-    "express" : "3.x.x",
-    "body-parser" : "1.13.3",
-    "sanitizer": "0.1.2",
-    "newrelic": "1.22.0",
-    "xml-escape": "1.0.0",
-    "request": "2.61.0",
-    "i18next": "1.10.4",
-    "md5": "2.0.0",
-    "underscore": "1.8.3",
-    "method-override": "2.3.5"
+    "coffee-script" : "latest",
+    "express" : "latest",
+    "body-parser" : "latest",
+    "sanitizer": "latest",
+    "newrelic": "latest",
+    "xml-escape": "latest",
+    "request": "latest",
+    "i18next": "latest",
+    "md5": "latest",
+    "underscore": "latest",
+    "method-override": "latest"
   }
 }

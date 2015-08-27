@@ -48,9 +48,6 @@ module.exports = class FOAAS
       res.header 'Access-Control-Allow-Headers', 'Content-Type'
       next()
 
-    # Express Router
-    @app.use(@app.router)
-
     # Operations
     @loadOperations(operationsPath)
 
@@ -96,9 +93,10 @@ module.exports = class FOAAS
     @filters = _(@filters).chain().sortBy('priority').value()
 
   loadOperations: (path) =>
+    router = express.Router()
     for file in fs.readdirSync(path)
       operation = require path+'/'+file
-      operation.register(@app, @output, @VERSION)
+      operation.register(router, @output, @VERSION)
       @operationsArray.push
         name: operation.name
         url: operation.url
@@ -106,14 +104,16 @@ module.exports = class FOAAS
       @operations[operation.url] = operation
 
     # /operations endpoint
-    @app.get '/operations', (req, res) =>
+    router.get '/operations', (req, res) =>
       res.send @operationsArray
 
     # Default Operation
-    @app.get '/:thing/:from', (req, res) =>
+    router.get '/:thing/:from', (req, res) =>
       message = "Fuck #{req.params.thing}."
       subtitle = "- #{req.params.from}"
       @output(req, res, message, subtitle)
+
+    @app.use(router)
 
   start: (port) =>
     @app.listen port
