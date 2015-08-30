@@ -1,6 +1,6 @@
 request = require 'request'
 i18next = require 'i18next'
-md5 = require 'MD5'
+md5 = require 'md5'
 
 module.exports =
   name: "i18n"
