@@ -1,0 +1,203 @@
+
+
+
+
+
+
+Network Working Group                    T. Cully, A. Hodgkinson, et.al
+Request for Comments: DRAFT03213                           1 April 2016
+Category: Informational
+
+
+     Hyper Text Transport Protocol Sarcasm Extension (HTTPSE/1.0)
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) FOAAS (2016).  All Rights Reserved.
+
+Abstract
+
+   This document describes HTTPSE, a HTTP protocol extension to
+   allow a webserver to express sarcasm.
+
+1. Rationale and Scope
+
+   The standard HTTP status codes are designated ranges designed
+   around specific response categories, broadly as follows:
+
+      1xx   Intermediate Responses, Protocol control
+      2xx   OK
+      3xx   Redirect
+      4xx   Client Error (You Fucked Up)
+      5xx   Server Error (I Fucked Up)
+
+   Increasingly, home and consumer devices are being connected to the
+   Internet and the need has arisen for a more colloquial and holistic
+   approach to the dry and technical responses we have used previously.
+   We propose that the protocol be extended to include further ranges of 
+   codes to express higher order concepts, in this example, sarcasm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+T. Cully, A. Hodgkinson      Informational                      [Page 1]
+
+DRAFT03213                     HTTPSE/1.0                   1 April 2016
+
+2. HTTPSE/1.0 Extension to HTTP
+
+  The HTTPSE protocol is a superset of HTTP, with the addition of a
+  few new return codes. The return codes follow the format 6xx and are 
+  intended to express sarcasm at ridiculous and/or trivial requests.
+
+2.1 HTTPSE return codes
+
+2.1.0 600 Fucking Good Enough
+
+  The server deems its response sufficient. Further requests of the 
+  same nature may result in a 622 response.
+
+2.1.1 602 When I'm Good and Fucking Ready
+
+  Server MAY complete the request at a subsequent time. And then again,
+  it may not bother its arse. The implication is not that the server is
+  under load and likely grumpy, rather that the server could't be 
+  bothered with the request or that the request has been issued with 
+  unreasonable time expectations.
+
+2.1.2 603 @pond 
+
+  Return code used to express the concept that the server SHOULD issue
+  a sarcastic response but the stream of sarcasm from /dev/sarcasm has
+  been temporarily exhausted due to the volume of recent requests.
+
+  The client SHOULD issue the request again after a random back-off time,
+  and possibly the supply of coffee via [RFC 2324] HTCPCP/1.0 to server.
+
+2.1.3 604 Monday/Friday
+
+  The request has been issued early on Monday morning or late on Friday
+  afternoon. HTTP body response MAY NOT be accurate, timely, or even 
+  related to the request.
+
+2.1.4 610 Don’t Fucking Talk To Me
+
+  The client SHOULD NOT reissue the request under any circumstances as 
+  physical harm may result.
+
+2.1.5 606 Commercial Decision detected
+
+  The request has been found to be patently absurd, impossible, or so
+  internally inconsistent as to require a breach of the accepted laws 
+  of physics to complete. 
+
+  The client SHOULD NOT issue the request again to this server.
+
+2.1.7 613 TL;DR
+
+   The request was either too large, too boring, or both, for the
+   server to consider processing.
+
+2.1.8 622 All The Fucks
+
+  Server invites the client to consider the monumental amount of fucks it
+  couldn't give regarding the request. 
+
+  The client SHOULD NOT issue the request again to this server.
+
+
+T. Cully, A. Hodgkinson      Informational                      [Page 2]
+
+DRAFT03213                     HTTPSE/1.0                   1 April 2016
+
+3. Acknowledgements
+
+   Many thanks to the many contributors to this standard, including 
+   Andrew Pett, David Mitchell, Rory Stephenson, Charles Peach, David 
+   Oram,Jordan Carter, Wayne Hoover et. al
+
+4. References
+
+   [RFC2068] Fielding, R., Gettys, J., Mogul, J., Frystyk, H., and T.
+   Berners-Lee, "Hypertext Transfer Protocol -- HTTP/1.1", RFC 2068,
+   January 1997.
+
+   [RFC2324] L. Masinter "Hyper Text Coffee Pot Control Protocol 
+   (HTCPCP/1.0)", RFC 2068, April 1998.
+
+   [NTP] Mills, D., "Network Time Protocol (Version 3) Specification,
+   Implementation and Analysis", RFC 1305, March 1992.
+
+   [URLI18N] Masinter, L., "Using UTF8 for non-ASCII Characters in
+   Extended URIs" Work in Progress.
+
+5. Author's Details
+
+   Tom Cully
+   email: tom@foaas.com
+
+   Andrew Hodgkinson
+   email: andrew@pond.co.uk
+
+
+T. Cully, A. Hodgkinson      Informational                      [Page 2]
+
+DRAFT03213                     HTTPSE/1.0                   1 April 2016
+
+
+6.  Full Copyright Statement
+
+           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                   Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+ 0. You just DO WHAT THE FUCK YOU WANT TO.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Masinter                     Informational                     [Page 10]
+
