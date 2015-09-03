@@ -40,7 +40,7 @@ Abstract
    Increasingly, home and consumer devices are being connected to the
    Internet and the need has arisen for a more colloquial and holistic
    approach to the dry and technical responses we have used previously.
-   We propose that the protocol be extended to include further ranges of 
+   We propose that the protocol be extended to include further ranges of
    codes to express higher order concepts, in this example, sarcasm.
 
 
@@ -62,25 +62,25 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 2. HTTPSE/1.0 Extension to HTTP
 
   The HTTPSE protocol is a superset of HTTP, with the addition of a
-  few new return codes. The return codes follow the format 6xx and are 
+  few new return codes. The return codes follow the format 6xx and are
   intended to express sarcasm at ridiculous and/or trivial requests.
 
 2.1 HTTPSE return codes
 
 2.1.0 600 Fucking Good Enough
 
-  The server deems its response sufficient. Further requests of the 
+  The server deems its response sufficient. Further requests of the
   same nature may result in a 622 response.
 
 2.1.1 602 When I'm Good and Fucking Ready
 
   Server MAY complete the request at a subsequent time. And then again,
   it may not bother its arse. The implication is not that the server is
-  under load and likely grumpy, rather that the server could't be 
-  bothered with the request or that the request has been issued with 
+  under load and likely grumpy, rather that the server could't be
+  bothered with the request or that the request has been issued with
   unreasonable time expectations.
 
-2.1.2 603 @pond 
+2.1.2 603 @pond
 
   Return code used to express the concept that the server SHOULD issue
   a sarcastic response but the stream of sarcasm from /dev/sarcasm has
@@ -92,31 +92,34 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 2.1.3 604 Monday/Friday
 
   The request has been issued early on Monday morning or late on Friday
-  afternoon. HTTP body response MAY NOT be accurate, timely, or even 
+  afternoon. HTTP body response MAY NOT be accurate, timely, or even
   related to the request.
 
-2.1.4 610 Don’t Fucking Talk To Me
-
-  The client SHOULD NOT reissue the request under any circumstances as 
-  physical harm may result.
-
-2.1.5 606 Commercial Decision detected
+2.1.4 606 Commercial Decision detected
 
   The request has been found to be patently absurd, impossible, or so
-  internally inconsistent as to require a breach of the accepted laws 
-  of physics to complete. 
+  internally inconsistent as to require a breach of the accepted laws
+  of physics to complete.
 
   The client SHOULD NOT issue the request again to this server.
 
-2.1.7 613 TL;DR
+2.1.5 610 Don’t Fucking Talk To Me
 
-   The request was either too large, too boring, or both, for the
-   server to consider processing.
+  The client SHOULD NOT reissue the request under any circumstances as
+  physical harm may result.
 
-2.1.8 622 All The Fucks
+2.1.6 613 TL;DR
+
+  The request was either too large, too boring, or both, for the
+  server to consider processing.
+
+  The client SHOULD reissue the request with either: far less shit or
+  something more interesting
+
+2.1.7 622 All The Fucks
 
   Server invites the client to consider the monumental amount of fucks it
-  couldn't give regarding the request. 
+  couldn't give regarding the request.
 
   The client SHOULD NOT issue the request again to this server.
 
@@ -127,8 +130,8 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
 3. Acknowledgements
 
-   Many thanks to the many contributors to this standard, including 
-   Andrew Pett, David Mitchell, Rory Stephenson, Charles Peach, David 
+   Many thanks to the many contributors to this standard, including
+   Andrew Pett, David Mitchell, Rory Stephenson, Charles Peach, David
    Oram,Jordan Carter, Wayne Hoover et. al
 
 4. References
@@ -137,7 +140,7 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
    Berners-Lee, "Hypertext Transfer Protocol -- HTTP/1.1", RFC 2068,
    January 1997.
 
-   [RFC2324] L. Masinter "Hyper Text Coffee Pot Control Protocol 
+   [RFC2324] L. Masinter "Hyper Text Coffee Pot Control Protocol
    (HTCPCP/1.0)", RFC 2068, April 1998.
 
    [NTP] Mills, D., "Network Time Protocol (Version 3) Specification,
