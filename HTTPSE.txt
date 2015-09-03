@@ -95,12 +95,7 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
   afternoon. HTTP body response MAY NOT be accurate, timely, or even
   related to the request.
 
-2.1.4 610 Don’t Fucking Talk To Me
-
-  The client SHOULD NOT reissue the request under any circumstances as
-  physical harm may result.
-
-2.1.5 606 Commercial Decision detected
+2.1.4 606 Commercial Decision detected
 
   The request has been found to be patently absurd, impossible, or so
   internally inconsistent as to require a breach of the accepted laws
@@ -108,7 +103,12 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
   The client SHOULD NOT issue the request again to this server.
 
-2.1.7 613 TL;DR
+2.1.5 610 Don’t Fucking Talk To Me
+
+  The client SHOULD NOT reissue the request under any circumstances as
+  physical harm may result.
+
+2.1.6 613 TL;DR
 
   The request was either too large, too boring, or both, for the
   server to consider processing.
@@ -116,7 +116,7 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
   The client SHOULD reissue the request with either: far less shit or
   something more interesting
 
-2.1.8 622 All The Fucks
+2.1.7 622 All The Fucks
 
   Server invites the client to consider the monumental amount of fucks it
   couldn't give regarding the request.
