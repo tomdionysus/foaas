@@ -14,7 +14,8 @@
   "author": "Tom Cully",
   "license": "WTFPL",
   "devDependencies": {
-    "jasmine-node": "1.14.5"
+    "jasmine-node": "1.14.5",
+    "coffee-coverage": "latest"
   },
   "dependencies": {
     "coffee-script" : "latest",
