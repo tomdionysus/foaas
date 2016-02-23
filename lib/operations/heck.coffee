@@ -1,5 +1,5 @@
 module.exports =
-  name: "heck"
+  name: "Heck Off"
   url: '/heck/:name/:from'
   fields: [
     { name: 'Name', field: 'name'}
