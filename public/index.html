@@ -11,7 +11,7 @@
       <div class="hero-unit">
         <h1>FOAAS</h1>
         <h2>Fuck Off As A Service</h2>
-        <p><em>v0.1.8</em></p>
+        <p><em>v0.1.9</em></p>
       </div>
     </div>
     <div class="container">
@@ -19,12 +19,11 @@
         <h2 id="introduction">Introduction</h2>
         <p>FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.</p>
 
-        <h2>What's New in 0.1.8</h2>
+        <h2>What's New in 0.1.9</h2>
         <ul>
-            <li><strong>/retard</strong> Resource</li>
-            <li><strong>/thumbs</strong> Resource</li>
-            <li><strong>/dosomething</strong> Resource</li>
-            <li><strong>Express 4</strong> backend</li>
+            <li><strong>/greed</strong> Resource by <a href="https://github.com/mranostay">mranostay</a></li>
+            <li><strong>/mornin</strong> Resource by <a href="https://github.com/kcorey">kcorey</a></li>
+            <li><strong>Metatags</strong> for twitter cards, slack unfurls etc. by <a href="https://github.com/morozgrafix">morozgrafix</a></li>
         </ul>
 
         <h2 id="api">API</h2>
@@ -260,6 +259,11 @@
             </tr>
 
             <tr>
+                <td>/mornin/:from</td>
+                <td>Will return content of the form "Happy fuckin' Mornin'! - :from".</td>
+            </tr>
+
+            <tr>
                 <td>/thumbs/:subject/:from</td>
                 <td>Will return content of the form 'Who has two thumbs and doesn't give a fuck? :subject. - :from', e.g. <a href='/thumbs/This%20Guy/Kob%20Belso' target='_blank'>/thumbs/This%20Guy/Kob%20Belso</a> will return 'Who has two thumbs and doesn't give a fuck? This Guy. - Kob Belso'</td>
             </tr>
@@ -267,6 +271,11 @@
             <tr>
                 <td>/retard/:from</td>
                 <td>Will return content of the form 'You Fucktard! - :from'.</td>
+            </tr>
+
+            <tr>
+                <td>/greed/:noun/:from</td>
+                <td>Will return content of the form 'The point is, ladies and gentleman, that :noun -- for lack of a better word -- is good. :noun is right. :noun works. :noun clarifies, cuts through, and captures the essence of the evolutionary spirit. :noun, in all of its forms -- :noun for life, for money, for love, knowledge -- has marked the upward surge of mankind' - :from.</td>
             </tr>
 
             <tr>
@@ -303,7 +312,7 @@
 
         <h2 id="roadmap">Roadmap</h2>
 
-        <p>FOASS will be extended to include the following functionality:</p>
+        <p>FOAAS will be extended to include the following functionality:</p>
 
         <ul>
         <li>Random fuck offs (or Fuck Off of the Day), without having to specify the operation (off, you, everyone, donut etc) explicitly</li>

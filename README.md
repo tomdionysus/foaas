@@ -1,6 +1,6 @@
 # FOAAS
 
-0.1.8
+0.1.9
 
 [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
 [![Dependency Status](https://gemnasium.com/tomdionysus/foaas.svg)](https://gemnasium.com/tomdionysus/foaas)
@@ -40,7 +40,7 @@ API clients are available in a number of languages:
 
 | Platform/Software | Name                                                                         |
 |:------------------|:-----------------------------------------------------------------------------|
-| Hubot				| https://github.com/github/hubot-scripts/blob/master/src/scripts/foass.coffee |
+| Hubot				| https://github.com/github/hubot-scripts/blob/master/src/scripts/FOAAS.coffee |
 | Thunderbird/Seamonkey | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off |
 | TelegramBot | https://github.com/rajanand02/TelegramFoaasBot |
 
