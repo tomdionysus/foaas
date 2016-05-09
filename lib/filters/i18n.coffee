@@ -32,7 +32,7 @@ module.exports =
 
     if module.exports.cache[key]?
       txtt = module.exports.cache[key].split(separator)
-      console.log txtt
+      #console.log txtt
       req.message = txtt[0]
       req.subtitle = txtt[1]
       return next(req, res)
