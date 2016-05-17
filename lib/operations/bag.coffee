@@ -1,12 +1,12 @@
 module.exports =
-  name: "mornin"
-  url: '/mornin/:from'
+  name: "Bag"
+  url: '/bag/:from'
   fields: [
     { name: 'From', field: 'from'}
   ]
 
   register: (app, output) ->
-    app.get '/mornin/:from', (req, res) ->
-      message = "Happy fuckin' mornin'!"
+    app.get '/bag/:from', (req, res) ->
+      message = "Eat a bag of dicks."
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
