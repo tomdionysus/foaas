@@ -7,6 +7,6 @@ module.exports =
 
   register: (app, output) ->
     app.get '/because/:from', (req, res) ->
-      message = "Why? Because Fuck you, that's why."
+      message = "Why? Because fuck you, that's why."
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
