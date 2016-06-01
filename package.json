@@ -1,6 +1,6 @@
 {
   "name": "foaas",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "description": "Fuck Off As A Service",
   "engines": {
     "node": "latest"
