@@ -142,8 +142,7 @@ module.exports = class FOAAS
       return
 
     @formats[mime](req, res)
-    console.log new Date().toISOString()+" "+req.method+" "+req.originalUrl+" ["+res.statusCode.toString()+"]"
-    res.end()
+    console.log new Date().toISOString()+" "+req.method+" "+req.originalUrl+" ["+res.statusCode.toString()+"] "+JSON.stringify(req.body)
 
     
 
