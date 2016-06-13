@@ -123,6 +123,11 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
   The client SHOULD NOT issue the request again to this server.
 
+2.1.8 666 Too Late!
+
+  Server notifies client that the apocalypse has occured and as such
+  there's very little point   
+
 
 T. Cully, A. Hodgkinson      Informational                      [Page 2]
 
