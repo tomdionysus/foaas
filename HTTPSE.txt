@@ -126,7 +126,9 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 2.1.8 666 Too Late!
 
   Server notifies client that the apocalypse has occured and as such
-  there's very little point   
+  there's very little point in a response. Server further implies that
+  the client SHOULD really be worrying about bigger things right now
+  than a fucking API call.   
 
 
 T. Cully, A. Hodgkinson      Informational                      [Page 2]
