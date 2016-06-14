@@ -139,7 +139,7 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
    Many thanks to the many contributors to this standard, including
    Andrew Pett, David Mitchell, Rory Stephenson, Charles Peach, David
-   Oram,Jordan Carter, Wayne Hoover et. al
+   Oram, Jordan Carter, Wayne Hoover, Joe Harrison et. al
 
 4. References
 
