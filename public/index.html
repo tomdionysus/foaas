@@ -4,7 +4,7 @@
     <title>Fuck Off As A Service (FOAAS)</title>
 
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@foaas">
     <meta name="twitter:creator" content="@TomDionysus">
@@ -64,6 +64,11 @@
             <tr>
                 <td>/off/:name/:from</td>
                 <td>Will return content of the form 'Fuck off, :name. - :from', e.g. <a href='/off/Tom/Chris' target='_blank'>/off/Tom/Chris</a> will return 'Fuck off, Tom - Chris'</td>
+            </tr>
+
+            <tr>
+                <td>/ing/:name/:from</td>
+                <td>Will return content of the form 'Fucking fuck off, :name. - :from', e.g. <a href='/ing/Tom/Chris' target='_blank'>/ing/Tom/Chris</a> will return 'Fucking fuck off, Tom - Chris'</td>
             </tr>
 
             <tr>
@@ -159,7 +164,7 @@
 
             <tr>
                 <td>/cool/:from</td>
-                <td>'Cool story, Bro - :from'</td>
+                <td>'Cool story, bro - :from'</td>
             </tr>
 
             <tr>
@@ -319,6 +324,11 @@
             </tr>
 
             <tr>
+                <td>/thinking/:name/:from</td>
+                <td>Will return content of the form ":name, what the fuck where you actually thinking? - :from".</td>
+            </tr>
+
+            <tr>
                 <td>/looking/:from</td>
                 <td>Will return content of the form "Looking for a fuck to give. - :from".</td>
             </tr>
@@ -337,12 +347,12 @@
                 <td>/zero/:from</td>
                 <td>Zero, thats the number of fucks I give. - :from".</td>
             </tr>
-            
+
             <tr>
                 <td>/pulp/:language/:from</td>
                 <td>Will return content of the form ":language, motherfucker, do you speak it? - :from".</td>
             </tr>
-            
+
             <tr>
                 <td>/sake/:from</td>
                 <td>Will return content of the form "For Fuck's sake! - :from".</td>
@@ -352,6 +362,16 @@
                 <td>/anyway/:company/:from</td>
                 <td>Will return content of the form 'Who the fuck are you anyway, :company, why are you stirring up so much trouble, and, who pays you? - :from.', e.g. <a href='/anyway/EFF/John' target='_blank'>/anyway/EFF/John</a> will return 'Who the fuck are you anyway, EFF, why are you stirring up so much trouble, and, who pays you? - John.'</td>
             </tr>
+
+            <tr>
+                <td>/maybe/:from</td>
+                <td>Will return content of the form 'Maybe. Maybe not. Maybe fuck yourself. - :from'.</td>
+			</tr>
+			
+			<tr>
+				<td>/cocksplat/:name/:from</td>
+				<td>Will return content of the form 'Fuck off :name, you worthless cocksplat. - :from'.</td>
+			</tr>
         </table>
 
         <h3 id="filters">Filters</h3>
