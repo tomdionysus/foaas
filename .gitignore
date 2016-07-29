@@ -4,3 +4,4 @@ newrelic.js
 public/googlead*
 npm-debug.log
 .idea
+.DS_Store
