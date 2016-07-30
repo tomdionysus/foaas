@@ -113,7 +113,13 @@ module.exports = class FOAAS
       subtitle = "- #{req.params.from}"
       @output(req, res, message, subtitle)
 
+    @app.use(@do)
     @app.use(router)
+
+  do: (req, res, next) =>
+    if process.env.DEBUG != ""
+      console.log(@ISODateString(new Date())+" [INFO ] #{req.path}")
+    next()
 
   start: (port) =>
     @app.listen port
@@ -143,6 +149,13 @@ module.exports = class FOAAS
 
     @formats[mime](req, res)
     console.log new Date().toISOString()+" "+req.method+" "+req.originalUrl+" ["+res.statusCode.toString()+"] "+JSON.stringify(req.body)
+
+  ISODateString: (d) ->
+    pad = (n) ->
+      if n < 10 then '0' + n else n
+
+    d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()) + 'T' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds()) + 'Z'
+
 
     
 
