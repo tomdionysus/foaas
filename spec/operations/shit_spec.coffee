@@ -1,4 +1,4 @@
-operation = require '../../lib/operations/this'
+operation = require '../../lib/operations/shit'
 
 describe "/shit", ->
   it "should have the correct name", ->
