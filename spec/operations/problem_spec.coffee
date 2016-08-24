@@ -35,7 +35,7 @@ describe "/problem", ->
           name: "TESTNAME"
           from: "TESTFROM"
 
-      message = "What the fuck is you problem #{req.params.name}?"
+      message = "What the fuck is your problem #{req.params.name}?"
       subtitle = "- #{req.params.from}"
 
       func(req,'RES')
