@@ -1,11 +1,11 @@
-operation = require '../../lib/operations/because'
+operation = require '../../lib/operations/bag'
 
-describe "/because", ->
+describe "/bag", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('Because')
+    expect(operation.name).toEqual('Bag')
 
   it "should have the correct url", ->
-    expect(operation.url).toEqual('/because/:from')
+    expect(operation.url).toEqual('/bag/:from')
 
   it "should have the correct fields", ->
     expect(operation.fields).toEqual([
@@ -20,7 +20,7 @@ describe "/because", ->
       operation.register(app,null)
 
       expect(app.get).toHaveBeenCalled()
-      expect(app.get.argsForCall[0][0]).toEqual('/because/:from')
+      expect(app.get.argsForCall[0][0]).toEqual('/bag/:from')
 
     it 'should call output with correct params', ->
       func = null
@@ -33,8 +33,10 @@ describe "/because", ->
         params:
           from: "TESTFROM"
 
-      message = "Why? Because fuck you, that's why."
-      subtitle = "- #{req.params.from}"
-
       func(req,'RES')
-      expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
+      expect(output).toHaveBeenCalledWith(
+        req,
+        'RES',
+        'Eat a bag of fucking dicks.',
+        '- TESTFROM'
+      )
