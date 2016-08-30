@@ -1,12 +1,12 @@
 module.exports =
-  name: "Because"
-  url: '/because/:from'
+  name: "Bag"
+  url: '/bag/:from'
   fields: [
     { name: 'From', field: 'from'}
   ]
 
   register: (app, output) ->
-    app.get '/because/:from', (req, res) ->
-      message = "Why? Because fuck you, that's why."
+    app.get '/bag/:from', (req, res) ->
+      message = "Eat a bag of fucking dicks."
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
