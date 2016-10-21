@@ -29,11 +29,11 @@ describe "/because", ->
       output = jasmine.createSpy()
       operation.register(app, output)
 
-      req = 
+      req =
         params:
           from: "TESTFROM"
 
-      message = "Why? Because Fuck you, that's why."
+      message = "Why? Because fuck you, that's why."
       subtitle = "- #{req.params.from}"
 
       func(req,'RES')

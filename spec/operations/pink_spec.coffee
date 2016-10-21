@@ -29,11 +29,11 @@ describe "/pink", ->
       output = jasmine.createSpy()
       operation.register(app, output)
 
-      req = 
+      req =
         params:
           from: "TESTFROM"
 
-      message = "Well, Fuck me pink."
+      message = "Well, fuck me pink."
       subtitle = "- #{req.params.from}"
 
       func(req,'RES')
