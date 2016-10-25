@@ -46,6 +46,7 @@ API clients are available in a number of languages:
 | Thunderbird/Seamonkey | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off          |
 | TelegramBot           | https://github.com/rajanand02/TelegramFoaasBot                               |
 | Slack                 | https://github.com/revmischa/foaas-slack                                     |
+| Amazon Echo           | https://github.com/martinschaef/foaas-alex                                   |
 
 # Contributing
 
