@@ -19,7 +19,7 @@ module.exports = class FOAAS
     @formats = {}
     @formatsArray = []
     @filters = {}
-    @port = 0 
+    @fucks = ''
 
     # Main App
     @app = express()
@@ -74,27 +74,7 @@ module.exports = class FOAAS
     @loadRenderers(renderersPath)
 
   sendFucks: (req, res) =>
-    file = "/tmp/fucks.html"
-    fs.access file, fs.F_OK, (err) => 
-      if !err 
-        res.sendFile(file)
-      else 
-        console.info @ISODateString(new Date()) + " [INFO ] generating fucks"
-        request 'http://localhost:' + @port + '/operations', (error, response, body) =>
-          if error
-            send622 req, res
-          else 
-            ops = JSON.parse(body)
-            count = 0
-            for op in ops
-              count++
-
-            for op in ops                 
-              request {url: 'http://localhost:' + @port + op.url, headers: { 'Accept': 'text/plain'}}, (error, response, body) =>
-                fs.appendFile file, '<tr><td>' + response.request.uri.path + '</td><td> Will return content of the form \'' + body + '\'</td></tr>', (err) => 
-                  count--                  
-                  if 0 == count
-                    res.sendFile(file)
+    res.send(@fucks)
 
   send622: (req, res) =>
     # NewRelic hasn't yet adopted the HTTP 6xx (Sarcasm) series of responses.
@@ -150,9 +130,19 @@ module.exports = class FOAAS
     next()
 
   start: (port) =>
-    @port = port
     @app.listen port
     console.log "FOAAS v#{@VERSION} Started on port #{port}"
+
+    console.log @ISODateString(new Date()) + " [INFO ] generating fucks"
+    request 'http://localhost:' + port + '/operations', (error, response, body) =>
+      if error
+        console.log @ISODateString(new Date()) + " [ERROR] could not retrieve the fucks"
+      else 
+        ops = JSON.parse(body)
+
+        for op in ops                 
+          request {url: 'http://localhost:' + port + op.url, headers: { 'Accept': 'text/plain'}}, (error, response, body) =>
+            @fucks += '<tr><td>' + response.request.uri.path + '</td><td> Will return content of the form \'' + body + '\'</td></tr>'
 
   output: (req, res, message, subtitle) =>
     req.message = message
@@ -184,8 +174,3 @@ module.exports = class FOAAS
       if n < 10 then '0' + n else n
 
     d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()) + 'T' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds()) + 'Z'
-
-
-    
-
-
