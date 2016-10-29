@@ -60,6 +60,4 @@ To add a new FOAAS operation:
 4. Add specs, using `/spec/operations` as examples. We won't be merging operations without working specs.
 5. Push to your fork and submit a PR.
 
-For the time being, in your PR, please include relevant documentation in `public/index.html`.
-
 All contributions are very welcome.
