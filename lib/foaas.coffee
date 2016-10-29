@@ -6,6 +6,7 @@ path = require 'path'
 npmPackage = require path.resolve(__dirname,'../package.json')
 newrelic = require 'newrelic'
 _ = require 'underscore'
+request = require('request')
 
 module.exports = class FOAAS
 
@@ -18,6 +19,7 @@ module.exports = class FOAAS
     @formats = {}
     @formatsArray = []
     @filters = {}
+    @fucks = ''
 
     # Main App
     @app = express()
@@ -58,6 +60,9 @@ module.exports = class FOAAS
     @app.get '/', @sendIndex
     @app.get 'index.html', @sendIndex
 
+    # GET /fucks sends documentation
+    @app.get '/fucks', @sendFucks
+
     # OPTIONS on any route sends CORS above and ends
     @app.options "*", (req, res) ->
       res.end()
@@ -67,6 +72,9 @@ module.exports = class FOAAS
     
     # Renderers
     @loadRenderers(renderersPath)
+
+  sendFucks: (req, res) =>
+    res.send(@fucks)
 
   send622: (req, res) =>
     # NewRelic hasn't yet adopted the HTTP 6xx (Sarcasm) series of responses.
@@ -125,6 +133,17 @@ module.exports = class FOAAS
     @app.listen port
     console.log "FOAAS v#{@VERSION} Started on port #{port}"
 
+    console.log @ISODateString(new Date()) + " [INFO ] generating fucks"
+    request 'http://localhost:' + port + '/operations', (error, response, body) =>
+      if error
+        console.log @ISODateString(new Date()) + " [ERROR] could not retrieve the fucks"
+      else 
+        ops = JSON.parse(body)
+
+        for op in ops                 
+          request {url: 'http://localhost:' + port + op.url, headers: { 'Accept': 'text/plain'}}, (error, response, body) =>
+            @fucks += '<tr><td>' + response.request.uri.path + '</td><td> Will return content of the form \'' + body + '\'</td></tr>'
+
   output: (req, res, message, subtitle) =>
     req.message = message
     req.subtitle = subtitle
@@ -155,8 +174,3 @@ module.exports = class FOAAS
       if n < 10 then '0' + n else n
 
     d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()) + 'T' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds()) + 'Z'
-
-
-    
-
-
