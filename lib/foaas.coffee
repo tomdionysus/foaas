@@ -67,11 +67,16 @@ module.exports = class FOAAS
     @app.options "*", (req, res) ->
       res.end()
 
+    @app.get '/operations', @sendOps
+
     # Final case, send 622 All The Fucks
     @app.use @send622
     
     # Renderers
     @loadRenderers(renderersPath)
+
+  sendOps: (req, res) =>
+    res.send @operationsArray
 
   sendFucks: (req, res) =>
     res.send(@fucks)
@@ -111,10 +116,6 @@ module.exports = class FOAAS
         fields: operation.fields
       @operations[operation.url] = operation
 
-    # /operations endpoint
-    router.get '/operations', (req, res) =>
-      res.send @operationsArray
-
     # Default Operation
     router.get '/:thing/:from', (req, res) =>
       message = "Fuck #{req.params.thing}."
@@ -133,6 +134,12 @@ module.exports = class FOAAS
     @app.listen port
     console.log "FOAAS v#{@VERSION} Started on port #{port}"
 
+    for operation in @operationsArray
+      do (operation) =>
+        request {url: 'http://localhost:' + port + operation.url, headers: {'Accept': 'text/plain'}}, (error, response, body) =>
+          operation.sample = body
+
+ 
     console.log @ISODateString(new Date()) + " [INFO ] generating fucks"
     request 'http://localhost:' + port + '/operations', (error, response, body) =>
       if error
