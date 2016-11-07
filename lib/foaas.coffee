@@ -138,7 +138,6 @@ module.exports = class FOAAS
       do (operation) =>
         request {url: 'http://localhost:' + port + operation.url, headers: {'Accept': 'text/plain'}}, (error, response, body) =>
           operation.sample = body
-
  
     console.log @ISODateString(new Date()) + " [INFO ] generating fucks"
     request 'http://localhost:' + port + '/operations', (error, response, body) =>
