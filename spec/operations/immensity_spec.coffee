@@ -22,19 +22,19 @@ describe "/immensity", ->
       expect(app.get).toHaveBeenCalled()
       expect(app.get.argsForCall[0][0]).toEqual('/immensity/:from')
 
-      it 'should call output with correct params', ->
-        func = null
-        app =
-          get: (url, fn) -> func = fn
-        output = jasmine.createSpy()
-        operation.register(app, output)
+    it 'should call output with correct params', ->
+      func = null
+      app =
+        get: (url, fn) -> func = fn
+      output = jasmine.createSpy()
+      operation.register(app, output)
 
-        req =
-          params:
-            from: "Kalabhairava"
+      req =
+        params:
+          from: "Kalabhairava"
 
-        message = "You can not imagine the immensity of the FUCK I do not give."
-        subtitle = "- #{req.params.from}"
+      message = "You can not imagine the immensity of the FUCK I do not give."
+      subtitle = "- #{req.params.from}"
 
-        func(req,'RES')
-        expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
+      func(req,'RES')
+      expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
