@@ -2,7 +2,7 @@
 
 1.1.0
 
-[![Build Status](https://travis-ci.org/ksonney/istrumpstillpresident.io.svg?branch=master)](https://travis-ci.org/ksonney/istrumpstillpresident.io)
+[![Build Status](https://travis-ci.org/ksonney/istrumpstillpresident.io.svg?branch=istrumpstillpresident)](https://travis-ci.org/ksonney/istrumpstillpresident.io)
 
 
 IsTrumpStillPresident.io provides a modern, RESTful, scalable solution to the common problem of checking to see if Donald Trump is still the US President.
