@@ -8,7 +8,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['FOAAS'],
+  app_name : ['istrumpstillpresident'],
   /**
    * Your New Relic license key.
    */

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fuck Off As A Service (FOAAS)</title>
+    <title>Is Trump Still President As A Service</title>
 
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 
@@ -10,15 +10,15 @@
     <meta name="twitter:creator" content="@TomDionysus">
     <meta name="og:url" content="https://foaas.com">
     <meta name="og:title" content="Fuck Off As A Service">
-    <meta name="og:description" content="FOAAS provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.">
+    <meta name="og:description" content="ITSPAAS provides a modern, RESTful, scalable solution to the common problem of checking if Donald Trump is Still President.">
 
     <script src="//code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function(){
             $.ajax({
-                url: '/fucks',
+                url: '/stillpresident',
                 success: function(data) {
-                    $('#fucks').append(data);
+                    $('#stillpresident').append(data);
                 }
             })
         });
