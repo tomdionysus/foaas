@@ -1,13 +1,15 @@
-# FOAAS
+# Is Trump Still President?
 
 1.1.0
 
 [![Build Status](https://travis-ci.org/ksonney/istrumpstillpresident.io.svg?branch=master)](https://travis-ci.org/ksonney/istrumpstillpresident.io)
 
 
-FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
+IsTrumpStillPresident.io provides a modern, RESTful, scalable solution to the common problem of checking to see if Donald Trump is still the US President.
 
-Please see http://foaas.com for API documentation and examples.
+This is a fork of the FOAAS project at [[https://foass.com]]
+
+Please see http://istrumpstillpresident.io for API documentation and examples.
 
 # Installation
 
