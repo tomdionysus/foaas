@@ -59,7 +59,7 @@ To add a new istrumpstillpresident operation:
 
 1. Fork into your account
 2. Branch into a feature branch `feature/your_operation`
-3. See the operation files in `/lib/operations`.
+3. See the operation files in `/lib/itsp_operations`.
 4. Add specs, using `/spec/operations` as examples. We won't be merging operations without working specs.
 5. Push to your fork and submit a PR.
 
