@@ -7,7 +7,7 @@
 
 IsTrumpStillPresident.io provides a modern, RESTful, scalable solution to the common problem of checking to see if Donald Trump is still the US President.
 
-This is a fork of the FOAAS project at [[https://foass.com]]
+This is a fork of the FOAAS project at https://foass.com
 
 Please see http://istrumpstillpresident.io for API documentation and examples.
 
@@ -23,7 +23,9 @@ Please see http://istrumpstillpresident.io for API documentation and examples.
 
 	npm test
 
-# Clients
+# Clients and Integrations
+
+Any one of the following FOAAS Clients or integrations can be adapted for istrumstillpresident.io However, we have not done so. 
 
 API clients are available in a number of languages:
 
@@ -40,7 +42,6 @@ API clients are available in a number of languages:
 | Go       | `go-fuck-off`  | https://godoc.org/github.com/ds0nt/go-fuck-off |
 | Erlang   | `foaas-erlang` | https://github.com/rikribbers/foaas-erlang     |
 
-# Integrate FOAAS
 
 | Platform/Software     | Name                                                                         |
 |:----------------------|:-----------------------------------------------------------------------------|
@@ -54,7 +55,7 @@ API clients are available in a number of languages:
 
 ## Adding new operations
 
-To add a new FOAAS operation:
+To add a new istrumpstillpresident operation:
 
 1. Fork into your account
 2. Branch into a feature branch `feature/your_operation`
