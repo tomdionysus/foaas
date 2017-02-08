@@ -10,7 +10,7 @@
     "start": "./node_modules/.bin/coffee lib/server.coffee",
     "test": "./node_modules/.bin/jasmine-node --coffee spec"
   },
-  "repository": "git@github.com:tomdionysus/foaas",
+  "repository": "git@github.com:ksonney/istrumpstillpresident.io",
   "author": "Kevin Sonney",
   "license": "WTFPL",
   "devDependencies": {
