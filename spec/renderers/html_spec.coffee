@@ -32,12 +32,10 @@ describe "HTML Renderer", ->
       expect(res.send).toHaveBeenCalledWith('<!DOCTYPE html>
 <html>
   <head>
-    <title>FOAAS - ONE - TWO</title>
+    <title>ITSPAAS - ONE - TWO</title>
     <meta charset="utf-8">
     <meta property="og:description" content="ONE TWO">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@foaas" />
-    <meta name="twitter:title" content="FOAAS: Fuck Off As A Service" />
     <meta name="twitter:description" content="ONE TWO" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
@@ -51,7 +49,7 @@ describe "HTML Renderer", ->
         </div>
       </div>
     </div>
-    <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-42551488-1","herokuapp.com"),ga("send","pageview");</script>
+    <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-15718525-6","auto"),ga("send","pageview");</script>
   </body>
 </html>')
    
@@ -67,12 +65,10 @@ describe "HTML Renderer", ->
       expect(res.send).toHaveBeenCalledWith('<!DOCTYPE html>
 <html>
   <head>
-    <title>FOAAS - &lt;one&gt;ONE&lt;/one&gt; - &lt;two&gt;TWO&lt;/two&gt;</title>
+    <title>ITSPAAS - &lt;one&gt;ONE&lt;/one&gt; - &lt;two&gt;TWO&lt;/two&gt;</title>
     <meta charset="utf-8">
     <meta property="og:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@foaas" />
-    <meta name="twitter:title" content="FOAAS: Fuck Off As A Service" />
     <meta name="twitter:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
@@ -86,6 +82,6 @@ describe "HTML Renderer", ->
         </div>
       </div>
     </div>
-    <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-42551488-1","herokuapp.com"),ga("send","pageview");</script>
+    <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-15718525-6",auto"),ga("send","pageview");</script>
   </body>
 </html>')
