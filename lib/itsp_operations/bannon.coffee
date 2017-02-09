@@ -1,6 +1,6 @@
 module.exports =
   name: "Bannon really is"
-  url: '/itsp/:name/:from'
+  url: '/bannon/:name/:from'
   fields: [
     { name: 'Name', field: 'name'}
     { name: 'From', field: 'from'}
