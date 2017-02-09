@@ -1,6 +1,6 @@
 module.exports =
-  name: ""
-  url: '/gibbon/:name/:from'
+  name: "Yes He Is"
+  url: '/itsp/:name/:from'
   fields: [
     { name: 'Name', field: 'name'}
     { name: 'From', field: 'from'}
@@ -8,6 +8,6 @@ module.exports =
 
   register: (app, output) ->
     app.get '/itsp/:name/:from', (req, res) ->
-      message = "Yes, #{req.params.name}, the  fascist, loofa-faced shit-gibbon Donald Trump is still the US President."
+      message = "Sadly Yes, #{req.params.name}, Donald Trump is still the US President."
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
