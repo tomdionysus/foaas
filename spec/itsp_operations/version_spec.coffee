@@ -1,4 +1,4 @@
-operation = require '../../lib/operations/version'
+operation = require '../../lib/itsp_operations/version'
 
 describe "/version", ->
   it "should have the correct name", ->
@@ -36,5 +36,5 @@ describe "/version", ->
         req,
         'RES',
         "Version 1234",
-        'FOAAS'
+        'ITSPAAS'
       )
