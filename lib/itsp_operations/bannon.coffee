@@ -7,7 +7,7 @@ module.exports =
   ]
 
   register: (app, output) ->
-    app.get '/itsp/:name/:from', (req, res) ->
+    app.get '/bannon/:name/:from', (req, res) ->
       message = "Yes, #{req.params.name}, Donald Trump is US President, but we all know Steve Bannon is really in charge."
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
