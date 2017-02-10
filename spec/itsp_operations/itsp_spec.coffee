@@ -1,6 +1,6 @@
 operation = require '../../lib/itsp_operations/itsp'
 
-describe "/me", ->
+describe "/itsp", ->
   it "should have the correct name", ->
     expect(operation.name).toEqual('Yes He Is')
 
