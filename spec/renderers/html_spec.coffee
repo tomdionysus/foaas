@@ -35,6 +35,10 @@ describe "HTML Renderer", ->
     <title>ITSPAAS - ONE - TWO</title>
     <meta charset="utf-8">
     <meta property="og:description" content="ONE TWO">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="ITSPAAS: Is Trump Still President (As A Service)" />
+     <meta name="twitter:description" content="ONE TWO" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
   <body style="margin-top:40px;">
@@ -65,6 +69,10 @@ describe "HTML Renderer", ->
     <title>ITSPAAS - &lt;one&gt;ONE&lt;/one&gt; - &lt;two&gt;TWO&lt;/two&gt;</title>
     <meta charset="utf-8">
     <meta property="og:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="ITSPAAS: Is Trump Still President (As A Service)" />
+    <meta name="twitter:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   </head>
   <body style="margin-top:40px;">
