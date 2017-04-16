@@ -8,6 +8,6 @@ module.exports =
 
   register: (app, output) ->
     app.get '/thinking/:name/:from', (req, res) ->
-      message  = "#{req.params.name}, what the fuck where you actually thinking?"
+      message  = "#{req.params.name}, what the fuck were you actually thinking?"
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
