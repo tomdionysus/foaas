@@ -35,7 +35,7 @@ describe "/thinking", ->
           name: "TESTNAME"
           from: "TESTFROM"
 
-      message = "#{req.params.name}, what the fuck where you actually thinking?"
+      message = "#{req.params.name}, what the fuck were you actually thinking?"
       subtitle = "- #{req.params.from}"
 
       func(req,'RES')
