@@ -64,3 +64,8 @@ To add a new istrumpstillpresident operation:
 5. Push to your fork and submit a PR.
 
 All contributions are very welcome.
+
+## TODO
+
+1. Update for Muslim Ban II
+2. Update for Russia Ivestigation
