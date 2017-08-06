@@ -9,8 +9,8 @@ describe "/greed", ->
 
   it "should have the correct fields", ->
     expect(operation.fields).toEqual([
-      { noun: 'Noun', field: 'noun'}
-      { from: 'From', field: 'from'}
+      { name: 'Noun', field: 'noun'}
+      { name: 'From', field: 'from'}
     ])
 
   describe 'register', ->

@@ -2,8 +2,8 @@ module.exports =
   name: "Greed"
   url: '/greed/:noun/:from'
   fields: [
-    { noun: 'Noun', field: 'noun'}
-    { from: 'From', field: 'from'}
+    { name: 'Noun', field: 'noun'}
+    { name: 'From', field: 'from'}
   ]
 
   register: (app, output) ->
