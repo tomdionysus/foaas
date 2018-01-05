@@ -1,6 +1,6 @@
 # FOAAS
 
-1.1.0
+1.1.1
 
 [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
 [![Dependency Status](https://gemnasium.com/tomdionysus/foaas.svg)](https://gemnasium.com/tomdionysus/foaas)
