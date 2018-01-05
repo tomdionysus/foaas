@@ -34,18 +34,24 @@ API clients are available in a number of languages:
 | R        | `rfoaas`       | https://github.com/eddelbuettel/rfoaas         |
 | CLI/bash | `foaas.sh`     | https://github.com/RaymiiOrg/foaas.sh          |
 | .NET     | `FOAASClient`  | https://github.com/igorkulman/FOAASClient      |
-| Java     | `JFOAAS`       | https://github.com/SSederberg/FOAAS-Java   |
+| Java     | `JFOAAS`       | https://github.com/SSederberg/FOAAS-Java       |
 | Go       | `go-fuck-off`  | https://godoc.org/github.com/ds0nt/go-fuck-off |
 | Erlang   | `foaas-erlang` | https://github.com/rikribbers/foaas-erlang     |
+
+# Framework Support
+
+| Framework     | Info                                                                         |
+|:--------------------------------------------|:-----------------------------------------------------------------------------|
+| [Polymer](https://www.polymer-project.org/) | https://github.com/benfonty/fooas-element                                    |
 
 # Integrate FOAAS
 
 | Platform/Software     | Name                                                                         |
-|:----------------------|:-----------------------------------------------------------------------------|
-| Thunderbird/Seamonkey | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off          |
-| TelegramBot           | https://github.com/rajanand02/TelegramFoaasBot                               |
-| Slack                 | https://github.com/revmischa/foaas-slack                                     |
-| Amazon Echo           | https://www.amazon.com/dp/B01LZLFTMQ/ (source available [here](https://github.com/martinschaef/foaas-alex))|
+|:--------------------------------------------|:-----------------------------------------------------------------------------|
+| Thunderbird/Seamonkey                       | https://addons.mozilla.org/en-US/seamonkey/addon/qfo-quick-fuck-off          |
+| TelegramBot                                 | https://github.com/rajanand02/TelegramFoaasBot                               |
+| Slack                                       | https://github.com/revmischa/foaas-slack                                     |
+| Amazon Echo                                 | https://www.amazon.com/dp/B01LZLFTMQ/ (source available [here](https://github.com/martinschaef/foaas-alex))|
 
 # Contributing
 
