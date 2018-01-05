@@ -1,6 +1,6 @@
 {
   "name": "foaas",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fuck Off As A Service",
   "engines": {
     "node": "latest"
@@ -18,9 +18,9 @@
     "coffee-coverage": "latest"
   },
   "dependencies": {
-    "coffee-script" : "latest",
-    "express" : "latest",
-    "body-parser" : "latest",
+    "coffee-script": "latest",
+    "express": "latest",
+    "body-parser": "latest",
     "sanitizer": "latest",
     "newrelic": "latest",
     "xml-escape": "latest",
