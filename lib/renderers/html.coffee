@@ -13,6 +13,7 @@ module.exports =
   <head>
     <title>FOAAS - '+message+' - '+subtitle+'</title>
     <meta charset="utf-8">
+    <meta property="og:title" content="'+message+' '+subtitle+'">
     <meta property="og:description" content="'+message+' '+subtitle+'">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@foaas" />

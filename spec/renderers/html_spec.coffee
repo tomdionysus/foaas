@@ -34,6 +34,7 @@ describe "HTML Renderer", ->
   <head>
     <title>FOAAS - ONE - TWO</title>
     <meta charset="utf-8">
+    <meta property="og:title" content="ONE TWO">
     <meta property="og:description" content="ONE TWO">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@foaas" />
@@ -54,7 +55,7 @@ describe "HTML Renderer", ->
     <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-42551488-1","herokuapp.com"),ga("send","pageview");</script>
   </body>
 </html>')
-   
+
     it 'should sanitize params', ->
       req =
         message: '<one>ONE</one>'
@@ -69,6 +70,7 @@ describe "HTML Renderer", ->
   <head>
     <title>FOAAS - &lt;one&gt;ONE&lt;/one&gt; - &lt;two&gt;TWO&lt;/two&gt;</title>
     <meta charset="utf-8">
+    <meta property="og:title" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;">
     <meta property="og:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@foaas" />
