@@ -18,16 +18,16 @@
     "coffee-coverage": "latest"
   },
   "dependencies": {
+    "body-parser": "latest",
     "coffee-script": "latest",
     "express": "latest",
-    "body-parser": "latest",
-    "sanitizer": "latest",
-    "newrelic": "latest",
-    "xml-escape": "latest",
-    "request": "latest",
     "i18next": "1.10.6",
     "md5": "latest",
+    "method-override": "latest",
+    "newrelic": "^2.9.0",
+    "request": "latest",
+    "sanitizer": "latest",
     "underscore": "latest",
-    "method-override": "latest"
+    "xml-escape": "latest"
   }
 }
