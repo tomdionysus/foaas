@@ -6,7 +6,7 @@ module.exports =
   ]
 
   register: (app, output) ->
-    app.get '/question:from', (req, res) ->
+    app.get '/question/:from', (req, res) ->
       message = "To fuck off, or to fuck off (that is not a question)"
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
