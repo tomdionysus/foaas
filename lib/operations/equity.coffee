@@ -8,6 +8,6 @@ module.exports =
 
   register: (app, output) ->
     app.get '/equity/:name/:from', (req, res) ->
-      message = "Equity only? Long hours? Zero Pay? Well #{req.params.name}, just sign me right to fuck up."
+      message = "Equity only? Long hours? Zero Pay? Well #{req.params.name}, just sign me right the fuck up."
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
