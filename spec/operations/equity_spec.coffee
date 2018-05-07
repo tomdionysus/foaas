@@ -35,7 +35,7 @@ describe "/equity", ->
           name: "TESTNAME"
           from: "TESTFROM"
 
-      message = "Equity only? Long hours? Well TESTNAME, just sign me right to fuck up."
+      message = "Equity only? Long hours? Zero Pay? Well TESTNAME, just sign me right to fuck up."
       subtitle = "- TESTFROM"
 
       func(req,'RES')
