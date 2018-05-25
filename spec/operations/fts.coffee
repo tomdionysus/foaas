@@ -1,6 +1,6 @@
 operation = require '../../lib/operations/fts'
 
-describe "/off", ->
+describe "/fts", ->
   it "should have the correct name", ->
     expect(operation.name).toEqual('Fuck That Shit')
 
