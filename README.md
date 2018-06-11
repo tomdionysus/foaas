@@ -37,6 +37,7 @@ API clients are available in a number of languages:
 | Java     | `JFOAAS`       | https://github.com/SSederberg/FOAAS-Java       |
 | Go       | `go-fuck-off`  | https://godoc.org/github.com/ds0nt/go-fuck-off |
 | Erlang   | `foaas-erlang` | https://github.com/rikribbers/foaas-erlang     |
+| Crystal  | `foaas_client` | https://github.com/mamantoha/foaas_client      |
 
 # Framework Support
 
