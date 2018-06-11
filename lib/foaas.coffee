@@ -4,7 +4,6 @@ methodOverride = require('method-override')
 fs = require 'fs'
 path = require 'path'
 npmPackage = require path.resolve(__dirname,'../package.json')
-newrelic = require 'newrelic'
 _ = require 'underscore'
 request = require('request')
 
@@ -77,9 +76,6 @@ module.exports = class FOAAS
     res.send(@fucks)
 
   send622: (req, res) =>
-    # NewRelic hasn't yet adopted the HTTP 6xx (Sarcasm) series of responses.
-    newrelic.setIgnoreTransaction(true)
-
     res.status(622)
     @output(req, res, "622 - All The Fucks", 'Server invites you to consider the truly monumental amount of fucks it couldn\'t give about your request.')
 

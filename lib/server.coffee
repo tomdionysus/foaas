@@ -1,5 +1,3 @@
-require 'newrelic'
-
 path = require 'path'
 FOAAS = require path.resolve(__dirname,'foaas')
 

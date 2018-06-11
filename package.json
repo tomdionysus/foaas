@@ -1,6 +1,6 @@
 {
   "name": "foaas",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Fuck Off As A Service",
   "engines": {
     "node": "latest"
@@ -14,7 +14,6 @@
   "author": "Tom Cully",
   "license": "WTFPL",
   "devDependencies": {
-    "jasmine-node": "latest",
     "coffee-coverage": "latest"
   },
   "dependencies": {
@@ -22,9 +21,9 @@
     "coffee-script": "latest",
     "express": "latest",
     "i18next": "1.10.6",
+    "jasmine": "^3.1.0",
     "md5": "latest",
     "method-override": "latest",
-    "newrelic": "^2.9.0",
     "request": "latest",
     "sanitizer": "latest",
     "underscore": "latest",
