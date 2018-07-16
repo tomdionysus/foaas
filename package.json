@@ -8,7 +8,7 @@
   "main": "lib/server.coffee",
   "scripts": {
     "start": "./node_modules/.bin/coffee lib/server.coffee",
-    "test": "./node_modules/.bin/jasmine-node --coffee spec"
+    "test": "./node_modules/.bin/jasmine --coffee spec"
   },
   "repository": "git@github.com:tomdionysus/foaas",
   "author": "Tom Cully",
@@ -21,6 +21,7 @@
     "coffee-script": "latest",
     "express": "latest",
     "i18next": "1.10.6",
+    "istanbul": "^0.4.5",
     "jasmine": "^3.1.0",
     "md5": "latest",
     "method-override": "latest",

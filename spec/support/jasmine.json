@@ -1,0 +1,11 @@
+{
+  "spec_dir": "spec",
+  "spec_files": [
+    "**/*[sS]pec.coffee"
+  ],
+  "helpers": [
+    "helpers.coffee"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}
