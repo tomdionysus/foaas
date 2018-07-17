@@ -1,5 +1,2 @@
 node_modules
-public/googlead*
-npm-debug.log
-.idea
-.DS_Store
+coverage

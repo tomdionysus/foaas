@@ -1,9 +1,8 @@
 # FOAAS
 
-1.1.1
+2.0.0
 
 [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
-[![Dependency Status](https://gemnasium.com/tomdionysus/foaas.svg)](https://gemnasium.com/tomdionysus/foaas)
 
 FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
@@ -33,6 +32,7 @@ API clients are available in a number of languages:
 | Python   | `foaas-python` | https://github.com/dmpayton/foaas-python       |
 | R        | `rfoaas`       | https://github.com/eddelbuettel/rfoaas         |
 | CLI/bash | `foaas.sh`     | https://github.com/RaymiiOrg/foaas.sh          |
+| CLI      | `foass-cli`    | https://github.com/palash25/foaas-cli          |
 | .NET     | `FOAASClient`  | https://github.com/igorkulman/FOAASClient      |
 | Java     | `JFOAAS`       | https://github.com/SSederberg/FOAAS-Java       |
 | Go       | `go-fuck-off`  | https://godoc.org/github.com/ds0nt/go-fuck-off |

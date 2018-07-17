@@ -1,28 +1,26 @@
 {
   "name": "foaas",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Fuck Off As A Service",
   "engines": {
     "node": "latest"
   },
-  "main": "lib/server.coffee",
+  "main": "lib/server.js",
   "scripts": {
-    "start": "./node_modules/.bin/coffee lib/server.coffee",
-    "test": "./node_modules/.bin/jasmine --coffee spec"
+    "start": "node lib/server.js",
+    "test": "node node_modules/istanbul/lib/cli.js cover -x 'spec/**' node_modules/jasmine/bin/jasmine.js"
   },
   "repository": "git@github.com:tomdionysus/foaas",
   "author": "Tom Cully",
   "license": "WTFPL",
   "devDependencies": {
-    "coffee-coverage": "latest"
+    "jasmine": "^3.1.0",
+    "istanbul": "^0.4.5"
   },
   "dependencies": {
     "body-parser": "latest",
-    "coffee-script": "latest",
     "express": "latest",
     "i18next": "1.10.6",
-    "istanbul": "^0.4.5",
-    "jasmine": "^3.1.0",
     "md5": "latest",
     "method-override": "latest",
     "request": "latest",
