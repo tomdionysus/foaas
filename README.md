@@ -53,6 +53,7 @@ API clients are available in a number of languages:
 | TelegramBot                                 | https://github.com/rajanand02/TelegramFoaasBot                               |
 | Slack                                       | https://github.com/revmischa/foaas-slack                                     |
 | Amazon Echo                                 | https://www.amazon.com/dp/B01LZLFTMQ/ (source available [here](https://github.com/martinschaef/foaas-alex))|
+| Twitter bot                                 | https://github.com/chris104957/GoFuckYourselfBot/tree/master                 |
 
 # Contributing
 
