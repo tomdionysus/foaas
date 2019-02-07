@@ -20,6 +20,11 @@ Please see http://foaas.com for API documentation and examples.
 
 	npm test
 
+# Docker
+
+	docker build -t foaas:2 .
+    docker run -p 5000:5000 foaas:2
+
 # Clients
 
 API clients are available in a number of languages:
@@ -67,3 +72,9 @@ To add a new FOAAS operation:
 5. Push to your fork and submit a PR.
 
 All contributions are very welcome.
+
+
+
+
+
+
