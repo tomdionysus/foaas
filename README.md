@@ -72,9 +72,3 @@ To add a new FOAAS operation:
 5. Push to your fork and submit a PR.
 
 All contributions are very welcome.
-
-
-
-
-
-
