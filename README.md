@@ -22,7 +22,7 @@ Please see http://foaas.com for API documentation and examples.
 
 # Docker
 
-	docker build -t foaas:2 .
+	docker build -t foaas:1 .
     docker run -v $(pwd):/usr/src/app -p 5000:5000 foaas:1
 
 # Clients
