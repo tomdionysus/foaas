@@ -6,7 +6,7 @@
 
 FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
-Please see http://foaas.com for API documentation and examples.
+Please see https://foaas.com for API documentation and examples.
 
 # Installation
 
