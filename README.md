@@ -44,6 +44,7 @@ API clients are available in a number of languages:
 | Framework     | Info                                                                         |
 |:--------------------------------------------|:-----------------------------------------------------------------------------|
 | [Polymer](https://www.polymer-project.org/) | https://github.com/benfonty/fooas-element                                    |
+| [React](https://reactjs.org/) | https://github.com/circa10a/react-foaas-card                                   	     |
 
 # Integrate FOAAS
 
