@@ -20,6 +20,11 @@ Please see https://foaas.com for API documentation and examples.
 
 	npm test
 
+# Docker
+
+	docker build -t foaas:1 .
+    docker run -v $(pwd):/usr/src/app -p 5000:5000 foaas:1
+
 # Clients
 
 API clients are available in a number of languages:
