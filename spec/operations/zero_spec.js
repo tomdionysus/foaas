@@ -41,7 +41,7 @@ describe("/zero", function() {
         }
       };
 
-      const message = "Zero, thats the number of fucks I give.";
+      const message = "Zero, that's the number of fucks I give.";
       const subtitle = `- ${req.params.from}`;
 
       func(req,'RES');
