@@ -10,7 +10,7 @@ const operation = require('../../lib/operations/holygrail');
 describe("/holygrail", function() {
     it("should have the correct name", () => expect(operation.name).toEqual('Holygrail'));
 
-    it("should have the correct url", () => expect(operation.url).toEqual('/awesome/:from'));
+    it("should have the correct url", () => expect(operation.url).toEqual('/holygrail/:from'));
 
     it("should have the correct fields", () =>
     expect(operation.fields).toEqual([
