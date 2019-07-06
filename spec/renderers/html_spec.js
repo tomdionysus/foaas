@@ -39,7 +39,7 @@ describe("HTML Renderer", function() {
       };
       renderer.render(req,res);
 
-      return expect(res.send).toHaveBeenCalledWith('<!DOCTYPE html> <html> <head> <title>FOAAS - ONE - TWO</title> <meta charset="utf-8"> <meta property="og:title" content="ONE TWO"> <meta property="og:description" content="ONE TWO"> <meta name="twitter:card" content="summary" /> <meta name="twitter:site" content="@foaas" /> <meta name="twitter:title" content="FOAAS: Fuck Off As A Service" /> <meta name="twitter:description" content="ONE TWO" /> <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> </head> <body style="margin-top:40px;"> <div class="container"> <div id="view-10"> <div class="hero-unit"> <h1>ONE</h1> <p><em>TWO</em></p> </div> </div> <p style="text-align: center"><a href="http://foaas.com">foaas.com</a></p> </div> </body> </html>');
+      return expect(res.send).toHaveBeenCalledWith('<!DOCTYPE html> <html> <head> <title>FOAAS - ONE TWO</title> <meta charset="utf-8"> <meta property="og:title" content="ONE TWO"> <meta property="og:description" content="ONE TWO"> <meta name="twitter:card" content="summary" /> <meta name="twitter:site" content="@foaas" /> <meta name="twitter:title" content="FOAAS: Fuck Off As A Service" /> <meta name="twitter:description" content="ONE TWO" /> <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> </head> <body style="margin-top:40px;"> <div class="container"> <div id="view-10"> <div class="hero-unit"> <h1>ONE</h1> <p><em>TWO</em></p> </div> </div> <p style="text-align: center"><a href="http://foaas.com">foaas.com</a></p> </div> </body> </html>');
     });
   });
 });
