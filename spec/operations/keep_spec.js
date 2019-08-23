@@ -43,7 +43,7 @@ describe("/keep", function() {
         }
       };
 
-      const message = `${req.params.name}: Fuck off. And when you get there, fuck off from there too. Then fuck off some more. Keep fucking off until you get back here. Then fuck off again.`;
+      const message = `${req.params.name}, Fuck off. And when you get there, fuck off from there too. Then fuck off some more. Keep fucking off until you get back here. Then fuck off again.`;
       const subtitle = `- ${req.params.from}`;
 
       func(req,'RES');
