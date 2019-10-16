@@ -1,6 +1,6 @@
 # Is Trump Still President?
 
-1.1.0
+1.1.1
 
 [![Build Status](https://travis-ci.org/ksonney/istrumpstillpresident.io.svg?branch=istrumpstillpresident)](https://travis-ci.org/ksonney/istrumpstillpresident.io)
 
