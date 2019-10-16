@@ -1,11 +1,11 @@
-operation = require '../../lib/itsp_operations/taxes'
+operation = require '../../lib/itsp_operations/impeached'
 
-describe "/taxes", ->
+describe "/impeached", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('Has He Released His Taxes')
+    expect(operation.name).toEqual('Has He Been Impeached')
 
   it "should have the correct url", ->
-    expect(operation.url).toEqual('/taxes/:name/:from')
+    expect(operation.url).toEqual('/impeached/:name/:from')
 
   it "should have the correct fields", ->
     expect(operation.fields).toEqual([ { name : 'Name', field : 'name' }, { name : 'From', field : 'from' }])
@@ -18,7 +18,7 @@ describe "/taxes", ->
       operation.register(app, null)
 
       expect(app.get).toHaveBeenCalled()
-      expect(app.get.argsForCall[0][0]).toEqual('/taxes/:name/:from')
+      expect(app.get.argsForCall[0][0]).toEqual('/impeached/:name/:from')
 
     it 'should call output with correct params', ->
       func = null

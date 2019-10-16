@@ -1,6 +1,6 @@
 module.exports =
-  name: "Has He Released His Taxes"
-  url: '/taxes/:name/:from'
+  name: "Has He Been Impeached"
+  url: '/impeached/:name/:from'
   fields: [
     { name: 'Name', field: 'name'}
     { name: 'From', field: 'from'}

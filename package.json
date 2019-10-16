@@ -18,9 +18,9 @@
     "coffee-coverage": "latest"
   },
   "dependencies": {
-    "coffee-script" : "latest",
-    "express" : "latest",
-    "body-parser" : "latest",
+    "coffeescript": "latest",
+    "express": "latest",
+    "body-parser": "latest",
     "sanitizer": "latest",
     "newrelic": "latest",
     "xml-escape": "latest",
