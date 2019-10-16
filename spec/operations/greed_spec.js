@@ -12,10 +12,12 @@ describe("/greed", function() {
 
   it("should have the correct url", () => expect(operation.url).toEqual('/greed/:noun/:from'));
 
-  it("should have the correct fields", () => expect(operation.fields).toEqual([
-    { noun: 'Noun', field: 'noun'},
-    { from: 'From', field: 'from'}
-  ]));
+  it("should have the correct fields", () =>
+    expect(operation.fields).toEqual([
+      { name: 'Noun', field: 'noun'},
+      { name: 'From', field: 'from'}
+    ])
+  );
 
   return describe('register', function() {
     it('should call app.get with correct url', function() {
@@ -24,8 +26,7 @@ describe("/greed", function() {
 
       operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/greed/:noun/:from');
+      expect(app.get).toHaveBeenCalledWith('/greed/:noun/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {

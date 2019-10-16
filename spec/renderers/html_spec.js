@@ -39,67 +39,7 @@ describe("HTML Renderer", function() {
       };
       renderer.render(req,res);
 
-      return expect(res.send).toHaveBeenCalledWith(`<!DOCTYPE html> \
-<html> \
-<head> \
-<title>ITSPAAS - ONE - TWO</title> \
-<meta charset="utf-8"> \
-<meta property="og:description" content="ONE TWO"> \
-<meta name="twitter:card" content="summary" /> \
-<meta name="twitter:site" content="" /> \
-<meta name="twitter:title" content="ITSPAAS: Is Trump Still President (As A Service)" /> \
-<meta name="twitter:description" content="ONE TWO" /> \
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> \
-</head> \
-<body style="margin-top:40px;"> \
-<div class="container"> \
-<div id="view-10"> \
-<div class="hero-unit"> \
-<h1>ONE</h1> \
-<p><em>TWO</em></p> \
-</div> \
-</div> \
-</div> \
-<script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-15718525-6","auto"),ga("send","pageview");</script> \
-</body> \
-</html>`);
-    });
-   
-    return it('should sanitize params', function() {
-      const req = {
-        message: '<one>ONE</one>',
-        subtitle: '<two>TWO</two>'
-      };
-      const res = {
-        set: jasmine.createSpy(),
-        send: jasmine.createSpy()
-      };
-      renderer.render(req,res);
-
-      return expect(res.send).toHaveBeenCalledWith(`<!DOCTYPE html> \
-<html> \
-<head> \
-<title>ITSPAAS - &lt;one&gt;ONE&lt;/one&gt; - &lt;two&gt;TWO&lt;/two&gt;</title> \
-<meta charset="utf-8"> \
-<meta property="og:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;"> \
-<meta name="twitter:card" content="summary" /> \
-<meta name="twitter:site" content="" /> \
-<meta name="twitter:title" content="ITSPAAS: Is Trump Still President (As A Service)" /> \
-<meta name="twitter:description" content="&lt;one&gt;ONE&lt;/one&gt; &lt;two&gt;TWO&lt;/two&gt;" /> \
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> \
-</head> \
-<body style="margin-top:40px;"> \
-<div class="container"> \
-<div id="view-10"> \
-<div class="hero-unit"> \
-<h1>&lt;one&gt;ONE&lt;/one&gt;</h1> \
-<p><em>&lt;two&gt;TWO&lt;/two&gt;</em></p> \
-</div> \
-</div> \
-</div> \
-<script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-15718525-6","auto"),ga("send","pageview");</script> \
-</body> \
-</html>`);
+      return expect(res.send).toHaveBeenCalledWith('<!DOCTYPE html> <html> <head> <title>FOAAS - ONE TWO</title> <meta charset="utf-8"> <meta property="og:title" content="ONE TWO"> <meta property="og:description" content="ONE TWO"> <meta name="twitter:card" content="summary" /> <meta name="twitter:site" content="@foaas" /> <meta name="twitter:title" content="FOAAS: Fuck Off As A Service" /> <meta name="twitter:description" content="ONE TWO" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143325008-1"></script> <script>   window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(\'js\', new Date()); gtag(\'config\', \'UA-143325008-1\'); </script> </head> <body style="margin-top:40px;"> <div class="container"> <div id="view-10"> <div class="hero-unit"> <h1>ONE</h1> <p><em>TWO</em></p> </div> </div> <p style="text-align: center"><a href="http://foaas.com">foaas.com</a></p> </div> </body> </html>');
     });
   });
 });

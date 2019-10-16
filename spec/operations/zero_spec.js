@@ -12,9 +12,11 @@ describe("/zero", function() {
 
   it("should have the correct url", () => expect(operation.url).toEqual('/zero/:from'));
 
-  it("should have the correct fields", () => expect(operation.fields).toEqual([
-    { name: 'From', field: 'from'}
-  ]));
+  it("should have the correct fields", () =>
+    expect(operation.fields).toEqual([
+      { name: 'From', field: 'from'}
+    ])
+  );
 
   return describe('register', function() {
     it('should call app.get with correct url', function() {
@@ -23,8 +25,7 @@ describe("/zero", function() {
 
       operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/zero/:from');
+      expect(app.get).toHaveBeenCalledWith('/zero/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {
@@ -40,7 +41,7 @@ describe("/zero", function() {
         }
       };
 
-      const message = "Zero, thats the number of fucks I give.";
+      const message = "Zero, that's the number of fucks I give.";
       const subtitle = `- ${req.params.from}`;
 
       func(req,'RES');

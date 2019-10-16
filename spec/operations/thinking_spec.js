@@ -12,10 +12,12 @@ describe("/thinking", function() {
 
   it("should have the correct url", () => expect(operation.url).toEqual('/thinking/:name/:from'));
 
-  it("should have the correct fields", () => expect(operation.fields).toEqual([
-    { name: 'Name', field: 'name'},
-    { name: 'From', field: 'from'}
-  ]));
+  it("should have the correct fields", () =>
+    expect(operation.fields).toEqual([
+      { name: 'Name', field: 'name'},
+      { name: 'From', field: 'from'}
+    ])
+  );
 
   return describe('register', function() {
     it('should call app.get with correct url', function() {
@@ -24,8 +26,7 @@ describe("/thinking", function() {
 
       operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/thinking/:name/:from');
+      expect(app.get).toHaveBeenCalledWith('/thinking/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {
@@ -42,7 +43,7 @@ describe("/thinking", function() {
         }
       };
 
-      const message = `${req.params.name}, what the fuck where you actually thinking?`;
+      const message = `${req.params.name}, what the fuck were you actually thinking?`;
       const subtitle = `- ${req.params.from}`;
 
       func(req,'RES');

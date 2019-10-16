@@ -12,10 +12,12 @@ describe("/keepcalm", function() {
 
 	it("should have the correct url", () => expect(operation.url).toEqual('/keepcalm/:reaction/:from'));
 
-	it("should have the correct fields", () => expect(operation.fields).toEqual([
-        { name: 'Reaction', field: 'reaction'},
-        { name: 'From', field: 'from'}
-    ]));
+	it("should have the correct fields", () =>
+		expect(operation.fields).toEqual([
+			{ name: 'Reaction', field: 'reaction'},
+			{ name: 'From', field: 'from'}
+		])
+	);
 
 	return describe('register', function() {
 		it('should call app.get with correct url', function() {

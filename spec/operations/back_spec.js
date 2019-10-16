@@ -12,10 +12,12 @@ describe("/back", function() {
 
   it("should have the correct url", () => expect(operation.url).toEqual('/back/:name/:from'));
 
-  it("should have the correct fields", () => expect(operation.fields).toEqual([
-    { name: 'Name', field: 'name'},
-    { name: 'From', field: 'from'}
-  ]));
+  it("should have the correct fields", () =>
+    expect(operation.fields).toEqual([
+      { name: 'Name', field: 'name'},
+      { name: 'From', field: 'from'}
+    ])
+  );
 
   return describe('register', function() {
     it('should call app.get with correct url', function() {
@@ -24,8 +26,7 @@ describe("/back", function() {
 
       operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/back/:name/:from');
+      expect(app.get).toHaveBeenCalledWith('/back/:name/:from', jasmine.any(Function));
     });
 
     return it('should call outoput with correct params', function() {

@@ -12,9 +12,11 @@ describe("/retard", function() {
 
   it("should have the correct url", () => expect(operation.url).toEqual('/retard/:from'));
 
-  it("should have the correct fields", () => expect(operation.fields).toEqual([
-    { name: 'From', field: 'from'}
-  ]));
+  it("should have the correct fields", () =>
+    expect(operation.fields).toEqual([
+      { name: 'From', field: 'from'}
+    ])
+  );
 
   return describe('register', function() {
     it('should call app.get with correct url', function() {
@@ -23,8 +25,7 @@ describe("/retard", function() {
 
       operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/retard/:from');
+      expect(app.get).toHaveBeenCalledWith('/retard/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {
