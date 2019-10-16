@@ -21,8 +21,7 @@ describe("/version", function() {
 
       operation.register(app,null,1);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/version');
+      expect(app.get).toHaveBeenCalledWith('/version', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {

@@ -21,8 +21,7 @@ describe("/itsp", function() {
 
       operation.register(app, null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/itsp/:name/:from');
+      expect(app.get).toHaveBeenCalledWith('/itsp/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {

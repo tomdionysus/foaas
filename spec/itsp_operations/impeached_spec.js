@@ -21,8 +21,7 @@ describe("/impeached", function() {
 
       operation.register(app, null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/impeached/:name/:from');
+      expect(app.get).toHaveBeenCalledWith('/impeached/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {

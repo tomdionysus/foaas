@@ -18,9 +18,7 @@ describe("/eo13769", function() {
         {get: jasmine.createSpy()};
 
       operation.register(app, null);
-
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/eo13769');
+      expect(app.get).toHaveBeenCalledWith('/eo13769/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {

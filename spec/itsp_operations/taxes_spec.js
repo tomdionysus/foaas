@@ -20,9 +20,7 @@ describe("/taxes", function() {
         {get: jasmine.createSpy()};
 
       operation.register(app, null);
-
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/taxes/:name/:from');
+      expect(app.get).toHaveBeenCalledWith('/taxes/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {

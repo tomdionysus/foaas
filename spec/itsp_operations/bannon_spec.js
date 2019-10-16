@@ -5,12 +5,12 @@
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-const operation = require('../../lib/itsp_operations/bannon');
+const operation = require('../../lib/itsp_operations/putin');
 
-describe("/bannon", function() {
-  it("should have the correct name", () => expect(operation.name).toEqual('Bannon really is'));
+describe("/putin", function() {
+  it("should have the correct name", () => expect(operation.name).toEqual('Putin really is'));
 
-  it("should have the correct url", () => expect(operation.url).toEqual('/bannon/:name/:from'));
+  it("should have the correct url", () => expect(operation.url).toEqual('/putin/:name/:from'));
 
   it("should have the correct fields", () => expect(operation.fields).toEqual([ { name : 'Name', field : 'name' }, { name : 'From', field : 'from' }]));
 
@@ -19,10 +19,9 @@ describe("/bannon", function() {
       const app =
         {get: jasmine.createSpy()};
 
-      operation.register(app, null);
+      operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalled();
-      return expect(app.get.argsForCall[0][0]).toEqual('/bannon/:name/:from');
+      expect(app.get).toHaveBeenCalledWith('/putin/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {
@@ -43,7 +42,7 @@ describe("/bannon", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Yes, TESTNAME, Donald Trump is US President, but we all know Steve Bannon is really in charge.',
+        'Yes, TESTNAME, Donald Trump is US President, but we all know Putin is really in charge.',
         '- TESTFROM'
       );
     });
