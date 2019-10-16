@@ -1,7 +1,3 @@
 node_modules
-newrelic_agent.log
-newrelic.js
-public/googlead*
-npm-debug.log
+coverage
 .idea
-.DS_Store
