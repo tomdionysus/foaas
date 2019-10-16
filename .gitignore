@@ -1,7 +1,6 @@
 node_modules
 newrelic_agent.log
 newrelic.js
-package-lock.json
 public/googlead*
 npm-debug.log
 .idea
