@@ -1,40 +1,48 @@
-operation = require '../../lib/itsp_operations/version'
+/*
+ * decaffeinate suggestions:
+ * DS102: Remove unnecessary code created because of implicit returns
+ * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
+ */
+const operation = require('../../lib/itsp_operations/version');
 
-describe "/version", ->
-  it "should have the correct name", ->
-    expect(operation.name).toEqual('Version')
+describe("/version", function() {
+  it("should have the correct name", () => expect(operation.name).toEqual('Version'));
 
-  it "should have the correct url", ->
-    expect(operation.url).toEqual('/version')
+  it("should have the correct url", () => expect(operation.url).toEqual('/version'));
 
-  it "should have the correct fields", ->
-    expect(operation.fields).toEqual([])
+  it("should have the correct fields", () => expect(operation.fields).toEqual([]));
 
-  describe 'register', ->
-    it 'should call app.get with correct url', ->
-      app =
-        get: jasmine.createSpy()
+  return describe('register', function() {
+    it('should call app.get with correct url', function() {
+      const app =
+        {get: jasmine.createSpy()};
 
-      operation.register(app,null,1)
+      operation.register(app,null,1);
 
-      expect(app.get).toHaveBeenCalled()
-      expect(app.get.argsForCall[0][0]).toEqual('/version')
+      expect(app.get).toHaveBeenCalled();
+      return expect(app.get.argsForCall[0][0]).toEqual('/version');
+    });
 
-    it 'should call output with correct params', ->
-      func = null
-      app =
-        get: (url, fn) -> func = fn
-      output = jasmine.createSpy()
-      operation.register(app, output, 1234)
+    return it('should call output with correct params', function() {
+      let func = null;
+      const app =
+        {get(url, fn) { return func = fn; }};
+      const output = jasmine.createSpy();
+      operation.register(app, output, 1234);
 
-      req = 
-        params:
+      const req = { 
+        params: {
           from: "TESTFROM"
+        }
+      };
 
-      func(req,'RES')
-      expect(output).toHaveBeenCalledWith(
+      func(req,'RES');
+      return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
         "Version 1234",
         'ITSPAAS'
-      )
+      );
+    });
+  });
+});

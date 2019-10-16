@@ -1,32 +1,43 @@
-renderer = require __dirname+'/../../lib/renderers/text'
+/*
+ * decaffeinate suggestions:
+ * DS102: Remove unnecessary code created because of implicit returns
+ * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
+ */
+const renderer = require(__dirname+'/../../lib/renderers/text');
 
-describe "TEXT Renderer", ->
-  it "should have the correct name", ->
-    expect(renderer.name).toEqual('Text')
+describe("TEXT Renderer", function() {
+  it("should have the correct name", () => expect(renderer.name).toEqual('Text'));
 
-  it "should have the correct mime type", ->
-    expect(renderer.mime).toEqual('text/plain')
+  it("should have the correct mime type", () => expect(renderer.mime).toEqual('text/plain'));
 
-  describe 'render', ->
+  return describe('render', function() {
 
-    it 'should call res.set with Content-Type header', ->
-      req =
-        message: 'ONE'
+    it('should call res.set with Content-Type header', function() {
+      const req = {
+        message: 'ONE',
         subtitle: 'TWO'
-      res =
-        set: jasmine.createSpy()
+      };
+      const res = {
+        set: jasmine.createSpy(),
         send: jasmine.createSpy()
-      renderer.render(req,res)
+      };
+      renderer.render(req,res);
 
-      expect(res.set).toHaveBeenCalledWith('Content-Type', 'text/plain')
+      return expect(res.set).toHaveBeenCalledWith('Content-Type', 'text/plain');
+    });
 
-    it 'should call res.send with correct params', ->
-      req =
-        message: 'ONE'
+    return it('should call res.send with correct params', function() {
+      const req = {
+        message: 'ONE',
         subtitle: 'TWO'
-      res =
-        set: jasmine.createSpy()
+      };
+      const res = {
+        set: jasmine.createSpy(),
         send: jasmine.createSpy()
-      renderer.render(req,res)
+      };
+      renderer.render(req,res);
 
-      expect(res.send).toHaveBeenCalledWith('ONE TWO')
+      return expect(res.send).toHaveBeenCalledWith('ONE TWO');
+    });
+  });
+});
