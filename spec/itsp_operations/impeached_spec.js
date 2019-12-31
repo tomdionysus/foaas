@@ -42,7 +42,7 @@ describe("/impeached", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Unfortunately No, TESTNAME, Donald Trump has not had impeachment charges filed against him.',
+        'Yes, TESTNAME, impeachment charges have been passed by the House. They have not been sent to the Senate for trial yet.',
         '- TESTFROM'
       );
     });
