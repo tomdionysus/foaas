@@ -1,6 +1,6 @@
 {
   "name": "foaas",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Fuck Off As A Service",
   "engines": {
     "node": "latest"
@@ -15,7 +15,7 @@
   "license": "WTFPL",
   "devDependencies": {
     "istanbul": "^0.4.5",
-    "jasmine": "^3.4.0"
+    "jasmine": "^3.5.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -26,7 +26,7 @@
     "method-override": "^3.0.0",
     "request": "^2.88.0",
     "sanitizer": "latest",
-    "underscore": "latest",
+    "underscore": "^1.9.2",
     "xml-escape": "latest"
   }
 }
