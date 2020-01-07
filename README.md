@@ -43,6 +43,7 @@ API clients are available in a number of languages:
 | Go       | `go-fuck-off`  | https://godoc.org/github.com/ds0nt/go-fuck-off |
 | Erlang   | `foaas-erlang` | https://github.com/rikribbers/foaas-erlang     |
 | Crystal  | `foaas_client` | https://github.com/mamantoha/foaas_client      |
+| Rust     | `foaas-rs`     | https://github.com/jilsahm/foaas-rs            |
 
 # Framework Support
 
