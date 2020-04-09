@@ -24,9 +24,9 @@
     "i18next": "1.10.6",
     "md5": "latest",
     "method-override": "^3.0.0",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "sanitizer": "latest",
-    "underscore": "^1.9.2",
+    "underscore": "^1.10.2",
     "xml-escape": "latest"
   }
 }
