@@ -36,6 +36,7 @@ Abstract
       3xx   Redirect
       4xx   Client Error (You Fucked Up)
       5xx   Server Error (I Fucked Up)
+      6xx   Your Mom (We Fucked Up)
 
    Increasingly, home and consumer devices are being connected to the
    Internet and the need has arisen for a more colloquial and holistic
@@ -108,7 +109,11 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
   The client SHOULD NOT reissue the request under any circumstances as
   physical harm may result.
 
-2.1.6 613 TL;DR
+2.1.6 611 Fuck Ur Mom
+
+  My mum says you weren't any good.
+
+2.1.7 613 TL;DR
 
   The request was either too large, too boring, or both, for the
   server to consider processing.
@@ -116,19 +121,19 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
   The client SHOULD reissue the request with either: far less shit or
   something more interesting
 
-2.1.7 622 All The Fucks
+2.1.8 622 All The Fucks
 
   Server invites the client to consider the monumental amount of fucks it
   couldn't give regarding the request.
 
   The client SHOULD NOT issue the request again to this server.
 
-2.1.8 666 Too Late!
+2.1.9 666 Too Late!
 
   Server notifies client that the apocalypse has occured and as such
   there's very little point in a response. Server further implies that
   the client SHOULD really be worrying about bigger things right now
-  than a fucking API call.   
+  than a fucking API call.
 
 
 T. Cully, A. Hodgkinson      Informational                      [Page 2]
