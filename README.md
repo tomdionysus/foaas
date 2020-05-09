@@ -41,6 +41,7 @@ API clients are available in a number of languages:
 | CLI/bash | `foaas.sh`     | https://github.com/RaymiiOrg/foaas.sh          |
 | CLI      | `foass-cli`    | https://github.com/palash25/foaas-cli          |
 | .NET     | `FOAASClient`  | https://github.com/igorkulman/FOAASClient      |
+| .NET Core| `foaas-dotnet` | https://github.com/Zuev-Alexander/foaas-dotnet |
 | Java     | `JFOAAS`       | https://github.com/SSederberg/FOAAS-Java       |
 | Go       | `go-fuck-off`  | https://godoc.org/github.com/ds0nt/go-fuck-off |
 | Erlang   | `foaas-erlang` | https://github.com/rikribbers/foaas-erlang     |
