@@ -8,14 +8,15 @@
   "main": "lib/server.js",
   "scripts": {
     "start": "node lib/server.js",
-    "test": "node node_modules/istanbul/lib/cli.js cover -x 'spec/**' node_modules/jasmine/bin/jasmine.js"
+    "test": "node node_modules/nyc/bin/nyc.js --reporter=lcov --exclude=spec node_modules/jasmine/bin/jasmine.js && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": "git@github.com:tomdionysus/foaas",
   "author": "Tom Cully",
   "license": "WTFPL",
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "jasmine": "^3.5.0"
+    "coveralls": "^3.1.0",
+    "jasmine": "^3.5.0",
+    "nyc": "^15.0.1"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
