@@ -5,49 +5,49 @@
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-const operation = require('../../lib/operations/nugget');
+const operation = require('../../lib/operations/nugget')
 
-describe("/nugget", function() {
-  it("should have the correct name", () => expect(operation.name).toEqual('Nugget'));
+describe('/nugget', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Nugget'))
 
-  it("should have the correct url", () => expect(operation.url).toEqual('/nugget/:name/:from'));
+  it('should have the correct url', () => expect(operation.url).toEqual('/nugget/:name/:from'))
 
-  it("should have the correct fields", () =>
+  it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
-      { name: 'Name', field: 'name'},
-      { name: 'From', field: 'from'}
+      { name: 'Name', field: 'name' },
+      { name: 'From', field: 'from' }
     ])
-  );
+  )
 
-  return describe('register', function() {
-    it('should call app.get with correct url', function() {
+  return describe('register', function () {
+    it('should call app.get with correct url', function () {
       const app =
-        {get: jasmine.createSpy()};
+        { get: jasmine.createSpy() }
 
-      operation.register(app,null);
+      operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/nugget/:name/:from', jasmine.any(Function));
-    });
+      expect(app.get).toHaveBeenCalledWith('/nugget/:name/:from', jasmine.any(Function))
+    })
 
-    return it('should call output with correct params', function() {
-      let func = null;
+    return it('should call output with correct params', function () {
+      let func = null
       const app =
-        {get(url, fn) { return func = fn; }};
-      const output = jasmine.createSpy();
-      operation.register(app, output);
+        { get (url, fn) { return func = fn } }
+      const output = jasmine.createSpy()
+      operation.register(app, output)
 
-      const req = { 
+      const req = {
         params: {
-          name: "TESTNAME",
-          from: "TESTFROM"
+          name: 'TESTNAME',
+          from: 'TESTFROM'
         }
-      };
+      }
 
-      const message = `Well ${req.params.name}, aren't you a shining example of a rancid fuck-nugget.`;
-      const subtitle = `- ${req.params.from}`;
+      const message = `Well ${req.params.name}, aren't you a shining example of a rancid fuck-nugget.`
+      const subtitle = `- ${req.params.from}`
 
-      func(req,'RES');
-      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle);
-    });
-  });
-});
+      func(req, 'RES')
+      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
+    })
+  })
+})

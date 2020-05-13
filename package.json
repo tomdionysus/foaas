@@ -29,5 +29,11 @@
     "sanitizer": "latest",
     "underscore": "^1.10.2",
     "xml-escape": "latest"
+  },
+  "standard": {
+    "ignore": [
+      "**/*_spec.js",
+      "spec/*"
+    ]
   }
 }

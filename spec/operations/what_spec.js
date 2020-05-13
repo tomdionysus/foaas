@@ -5,47 +5,47 @@
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-const operation = require('../../lib/operations/what');
+const operation = require('../../lib/operations/what')
 
-describe("/what", function() {
-  it("should have the correct name", () => expect(operation.name).toEqual('What'));
+describe('/what', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('What'))
 
-  it("should have the correct url", () => expect(operation.url).toEqual('/what/:from'));
+  it('should have the correct url', () => expect(operation.url).toEqual('/what/:from'))
 
-  it("should have the correct fields", () =>
+  it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
-      { name: 'From', field: 'from'}
+      { name: 'From', field: 'from' }
     ])
-  );
+  )
 
-  return describe('register', function() {
-    it('should call app.get with correct url', function() {
+  return describe('register', function () {
+    it('should call app.get with correct url', function () {
       const app =
-        {get: jasmine.createSpy()};
+        { get: jasmine.createSpy() }
 
-      operation.register(app,null);
+      operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/what/:from', jasmine.any(Function));
-    });
+      expect(app.get).toHaveBeenCalledWith('/what/:from', jasmine.any(Function))
+    })
 
-    return it('should call output with correct params', function() {
-      let func = null;
+    return it('should call output with correct params', function () {
+      let func = null
       const app =
-        {get(url, fn) { return func = fn; }};
-      const output = jasmine.createSpy();
-      operation.register(app, output);
+        { get (url, fn) { return func = fn } }
+      const output = jasmine.createSpy()
+      operation.register(app, output)
 
-      const req = { 
+      const req = {
         params: {
-          from: "TESTFROM"
+          from: 'TESTFROM'
         }
-      };
+      }
 
-      const message = "What the fuck‽";
-      const subtitle = `- ${req.params.from}`;
+      const message = 'What the fuck‽'
+      const subtitle = `- ${req.params.from}`
 
-      func(req,'RES');
-      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle);
-    });
-  });
-});
+      func(req, 'RES')
+      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
+    })
+  })
+})
