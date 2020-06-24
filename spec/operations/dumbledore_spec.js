@@ -40,7 +40,7 @@ describe('/dumbledore', function () {
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
-      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitles)
+      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
     })
   })
 })
