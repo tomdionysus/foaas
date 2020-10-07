@@ -26,7 +26,7 @@
     "md5": "^2.3.0",
     "method-override": "^3.0.0",
     "request": "^2.88.2",
-    "sanitizer": "latest",
+    "sanitizer": "^0.1.3",
     "underscore": "^1.11.0",
     "xml-escape": "latest"
   },
