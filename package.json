@@ -27,7 +27,7 @@
     "method-override": "^3.0.0",
     "request": "^2.88.2",
     "sanitizer": "latest",
-    "underscore": "^1.10.2",
+    "underscore": "^1.11.0",
     "xml-escape": "latest"
   },
   "standard": {
