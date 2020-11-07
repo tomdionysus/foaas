@@ -37,12 +37,14 @@ describe("/itsp", function() {
           from: "TESTFROM"
         }
       };
-
+      var nowish = new Date();
+      var innaug = new Date("01/20/2021");
+      var daysLeft = Math.floor((Date.UTC(innaug.getFullYear(), innaug.getMonth(), innaug.getDate()) - Date.UTC(nowish.getFullYear(), nowish.getMonth(), nowish.getDate()) ) /(1000 * 60 * 60 * 24));
       func(req,'RES');
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Sadly Yes, TESTNAME, Donald Trump is still the US President.',
+        `Sadly Yes, TESTNAME, Donald Trump is still the US President for ${daysLeft} days.`,
         '- TESTFROM'
       );
     });
