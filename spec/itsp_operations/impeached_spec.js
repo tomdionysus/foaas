@@ -42,7 +42,7 @@ describe("/impeached", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Yes, TESTNAME, impeachment charges have been passed by the House. They have not been sent to the Senate for trial yet.',
+        'Yes, TESTNAME, Donald Trump has been impeached, but was not convicted.',
         '- TESTFROM'
       );
     });
