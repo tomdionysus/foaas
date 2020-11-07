@@ -40,7 +40,8 @@ describe("/daysleft", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        `There are ${daysLeft} days left in the Trump Presidency.`
+        `There are ${daysLeft} days left in the Trump Presidency.`,
+        "It can't come soon enough"
       );
     });
   });
