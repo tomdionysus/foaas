@@ -41,7 +41,7 @@ describe('/dense', function () {
         }
       }
 
-      const message = 'YOU DISINGENUOUS DENSE MOTHERFUCKER'
+      const message = 'You disingenuous dense motherfucker!'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
