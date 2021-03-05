@@ -1,9 +1,10 @@
 {
   "name": "foaas",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Fuck Off As A Service",
   "engines": {
-    "node": "latest"
+    "node": "v15.4.0",
+    "npm": "7.6.0"
   },
   "main": "lib/server.js",
   "scripts": {
