@@ -48,6 +48,13 @@ API clients are available in a number of languages:
 | Crystal  | `foaas_client` | https://github.com/mamantoha/foaas_client      |
 | Rust     | `foaas-rs`     | https://github.com/jilsahm/foaas-rs            |
 
+# GUI Clients
+
+| Platform          | Info                                                    |
+|:------------------|:--------------------------------------------------------|
+| Web               | https://github.com/hamza1311/fuck-off                   |
+
+
 # Framework Support
 
 | Framework     | Info                                                                         |
