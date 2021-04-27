@@ -44,7 +44,7 @@ describe('/ballmer', function () {
         }
       }
 
-      const message = `Fucking ${req.params.name} is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill ${req.params.company}.`
+      const message = `Fucking ${req.params.name} is a fucking ball-sack. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill ${req.params.company}.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
