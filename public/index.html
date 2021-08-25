@@ -21,6 +21,16 @@
                     $('#fucks').append(data);
                 }
             })
+
+            $.ajax({
+                url: '/version',
+                headers: {
+                    Accept: "text/plain"
+                },
+                success: function (data) {
+                    $('#version').append(data);
+                }
+            })
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -35,7 +45,7 @@
       <div class="hero-unit">
         <h1>FOAAS</h1>
         <h2>Fuck Off As A Service</h2>
-        <p><em>v2.3.1</em></p>
+        <p><em id="version"></em></p>
       </div>
     </div>
     <div class="container">

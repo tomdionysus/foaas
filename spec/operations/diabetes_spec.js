@@ -10,11 +10,12 @@ const operation = require('../../lib/operations/diabetes')
 describe('/diabetes', function () {
   it('should have the correct name', () => expect(operation.name).toEqual('Diabetes'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/diabetes/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/diabetes/:from/:type'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
-      { name: 'From', field: 'from' }
+      { name: 'From', field: 'from' },
+      { name: 'Type', field: 'type' }
     ])
   )
 
@@ -25,7 +26,7 @@ describe('/diabetes', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/diabetes/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/diabetes/:from/:type', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -37,11 +38,12 @@ describe('/diabetes', function () {
 
       const req = {
         params: {
-          from: 'TESTFROM'
+          from: 'TESTFROM',
+          type: '3'
         }
       }
 
-      const message = "I'd love to stop and chat to you but I'd rather have type 2 diabetes."
+      const message = `I'd love to stop and chat to you but I'd rather have type ${req.params.type} diabetes.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
