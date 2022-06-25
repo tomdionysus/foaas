@@ -34,9 +34,9 @@ Abstract
       1xx   Intermediate Responses, Protocol control
       2xx   OK
       3xx   Redirect
-      4xx   Client Error (You Fucked Up)
-      5xx   Server Error (I Fucked Up)
-      6xx   Your Mom (We Fucked Up)
+      4xx   Client Error (You forked Up)
+      5xx   Server Error (I forked Up)
+      6xx   Your Mom (We fokedd Up)
 
    Increasingly, home and consumer devices are being connected to the
    Internet and the need has arisen for a more colloquial and holistic

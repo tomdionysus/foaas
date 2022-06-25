@@ -1,7 +1,7 @@
 {
   "name": "foaas",
   "version": "2.3.2",
-  "description": "Fuck Off As A Service",
+  "description": "Polite Fork Off As A Service",
   "main": "lib/server.js",
   "scripts": {
     "start": "node lib/server.js",
