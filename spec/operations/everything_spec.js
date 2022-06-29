@@ -41,7 +41,7 @@ describe('/everything', function () {
         }
       }
 
-      const message = 'Fuck everything.'
+      const message = 'fork everything.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

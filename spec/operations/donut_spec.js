@@ -43,7 +43,7 @@ describe('/donut', function () {
         }
       }
 
-      const message = `${req.params.name}, go and take a flying fuck at a rolling donut.`
+      const message = `${req.params.name}, go and take a flying fork at a rolling donut.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

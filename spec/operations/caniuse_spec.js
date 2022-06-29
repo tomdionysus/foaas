@@ -43,7 +43,7 @@ describe('/caniuse', function () {
         }
       }
 
-      const message = `Can you use ${req.params.tool}? Fuck no!`
+      const message = `Can you use ${req.params.tool}? fork no!`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

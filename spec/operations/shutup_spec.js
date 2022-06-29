@@ -43,7 +43,7 @@ describe('/shutup', function () {
         }
       }
 
-      const message = `${req.params.name}, shut the fuck up.`
+      const message = `${req.params.name}, shut the fork up.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

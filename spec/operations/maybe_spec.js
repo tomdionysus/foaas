@@ -41,7 +41,7 @@ describe('/maybe', function () {
         }
       }
 
-      const message = 'Maybe. Maybe not. Maybe fuck yourself.'
+      const message = 'Maybe. Maybe not. Maybe fork yourself.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

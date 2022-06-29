@@ -47,7 +47,7 @@ describe('/ing', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fucking fuck off, TESTNAME.',
+        'Fucking fork off, TESTNAME.',
         '- TESTFROM'
       )
     })

@@ -41,7 +41,7 @@ describe('/flying', function () {
         }
       }
 
-      const message = "I don't give a flying fuck."
+      const message = "I don't give a flying fork."
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

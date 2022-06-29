@@ -43,7 +43,7 @@ describe('/yoda', function () {
         }
       }
 
-      const message = `Fuck off, you must, ${req.params.name}.`
+      const message = `fork off, you must, ${req.params.name}.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

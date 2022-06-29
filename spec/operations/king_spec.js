@@ -43,7 +43,7 @@ describe('/king', function () {
         }
       }
 
-      const message = `Oh fuck off, just really fuck off you total dickface. Christ, ${req.params.name}, you are fucking thick.`
+      const message = `Oh fork off, just really fork off you total dickface. Christ, ${req.params.name}, you are fucking thick.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

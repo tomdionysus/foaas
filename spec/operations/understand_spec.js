@@ -44,7 +44,7 @@ describe('/understand', function () {
       }
 
 
-      const message = `Listen here ${req.params.name}!  What part of 'Fuck Off' don't you understand?`
+      const message = `Listen here ${req.params.name}!  What part of 'fork Off' don't you understand?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

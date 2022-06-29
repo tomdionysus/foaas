@@ -41,7 +41,7 @@ describe('/cup', function () {
         }
       }
 
-      const message = 'How about a nice cup of shut the fuck up?'
+      const message = 'How about a nice cup of shut the fork up?'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

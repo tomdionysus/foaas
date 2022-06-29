@@ -1,7 +1,7 @@
 const operation = require('../../lib/operations/ftfy')
 
 describe('/ftfy', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Fuck That, Fuck You'))
+  it('should have the correct name', () => expect(operation.name).toEqual('fork That, fork You'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/ftfy/:from'))
 
@@ -34,7 +34,7 @@ describe('/ftfy', function () {
         }
       }
 
-      const message = 'Fuck That, Fuck You'
+      const message = 'fork That, fork You'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

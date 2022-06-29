@@ -45,7 +45,7 @@ describe('/ing', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck you, fuck me, fuck your family. Fuck your father, fuck your mother, fuck you and me.',
+        'fork you, fork me, fork your family. fork your father, fork your mother, fork you and me.',
         '- TESTFROM'
       )
     })

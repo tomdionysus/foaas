@@ -41,7 +41,7 @@ describe('/life', function () {
         }
       }
 
-      const message = 'Fuck my life.'
+      const message = 'fork my life.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

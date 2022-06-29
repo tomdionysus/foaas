@@ -34,7 +34,7 @@ describe('/yeah', function () {
         }
       }
 
-      const message = 'Fuck YEAH!'
+      const message = 'fork YEAH!'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

@@ -41,7 +41,7 @@ describe('/fyyff', function () {
         }
       }
 
-      const message = 'Fuck you, you fucking fuck.'
+      const message = 'fork you, you fucking fork.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

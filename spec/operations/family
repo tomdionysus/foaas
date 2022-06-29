@@ -33,7 +33,7 @@ describe "/programmer", ->
         params:
           from: "TESTFROM"
 
-      message = "Fuck you, I'm programmer, bitch."
+      message = "fork you, I'm programmer, bitch."
       subtitle = "- #{req.params.from}"
 
       func(req,'RES')

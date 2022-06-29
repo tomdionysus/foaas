@@ -41,7 +41,7 @@ describe('/immensity', function () {
         }
       }
 
-      const message = 'You can not imagine the immensity of the FUCK I do not give.'
+      const message = 'You can not imagine the immensity of the fork I do not give.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

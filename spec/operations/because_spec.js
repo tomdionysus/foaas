@@ -41,7 +41,7 @@ describe('/because', function () {
         }
       }
 
-      const message = "Why? Because fuck you, that's why."
+      const message = "Why? Because fork you, that's why."
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

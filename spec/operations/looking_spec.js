@@ -41,7 +41,7 @@ describe('/looking', function () {
         }
       }
 
-      const message = 'Looking for a fuck to give.'
+      const message = 'Looking for a fork to give.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

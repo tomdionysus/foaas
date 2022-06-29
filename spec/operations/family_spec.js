@@ -41,7 +41,7 @@ describe('/family', function () {
         }
       }
 
-      const message = 'Fuck you, your whole family, your pets, and your feces.'
+      const message = 'fork you, your whole family, your pets, and your feces.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

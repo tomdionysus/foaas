@@ -41,7 +41,7 @@ describe('/single', function () {
         }
       }
 
-      const message = 'Not a single fuck was given.'
+      const message = 'Not a single fork was given.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

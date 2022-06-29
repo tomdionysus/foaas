@@ -43,7 +43,7 @@ describe('/blackadder', function () {
         }
       }
 
-      const message = `${req.params.name}, your head is as empty as a eunuch’s underpants. Fuck off!`
+      const message = `${req.params.name}, your head is as empty as a eunuch’s underpants. fork off!`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

@@ -44,7 +44,7 @@ describe('/keepcalm', function () {
         }
       }
 
-      const message = `Keep the fuck calm and ${req.params.reaction}!`
+      const message = `Keep the fork calm and ${req.params.reaction}!`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

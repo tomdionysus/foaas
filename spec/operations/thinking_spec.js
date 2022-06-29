@@ -43,7 +43,7 @@ describe('/thinking', function () {
         }
       }
 
-      const message = `${req.params.name}, what the fuck were you actually thinking?`
+      const message = `${req.params.name}, what the fork were you actually thinking?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

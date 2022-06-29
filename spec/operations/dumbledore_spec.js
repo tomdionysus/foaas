@@ -36,7 +36,7 @@ describe('/dumbledore', function () {
         }
       }
 
-      const message = 'Happiness can be found, even in the darkest of times, if one only remembers to fuck off.'
+      const message = 'Happiness can be found, even in the darkest of times, if one only remembers to fork off.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

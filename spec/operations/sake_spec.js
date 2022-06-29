@@ -41,7 +41,7 @@ describe('/sake', function () {
         }
       }
 
-      const message = "For Fuck's sake!"
+      const message = "For fork's sake!"
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

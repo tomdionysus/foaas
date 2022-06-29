@@ -43,7 +43,7 @@ describe('/nugget', function () {
         }
       }
 
-      const message = `Well ${req.params.name}, aren't you a shining example of a rancid fuck-nugget.`
+      const message = `Well ${req.params.name}, aren't you a shining example of a rancid fork-nugget.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

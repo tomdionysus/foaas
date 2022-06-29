@@ -41,7 +41,7 @@ describe('/pink', function () {
         }
       }
 
-      const message = 'Well, fuck me pink.'
+      const message = 'Well, fork me pink.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

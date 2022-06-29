@@ -41,7 +41,7 @@ describe('/fascinating', function () {
         }
       }
 
-      const message = 'Fascinating story, in what chapter do you shut the fuck up?'
+      const message = 'Fascinating story, in what chapter do you shut the fork up?'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

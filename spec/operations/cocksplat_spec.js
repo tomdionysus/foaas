@@ -47,7 +47,7 @@ describe('/cocksplat', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck off TESTNAME, you worthless cocksplat',
+        'fork off TESTNAME, you worthless cocksplat',
         '- TESTFROM'
       )
     })

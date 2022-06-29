@@ -47,7 +47,7 @@ describe('/question', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'To fuck off, or to fuck off (that is not a question)',
+        'To fork off, or to fork off (that is not a question)',
         subtitle
       )
     })

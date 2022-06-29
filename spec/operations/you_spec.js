@@ -8,7 +8,7 @@
 const operation = require('../../lib/operations/you')
 
 describe('/you', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Fuck You'))
+  it('should have the correct name', () => expect(operation.name).toEqual('fork You'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/you/:name/:from'))
 
@@ -47,7 +47,7 @@ describe('/you', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck you, TESTNAME.',
+        'fork you, TESTNAME.',
         '- TESTFROM'
       )
     })

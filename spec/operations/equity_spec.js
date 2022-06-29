@@ -43,7 +43,7 @@ describe('/equity', function () {
         }
       }
 
-      const message = 'Equity only? Long hours? Zero Pay? Well TESTNAME, just sign me right the fuck up.'
+      const message = 'Equity only? Long hours? Zero Pay? Well TESTNAME, just sign me right the fork up.'
       const subtitle = '- TESTFROM'
 
       func(req, 'RES')

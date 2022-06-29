@@ -41,7 +41,7 @@ describe('/too', function () {
         }
       }
 
-      const message = 'Thanks, fuck you too.'
+      const message = 'Thanks, fork you too.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

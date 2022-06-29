@@ -43,7 +43,7 @@ describe('/outside', function () {
         }
       }
 
-      const message = `${req.params.name}, why don't you go outside and play hide-and-go-fuck-yourself?`
+      const message = `${req.params.name}, why don't you go outside and play hide-and-go-fork-yourself?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

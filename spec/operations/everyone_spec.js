@@ -41,7 +41,7 @@ describe('/everyone', function () {
         }
       }
 
-      const message = 'Everyone can go and fuck off.'
+      const message = 'Everyone can go and fork off.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

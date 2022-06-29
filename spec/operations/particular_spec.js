@@ -43,7 +43,7 @@ describe('/particular', function () {
         }
       }
 
-      const message = `Fuck this ${req.params.thing} in particular.`
+      const message = `fork this ${req.params.thing} in particular.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

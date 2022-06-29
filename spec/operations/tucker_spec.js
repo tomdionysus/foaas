@@ -41,7 +41,7 @@ describe('/tucker', function () {
         }
       }
 
-      const message = 'Come the fuck in or fuck the fuck off.'
+      const message = 'Come the fork in or fork the fork off.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

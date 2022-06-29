@@ -47,7 +47,7 @@ describe('/fewer', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Go fuck yourself TESTNAME, you\'ll disappoint fewer people.',
+        'Go fork yourself TESTNAME, you\'ll disappoint fewer people.',
         '- TESTFROM'
       )
     })

@@ -43,7 +43,7 @@ describe('/look', function () {
         }
       }
 
-      const message = `${req.params.name}, do I look like I give a fuck?`
+      const message = `${req.params.name}, do I look like I give a fork?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

@@ -43,7 +43,7 @@ describe('/problem', function () {
         }
       }
 
-      const message = `What the fuck is your problem ${req.params.name}?`
+      const message = `What the fork is your problem ${req.params.name}?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

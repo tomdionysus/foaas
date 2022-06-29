@@ -8,7 +8,7 @@
 const operation = require('../../lib/operations/horse')
 
 describe('/horse', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Fuck you and the horse you rode in on'))
+  it('should have the correct name', () => expect(operation.name).toEqual('fork you and the horse you rode in on'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/horse/:from'))
 
@@ -41,7 +41,7 @@ describe('/horse', function () {
         }
       }
 
-      const message = 'Fuck you and the horse you rode in on.'
+      const message = 'fork you and the horse you rode in on.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

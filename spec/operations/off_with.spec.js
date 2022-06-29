@@ -8,7 +8,7 @@
 const operation = require('../../lib/operations/off_with')
 
 describe('/off_with', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Fuck Off With'))
+  it('should have the correct name', () => expect(operation.name).toEqual('fork Off With'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/off-with/:behavior/:from'))
 
@@ -47,7 +47,7 @@ describe('/off_with', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        "Fuck off with the constant stupid emails to our team that we don't give a shit about!!",
+        "fork off with the constant stupid emails to our team that we don't give a shit about!!",
         '- Bubbles'
       )
     })

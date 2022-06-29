@@ -43,7 +43,7 @@ describe('/chainsaw', function () {
         }
       }
 
-      const message = `Fuck me gently with a chainsaw, ${req.params.name}. Do I look like Mother Teresa?`
+      const message = `fork me gently with a chainsaw, ${req.params.name}. Do I look like Mother Teresa?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
