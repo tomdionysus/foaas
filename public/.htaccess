@@ -4,8 +4,8 @@
 # RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 #Heroku way
-#RewriteEngine On
-#RewriteCond %{HTTPS} on
-#RewriteCond %{HTTP:X-Forwarded-Proto} https
-#RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-#RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP:X-Forwarded-Proto} https
+RewriteCond %{HTTP_HOST} ^pfoaas\.desigeek\.com$ [NC]
+RewriteRule .? http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
