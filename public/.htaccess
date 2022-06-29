@@ -1,11 +1,11 @@
 RewriteEngine On
 RewriteCond %{HTTPS} on
-#RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-#RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^pfoaas\.desigeek\.com [NC]
+RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 #Heroku way
-RewriteCond %{HTTP:X-Forwarded-Proto} . 
-
-#If neither above conditions are met, redirect to https
-RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteEngine On
+#RewriteCond %{HTTPS} on
+#RewriteCond %{HTTP:X-Forwarded-Proto} https
+#RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
