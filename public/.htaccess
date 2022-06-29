@@ -1,7 +1,7 @@
-RewriteEngine On
-RewriteCond %{HTTPS} on
-RewriteCond %{HTTP_HOST} ^pfoaas\.desigeek\.com [NC]
-RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# RewriteEngine On
+# RewriteCond %{HTTPS} on
+# RewriteCond %{HTTP_HOST} ^pfoaas\.desigeek\.com [NC]
+# RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 #Heroku way
 #RewriteEngine On
