@@ -1,0 +1,5 @@
+#Heroku way
+RewriteCond %{HTTP:X-Forwarded-Proto} . 
+
+#If neither above conditions are met, redirect to https
+RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
