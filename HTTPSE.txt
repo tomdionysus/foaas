@@ -1,9 +1,3 @@
-
-
-
-
-
-
 Network Working Group                    T. Cully, A. Hodgkinson, et.al
 Request for Comments: DRAFT03213                           1 April 2016
 Category: Informational
@@ -68,12 +62,12 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
 2.1 HTTPSE return codes
 
-2.1.0 600 Fucking Good Enough
+2.1.0 600 Forking Good Enough
 
   The server deems its response sufficient. Further requests of the
   same nature may result in a 622 response.
 
-2.1.1 602 When I'm Good and Fucking Ready
+2.1.1 602 When I'm Good and Forking Ready
 
   Server MAY complete the request at a subsequent time. And then again,
   it may not bother its arse. The implication is not that the server is
@@ -104,12 +98,12 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
   The client SHOULD NOT issue the request again to this server.
 
-2.1.5 610 Don’t Fucking Talk To Me
+2.1.5 610 Don’t Forking Talk To Me
 
   The client SHOULD NOT reissue the request under any circumstances as
   physical harm may result.
 
-2.1.6 611 Fuck Ur Mom
+2.1.6 611 Fork Ur Mom
 
   My mum says you weren't any good.
 
@@ -121,9 +115,9 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
   The client SHOULD reissue the request with either: far less shit or
   something more interesting
 
-2.1.8 622 All The Fucks
+2.1.8 622 All The Forks
 
-  Server invites the client to consider the monumental amount of fucks it
+  Server invites the client to consider the monumental amount of Forks it
   couldn't give regarding the request.
 
   The client SHOULD NOT issue the request again to this server.
@@ -133,7 +127,7 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
   Server notifies client that the apocalypse has occured and as such
   there's very little point in a response. Server further implies that
   the client SHOULD really be worrying about bigger things right now
-  than a fucking API call.
+  than a Forking API call.
 
 
 T. Cully, A. Hodgkinson      Informational                      [Page 2]
@@ -177,7 +171,7 @@ DRAFT03213                     HTTPSE/1.0                   1 April 2016
 
 6.  Full Copyright Statement
 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+           DO WHAT THE Fork YOU WANT TO PUBLIC LICENSE
                    Version 2, December 2004
 
 Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
@@ -186,10 +180,10 @@ Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long
 as the name is changed.
 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+           DO WHAT THE Fork YOU WANT TO PUBLIC LICENSE
   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
- 0. You just DO WHAT THE FUCK YOU WANT TO.
+ 0. You just DO WHAT THE Fork YOU WANT TO.
 
 
 
