@@ -39,7 +39,7 @@ describe('XML Renderer', function () {
       renderer.render(req, res)
 
       return expect(res.send).toHaveBeenCalledWith('<?xml version="1.0" encoding="UTF-8"?> \
-<foaas:response xmlns:foaas="http://foaas.com/fuckoff"> \
+<foaas:response xmlns:foaas="http://pfoaas.desigeek.com/forkoff"> \
 <foaas:message>ONE</foaas:message> \
 <foaas:subtitle>TWO</foaas:subtitle> \
 </foaas:response>')
@@ -57,7 +57,7 @@ describe('XML Renderer', function () {
       renderer.render(req, res)
 
       return expect(res.send).toHaveBeenCalledWith('<?xml version="1.0" encoding="UTF-8"?> \
-<foaas:response xmlns:foaas="http://foaas.com/fuckoff"> \
+<foaas:response xmlns:foaas="http://pfoaas.desigeek.com/forkoff"> \
 <foaas:message>&lt;one&gt;ONE&lt;/one&gt;</foaas:message> \
 <foaas:subtitle>&lt;two&gt;TWO&lt;/two&gt;</foaas:subtitle> \
 </foaas:response>')
