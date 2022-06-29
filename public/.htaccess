@@ -5,7 +5,7 @@
 
 #Heroku way
 RewriteEngine On
-RewriteCond %{HTTPS} on
+RewriteCond %{HTTPS} =on [OR]
 RewriteCond %{HTTP:X-Forwarded-Proto} https
 RewriteCond %{HTTP_HOST} ^pfoaas\.desigeek\.com$ [NC]
-RewriteRule .? http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteRule ^(.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
