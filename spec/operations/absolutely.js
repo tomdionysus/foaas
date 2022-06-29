@@ -9,7 +9,7 @@
 const operation = require('../../lib/operations/absolutely')
 
 describe('/absolutely', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Absolutely fucking Not'))
+  it('should have the correct name', () => expect(operation.name).toEqual('Absolutely Forking Not'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/absolutely/:company/:from'))
 
@@ -44,7 +44,7 @@ describe('/absolutely', function () {
         }
       }
 
-      const message = `Absolutely fucking Not, ${req.params.company}, No Fucking Way!`
+      const message = `Absolutely Forking Not, ${req.params.company}, No forking Way!`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
