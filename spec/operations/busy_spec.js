@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/people')
+const operation = require('../../lib/operations/busy')
 
-describe('/people', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('People'))
+describe('/busy', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Busy'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/people/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/busy/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/people', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/people/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/busy/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/people', function () {
         }
       }
 
-      const message = 'Sorry, but I just can\'t \'people\' right now.'
+      const message = 'Get busy leaving, or get busy dying.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

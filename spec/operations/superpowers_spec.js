@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/people')
+const operation = require('../../lib/operations/superpowers')
 
-describe('/people', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('People'))
+describe('/superpowers', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Superpowers'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/people/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/superpowers/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/people', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/people/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/superpowers/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/people', function () {
         }
       }
 
-      const message = 'Sorry, but I just can\'t \'people\' right now.'
+      const message = 'I wish I had superpowers, then I could make you disappear.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

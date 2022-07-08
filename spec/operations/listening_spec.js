@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/people')
+const operation = require('../../lib/operations/listening')
 
-describe('/people', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('People'))
+describe('/listening', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Listening'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/people/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/listening/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/people', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/people/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/listening/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/people', function () {
         }
       }
 
-      const message = 'Sorry, but I just can\'t \'people\' right now.'
+      const message = 'If you don\'t mind, I would like to stop listening to you now.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
