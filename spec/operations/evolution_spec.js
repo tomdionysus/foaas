@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/day')
+const operation = require('../../lib/operations/evolution')
 
-describe('/day', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Day'))
+describe('/evolution', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Evolution'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/day/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/evolution/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/day', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/day/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/evolution/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/day', function () {
         }
       }
 
-      const message = 'I hope your day is filled with people like you.'
+      const message = 'You spit in the face of evolution.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

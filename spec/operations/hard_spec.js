@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/day')
+const operation = require('../../lib/operations/hard')
 
-describe('/day', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Day'))
+describe('/hard', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Hard'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/day/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/hard/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/day', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/day/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/hard/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/day', function () {
         }
       }
 
-      const message = 'I hope your day is filled with people like you.'
+      const message = 'You are hard to look at.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

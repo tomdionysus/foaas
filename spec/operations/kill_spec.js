@@ -1,12 +1,13 @@
-const operation = require('../../lib/operations/day')
+const operation = require('../../lib/operations/kill')
 
-describe('/day', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Day'))
+describe('/kill', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Kill'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/day/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/kill/:name/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
+      { name: 'Name', field: 'name' },
       { name: 'From', field: 'from' }
     ])
   )
@@ -18,7 +19,7 @@ describe('/day', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/day/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/kill/:name/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -30,11 +31,12 @@ describe('/day', function () {
 
       const req = {
         params: {
+          name: 'TESTNAME',
           from: 'TESTFROM'
         }
       }
 
-      const message = 'I hope your day is filled with people like you.'
+      const message = `If I wanted to kill myself, I’d climb up your ego ${req.params.name}, and jump to your IQ.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
