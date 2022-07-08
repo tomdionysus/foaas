@@ -35,7 +35,7 @@ describe('/lowpoly', function () {
         }
       }
 
-      const message = 'You low polygon motherfucker!'
+      const message = 'You low polygon squid!'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
