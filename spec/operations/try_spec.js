@@ -1,13 +1,12 @@
-const operation = require('../../lib/operations/nature')
+const operation = require('../../lib/operations/try')
 
-describe('/nature', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Nature'))
+describe('/try', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Try'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/nature/:name/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/try/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
-      { name: 'Name', field: 'name' },
       { name: 'From', field: 'from' }
     ])
   )
@@ -19,7 +18,7 @@ describe('/nature', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/nature/:name/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/try/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -31,12 +30,11 @@ describe('/nature', function () {
 
       const req = {
         params: {
-          name: 'TESTNAME',
           from: 'TESTFROM'
         }
       }
 
-      const message = `I would love to insult you ${req.params.name}, but I’m afraid I won’t do it as well as nature did.`
+      const message = 'You try so hard.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

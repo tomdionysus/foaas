@@ -34,7 +34,7 @@ describe('/no', function () {
         }
       }
 
-      const message = 'No shit given.'
+      const message = 'Eh, no cigar. Try again.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

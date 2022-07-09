@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/nature')
+const operation = require('../../lib/operations/idiot')
 
-describe('/nature', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Nature'))
+describe('/idiot', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Idiot'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/nature/:name/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/idiot/:name/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -19,7 +19,7 @@ describe('/nature', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/nature/:name/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/idiot/:name/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -36,7 +36,7 @@ describe('/nature', function () {
         }
       }
 
-      const message = `I would love to insult you ${req.params.name}, but I’m afraid I won’t do it as well as nature did.`
+      const message = `${req.params.name} here may look like an idiot and talk like an idiot, but don't let that fool you! ${req.params.name}, really is an idiot. (●'◡'●)`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

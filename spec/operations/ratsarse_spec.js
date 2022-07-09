@@ -34,7 +34,7 @@ describe('/ratsarse', function () {
         }
       }
 
-      const message = "I don't give a rat's arse."
+      const message = "I don't give a rat's skinny and hairy arse."
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

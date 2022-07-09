@@ -34,7 +34,7 @@ describe('/idea', function () {
         }
       }
 
-      const message = 'That sounds like a fucking great idea!'
+      const message = 'That sounds like a brilliant idea! (⊙ˍ⊙)'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

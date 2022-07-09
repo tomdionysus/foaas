@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/sake')
 
 describe('/sake', function () {
@@ -41,7 +34,7 @@ describe('/sake', function () {
         }
       }
 
-      const message = "For fork's sake!"
+      const message = "Bollocks! For duck's sake!"
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
