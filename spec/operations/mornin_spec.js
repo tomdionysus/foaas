@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/mornin')
 
 describe('/mornin', function () {
@@ -41,7 +34,7 @@ describe('/mornin', function () {
         }
       }
 
-      const message = "Happy fuckin' mornin'!"
+      const message = "Who ate your bowl of sunshine this morning, thundercloud."
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

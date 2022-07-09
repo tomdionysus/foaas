@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/dalton')
 
 describe('/dalton', function () {
@@ -43,7 +36,7 @@ describe('/dalton', function () {
         }
       }
 
-      const message = `${req.params.name}: A fucking problem solving super-hero.`
+      const message = `${req.params.name}: An absolute bloody problem solving super-hero.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

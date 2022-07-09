@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/bag')
 
 describe('/bag', function () {
@@ -45,7 +38,7 @@ describe('/bag', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Eat a bag of fucking dicks.',
+        'Eat a bag of pure, organic, fresh, and steamy fecal matter.',
         '- TESTFROM'
       )
     })

@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/chainsaw')
 
 describe('/chainsaw', function () {
@@ -43,7 +36,7 @@ describe('/chainsaw', function () {
         }
       }
 
-      const message = `fork me gently with a chainsaw, ${req.params.name}. Do I look like Mother Teresa?`
+      const message = `Rub my back gently with a chainsaw, ${req.params.name}. Do I look like Mother Teresa?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

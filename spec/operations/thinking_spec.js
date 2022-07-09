@@ -1,10 +1,4 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
+
 const operation = require('../../lib/operations/thinking')
 
 describe('/thinking', function () {
@@ -43,7 +37,7 @@ describe('/thinking', function () {
         }
       }
 
-      const message = `${req.params.name}, what the fork were you actually thinking?`
+      const message = `${req.params.name}, what were you actually thinking? Wait. I apologize! I forgot, you don't have the innate ability to think.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
