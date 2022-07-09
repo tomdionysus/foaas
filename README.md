@@ -1,11 +1,6 @@
 # PFOaaS
 
 *July 2022 - v0.0.9*
-
-# [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas) [![Coverage #Status](https://coveralls.io/repos/github/tomdionysus/foaas/badge.svg?branch=master)](https://coveralls.io/github/tomdionysus/foaas?#branch=master)
-# [![Coverage Status](https://coveralls.io/repos/github/tomdionysus/foaas/badge.svg?branch=master)](https://coveralls.io/github/tomdionysus/foaas?branch=master)
-# [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fork off.
 
 Please see https://pfoaas.desigeek.com for API documentation and examples.
