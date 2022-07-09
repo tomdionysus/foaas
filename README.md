@@ -1,6 +1,6 @@
 # PFOaaS
 
-*July 2022 - v0.0.7*
+*July 2022 - v0.0.9*
 
 # [![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas) [![Coverage #Status](https://coveralls.io/repos/github/tomdionysus/foaas/badge.svg?branch=master)](https://coveralls.io/github/tomdionysus/foaas?#branch=master)
 # [![Coverage Status](https://coveralls.io/repos/github/tomdionysus/foaas/badge.svg?branch=master)](https://coveralls.io/github/tomdionysus/foaas?branch=master)
@@ -11,6 +11,7 @@ PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solut
 Please see https://pfoaas.desigeek.com for API documentation and examples.
 
 # Example use
+curl -H 'Accept: text/plain' https://pfoaas.desigeek.com/row/Amit 
 
 # Docker
 
