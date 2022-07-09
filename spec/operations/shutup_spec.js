@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/shutup')
 
 describe('/shutup', function () {
@@ -43,7 +36,7 @@ describe('/shutup', function () {
         }
       }
 
-      const message = `${req.params.name}, shut the fork up.`
+      const message = `Since you know it all ${req.params.name}, you should know when to shut up.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

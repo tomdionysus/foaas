@@ -41,7 +41,7 @@ describe('/awesome', function () {
         }
       }
 
-      const message = 'This is Fucking Awesome.'
+      const message = 'This is bloody awesome. Not!'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

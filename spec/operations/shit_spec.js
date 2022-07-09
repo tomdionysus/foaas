@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/shit')
 
 describe('/shit', function () {
@@ -45,7 +38,7 @@ describe('/shit', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'fork this shit!',
+        'You are so full of shit, the toilet’s jealous.',
         '- TESTFROM'
       )
     })
