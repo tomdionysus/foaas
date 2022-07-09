@@ -11,7 +11,21 @@ PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solut
 Please see https://pfoaas.desigeek.com for API documentation and examples.
 
 # Example use
+Follwing is an example on how to call the REST API and expecting a text output.
+
 curl -H 'Accept: text/plain' https://pfoaas.desigeek.com/row/Amit 
+![image](https://user-images.githubusercontent.com/3529468/178124475-2a3f5fc8-9c33-492f-a49c-de58ebbbf752.png)
+
+If json is your thing, then you can use the following, which will get you the result as a json object.
+curl -H 'Accept: application/json' https://pfoaas.desigeek.com/row/Amit 
+![image](https://user-images.githubusercontent.com/3529468/178124533-e3ea9e9d-bf28-47ce-84a2-4f46befd6e28.png)
+
+PFOaaS will respond to the following 'Accept:' values with appropriate content
+* text/plain - Content will be returned as a plain string.
+* application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }
+** Supports jsonp by including ?callback=?
+* text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
+* application/xml - Content will be returned as a XML document.
 
 # Docker
 
