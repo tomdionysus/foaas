@@ -7,7 +7,7 @@ PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solut
 Please see https://pfoaas.desigeek.com for API documentation and examples.
 
 # Example use
-Follwing is an example on how to call the REST API and expecting a text output.
+Following is an example on how to call the REST API and expecting a text output.
 
 `curl -H 'Accept: text/plain' https://pfoaas.desigeek.com/row/Amit`
 

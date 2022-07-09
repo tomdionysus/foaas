@@ -47,7 +47,7 @@
 
         <h3 id="contentnegotiation">Content Negotiation</h3>
 
-        <p>PFOAAS will respond to the following 'Accept:' values with appropriate content</p>
+        <p>PFOaaS will respond to the following 'Accept:' values with appropriate content</p>
 
         <ul>
           <li>text/plain - Content will be returned as a plain string.</li>
@@ -103,6 +103,20 @@
         <p>Filters can be used in combinations, e.g.:
           <a href="http://pfoaas.desigeek.com/row/Amit?shoutcloud&amp;i18n=de"><code>http://pfoaas.desigeek.com/row/Amit?<em>shoutcloud&amp;i18n=de</em></code></a>
         </p>
+
+        <h3 id="example">Examples</h3>
+        <p>Following is an example on how to call the REST API and expecting a text output.</p>
+        <code>curl -H 'Accept: text/plain' https://pfoaas.desigeek.com/row/Amit</code>
+        <br>
+        <p>This would yield the following output:</p>
+        <img src="https://user-images.githubusercontent.com/3529468/178124475-2a3f5fc8-9c33-492f-a49c-de58ebbbf752.png"/>
+        </p>
+        
+        <p>If json is your thing, then you can use the following, which will get you the result as a json object.</p>
+        
+        <code>curl -H 'Accept: application/json' https://pfoaas.desigeek.com/row/Amit</code>
+        <p>In this case, we will get the following output:</p>
+        <img src="https://user-images.githubusercontent.com/3529468/178124533-e3ea9e9d-bf28-47ce-84a2-4f46befd6e28.png"/>
 
         <h3 id="contact">Get in touch</h3>
         <ul>
