@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/cup')
 
 describe('/cup', function () {
@@ -41,7 +34,7 @@ describe('/cup', function () {
         }
       }
 
-      const message = 'How about a nice cup of shut the fork up?'
+      const message = 'Here’s a full cup and a lid. Now shut the full cup.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

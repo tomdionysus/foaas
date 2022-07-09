@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/bucket')
 
 describe('/bucket', function () {
@@ -41,7 +34,7 @@ describe('/bucket', function () {
         }
       }
 
-      const message = 'Please choke on a bucket of cocks.'
+      const message = 'Please choke on a bucket of merde.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

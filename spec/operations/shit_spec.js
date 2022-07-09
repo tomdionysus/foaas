@@ -1,7 +1,7 @@
 const operation = require('../../lib/operations/shit')
 
 describe('/shit', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('fork This Shit'))
+  it('should have the correct name', () => expect(operation.name).toEqual('Shit'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/shit/:from'))
 

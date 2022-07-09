@@ -1,20 +1,12 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/think')
 
 describe('/think', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('You Think'))
+  it('should have the correct name', () => expect(operation.name).toEqual('Think'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/think/:name/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/think/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
-      { name: 'Name', field: 'name' },
       { name: 'From', field: 'from' }
     ])
   )
@@ -26,7 +18,7 @@ describe('/think', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/think/:name/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/think/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -38,12 +30,11 @@ describe('/think', function () {
 
       const req = {
         params: {
-          name: 'TESTNAME',
           from: 'TESTFROM'
         }
       }
 
-      const message = `${req.params.name}, you think I give a fork?`
+      const message = 'I believe you think that.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
