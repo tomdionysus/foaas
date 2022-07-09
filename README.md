@@ -9,10 +9,12 @@ Please see https://pfoaas.desigeek.com for API documentation and examples.
 Follwing is an example on how to call the REST API and expecting a text output.
 
 `curl -H 'Accept: text/plain' https://pfoaas.desigeek.com/row/Amit`
+
 ![image](https://user-images.githubusercontent.com/3529468/178124475-2a3f5fc8-9c33-492f-a49c-de58ebbbf752.png)
 
 If json is your thing, then you can use the following, which will get you the result as a json object.
 `curl -H 'Accept: application/json' https://pfoaas.desigeek.com/row/Amit`
+
 ![image](https://user-images.githubusercontent.com/3529468/178124533-e3ea9e9d-bf28-47ce-84a2-4f46befd6e28.png)
 
 PFOaaS will respond to the following 'Accept:' values with appropriate content
