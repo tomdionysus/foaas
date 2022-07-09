@@ -1,14 +1,7 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/anyway')
 
 describe('/anyway', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Who the fork are you anyway'))
+  it('should have the correct name', () => expect(operation.name).toEqual('Who the hell are you anyway'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/anyway/:company/:from'))
 
@@ -43,7 +36,7 @@ describe('/anyway', function () {
         }
       }
 
-      const message = `Who the fork are you anyway, ${req.params.company}, why are you stirring up so much trouble, and, who pays you?`
+      const message = `Who the hell are you anyway, ${req.params.company}, why are you stirring up so much trouble, and, who pays you?`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

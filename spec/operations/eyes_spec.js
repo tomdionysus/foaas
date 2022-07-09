@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/you')
+const operation = require('../../lib/operations/eyes')
 
-describe('/you', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('You'))
+describe('/eyes', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Eyes'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/you/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/eyes/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -12,13 +12,13 @@ describe('/you', function () {
   )
 
   return describe('register', function () {
-    it('should call app.get with correct url', function () {
+    it('should call.app.get with correct url', function () {
       const app =
         { get: jasmine.createSpy() }
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/you/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/eyes/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,11 +34,11 @@ describe('/you', function () {
         }
       }
 
-      const message = "You! You’re living proof it’s possible to live without a brain."
+      const message = 'Keep rolling your eyes, you might eventually find a brain.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
-      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitle)
+      return expect(output).toHaveBeenCalledWith(req, 'RES', message, subtitles)
     })
   })
 })

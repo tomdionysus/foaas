@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/life')
 
 describe('/life', function () {
@@ -41,7 +34,7 @@ describe('/life', function () {
         }
       }
 
-      const message = 'fork my life.'
+      const message = 'You have an entire life to be an idiot. Why not take today off?'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

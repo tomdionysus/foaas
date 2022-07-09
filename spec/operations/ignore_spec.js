@@ -1,16 +1,9 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
-const operation = require('../../lib/operations/asshole')
+const operation = require('../../lib/operations/ignore')
 
-describe('/asshole', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Asshole'))
+describe('/ignore', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Ignore'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/asshole/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/ignore/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -25,7 +18,7 @@ describe('/asshole', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/asshole/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/ignore/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -41,7 +34,7 @@ describe('/asshole', function () {
         }
       }
 
-      const message = 'fork you, asshole'
+      const message = 'I’m busy right now, can I ignore you another time?'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

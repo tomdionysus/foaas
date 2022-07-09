@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/you')
+const operation = require('../../lib/operations/forgotten')
 
-describe('/you', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('You'))
+describe('/forgotten', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Forgotten'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/you/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/forgotten/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/you', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/you/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/forgotten/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/you', function () {
         }
       }
 
-      const message = "You! You’re living proof it’s possible to live without a brain."
+      const message = 'Child, I’ve forgotten more than you ever knew.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

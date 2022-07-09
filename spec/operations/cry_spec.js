@@ -1,16 +1,9 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
-const operation = require('../../lib/operations/king')
+const operation = require('../../lib/operations/cry')
 
-describe('/king', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('King'))
+describe('/cry', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Cry'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/king/:name/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/cry/:name/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -26,7 +19,7 @@ describe('/king', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/king/:name/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/cry/:name/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -43,7 +36,7 @@ describe('/king', function () {
         }
       }
 
-      const message = `Oh fork off, just really fork off you total dickface. Christ, ${req.params.name}, you are fucking thick.`
+      const message = `${req.params.name}, your face makes onions cry.`
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
