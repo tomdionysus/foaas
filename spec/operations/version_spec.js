@@ -42,7 +42,7 @@ describe('/version', function () {
         req,
         'RES',
         'Version 1234',
-        'FOAAS'
+        'PFOaaS'
       )
     })
   })
