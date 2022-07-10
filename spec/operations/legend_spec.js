@@ -36,7 +36,7 @@ describe("/legend", function() {
         }
       };
 
-      const message = `${req.params.name}, you're a fucking legend.`;
+      const message = `${req.params.name}, you're a bloody legend.`;
       const subtitle = `- ${req.params.from}`;
 
       func(req,'RES');
