@@ -1,34 +1,16 @@
 # PFOaaS
 
-*July 2022 - v0.0.9*
+*July 2022 - v0.0.10*
 
 PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fork off.
 
 Please see https://pfoaas.desigeek.com for API documentation and examples.
 
 # Example use
-Following is an example on how to call the REST API and expecting a text output.
-
-`curl -H 'Accept: text/plain' https://pfoaas.desigeek.com/row/Amit`
-
-![image](https://user-images.githubusercontent.com/3529468/178124475-2a3f5fc8-9c33-492f-a49c-de58ebbbf752.png)
-
-If json is your thing, then you can use the following, which will get you the result as a json object.
-
-`curl -H 'Accept: application/json' https://pfoaas.desigeek.com/row/Amit`
-
-![image](https://user-images.githubusercontent.com/3529468/178124533-e3ea9e9d-bf28-47ce-84a2-4f46befd6e28.png)
-
-PFOaaS will respond to the following 'Accept:' values with appropriate content
-* text/plain - Content will be returned as a plain string.
-* application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }
-   - Supports jsonp by including `?callback=?`
-* text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
-* application/xml - Content will be returned as a XML document.
 
 # Docker
 
-    docker build -t foaas:1 .
+	docker build -t foaas:1 .
     docker run -v $(pwd):/usr/src/app -p 5000:5000 foaas:1
 
 # Clients
@@ -81,7 +63,7 @@ API clients are available in a number of languages:
 
 ## Adding new operations
 
-To add a new PFOaaS operation:
+To add a new FOAAS operation:
 
 1. Fork into your account
 2. Branch into a feature branch `feature/your_operation`

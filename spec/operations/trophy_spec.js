@@ -1,16 +1,9 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
-const operation = require('../../lib/operations/that')
+const operation = require('../../lib/operations/trophy')
 
-describe('/that', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('fork That'))
+describe('/trophy', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Trophy'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/that/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/trophy/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -25,7 +18,7 @@ describe('/that', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/that/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/trophy/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -45,7 +38,7 @@ describe('/that', function () {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'fork that.',
+        'If you were an inanimate object, you’d be a participation trophy.',
         '- TESTFROM'
       )
     })
