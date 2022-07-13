@@ -34,7 +34,7 @@ describe('/everything', function () {
         }
       }
 
-      const message = 'Screw everything.'
+      const message = 'Unless your name is Bing, stop acting like you know everything!'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

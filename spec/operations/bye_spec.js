@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/operations/bye')
 
 describe('/bye', function () {
@@ -41,7 +34,7 @@ describe('/bye', function () {
         }
       }
 
-      const message = 'Fuckity bye!'
+      const message = 'Bye. Hope to see you never.'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

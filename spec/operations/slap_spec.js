@@ -1,20 +1,12 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
-const operation = require('../../lib/operations/bus')
+const operation = require('../../lib/operations/slap')
 
-describe('/bus', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Bus'))
+describe('/slap', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Slap'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/bus/:name/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/slap/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
-      { name: 'Name', field: 'name' },
       { name: 'From', field: 'from' }
     ])
   )
@@ -26,7 +18,7 @@ describe('/bus', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/bus/:name/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/slap/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -38,12 +30,11 @@ describe('/bus', function () {
 
       const req = {
         params: {
-          name: 'TESTNAME',
           from: 'TESTFROM'
         }
       }
 
-      const message = `Christ on a bendy-bus, ${req.params.name}, don't be such a fucking faff-arse.`
+      const message = "I will slap you so hard even Google won’t be able to find you."
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')

@@ -1,9 +1,9 @@
-const operation = require('../../lib/operations/even')
+const operation = require('../../lib/operations/something')
 
-describe('/even', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Even'))
+describe('/something', function () {
+  it('should have the correct name', () => expect(operation.name).toEqual('Something'))
 
-  it('should have the correct url', () => expect(operation.url).toEqual('/even/:from'))
+  it('should have the correct url', () => expect(operation.url).toEqual('/something/:from'))
 
   it('should have the correct fields', () =>
     expect(operation.fields).toEqual([
@@ -18,7 +18,7 @@ describe('/even', function () {
 
       operation.register(app, null)
 
-      expect(app.get).toHaveBeenCalledWith('/even/:from', jasmine.any(Function))
+      expect(app.get).toHaveBeenCalledWith('/something/:from', jasmine.any(Function))
     })
 
     return it('should call output with correct params', function () {
@@ -34,7 +34,7 @@ describe('/even', function () {
         }
       }
 
-      const message = "I can't fuckin' even."
+      const message = "If I had a dollar for every time you said something smart, I’d be broke."
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
