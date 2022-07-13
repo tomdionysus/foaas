@@ -1,7 +1,7 @@
 const operation = require('../../lib/operations/logs')
 
 describe('/logs', function () {
-  it('should have the correct name', () => expect(operation.name).toEqual('Check your fucking logs!'))
+  it('should have the correct name', () => expect(operation.name).toEqual('Logs'))
 
   it('should have the correct url', () => expect(operation.url).toEqual('/logs/:from'))
 
@@ -34,7 +34,7 @@ describe('/logs', function () {
         }
       }
 
-      const message = 'Check your fucking logs!'
+      const message = 'Check your bloody logs, you imbecile!'
       const subtitle = `- ${req.params.from}`
 
       func(req, 'RES')
