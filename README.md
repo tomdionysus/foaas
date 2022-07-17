@@ -72,6 +72,7 @@ API clients are available in a number of languages:
 | Slack                                       | https://github.com/revmischa/foaas-slack                                     |
 | Amazon Echo                                 | https://www.amazon.com/dp/B01LZLFTMQ/ (source available [here](https://github.com/martinschaef/foaas-alex))|
 | Terraform Provider                          | https://github.com/m13t/terraform-provider-foac                              |
+| Discord                                     | https://discord.com/oauth2/authorize?client_id=997665947122937909&scope=bot%20applications.commands&permissions=277025466368 (source available [here](https://github.com/dwisiswant0/foaas-discord))|
 
 # Contributing
 
