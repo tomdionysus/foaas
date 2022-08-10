@@ -1,6 +1,6 @@
 {
   "name": "pfoaas",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Polite Fork Off As A Service",
   "main": "lib/server.js",
   "scripts": {
