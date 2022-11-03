@@ -36,13 +36,14 @@
       <div class="hero-unit">
         <h1>PFOaaS</h1>
         <h2>Polite Fork Off As A Service</h2>
-        <p><em>v0.0.13</em></p>
+        <p><em>v0.0.14</em></p>
       </div>
     </div>
     <div class="container">
       <div class="content" style="margin-left:50px;">
         <h2 id="introduction">Introduction</h2>
         <p>PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to Fork off.</p>
+        <p>It is a simple service that returns a random fork off message. (❁´◡`❁)</p>
 
         <h2 id="api">API</h2>
 
@@ -51,15 +52,14 @@
         <p>PFOaaS will respond to the following 'Accept:' values with appropriate content</p>
 
         <ul>
-          <li>text/plain - Content will be returned as a plain string.</li>
-          <li>
-            application/json - Content will be returned as a JSON object <code>{ message: 'message', subtitle: 'subtitle' }</code>
+          <li><b>text/plain</b> - Content will be returned as a plain string.</li>
+          <li><b>application/json</b> - Content will be returned as a JSON object <code>{ message: 'message', subtitle: 'subtitle' }</code>
             <ul>
               <li>Supports jsonp by including <code>?callback=?</code></li>
             </ul>
           </li>
-          <li>text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.</li>
-          <li>application/xml - Content will be returned as a XML document.</li>
+          <li><b>text/html</b> - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.</li>
+          <li><b>application/xml</b> - Content will be returned as a XML document.</li>
         </ul>
 
         <h3 id="operations">Operations</h3>
