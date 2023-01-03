@@ -1,6 +1,6 @@
 # PFOaaS
 
-*Aug 2022 - v0.0.13*
+*Dec 2022 - v0.0.14*
 
 PFOaaS (Polite Fork Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fork off.
 
@@ -10,10 +10,11 @@ Please see https://pfoaas.desigeek.com for API documentation and examples.
 
 # Docker
 
-	docker build -t foaas:1 .
+    docker build -t foaas:1 .
     docker run -v $(pwd):/usr/src/app -p 5000:5000 foaas:1
 
 # Clients
+*NOTE:* These use the base version, and not this forked version.
 
 API clients are available in a number of languages:
 
@@ -36,6 +37,7 @@ API clients are available in a number of languages:
 | Rust     | `foaas-rs`     | https://github.com/jilsahm/foaas-rs            |
 
 # GUI Clients
+*NOTE:* These use the base version, and not this forked version.
 
 | Platform          | Info                                                    |
 |:------------------|:--------------------------------------------------------|
@@ -43,6 +45,7 @@ API clients are available in a number of languages:
 
 
 # Framework Support
+NOTE: These use the base version, and not this forked version.
 
 | Framework     | Info                                                                         |
 |:--------------------------------------------|:-----------------------------------------------------------------------------|
@@ -50,6 +53,7 @@ API clients are available in a number of languages:
 | [React](https://reactjs.org/) | https://github.com/circa10a/react-foaas-card                                   	     |
 
 # Integrate FOAAS
+*NOTE:* These use the base version, and not this forked version.
 
 | Platform/Software     | Name                                                                         |
 |:--------------------------------------------|:-----------------------------------------------------------------------------|
